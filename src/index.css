@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .container{
+     @apply max-w-[1210px] w-full px-5 mx-auto;
+  }
+  .padingheader {
+    padding: 7px 12px 7px 20px;
+}
+}
+.padingheader {
+    padding: 7px 12px 7px 20px;
+}
