@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 const Header = () => {
   return (
     <>
-    <div className='bg-black flex items-center justify-center w-screen text-white pl-[310px] py-[12px]' >
+    <div className='bg-black flex items-center justify-center w-screen text-white pl-[310px] py-[12px] ' >
       <div className="flex w-[859px] gap-[231px] items-center">
 
       <div className='flex gap-[8px] items-center'>
@@ -17,33 +17,34 @@ const Header = () => {
     </div>
       </div>
     </div>
-    <header >
+    <header className='border-b border-gray-150' >
 
-    <nav className='container'>
+    <nav className='container mt-[40px] mb-[16px]' >
       <div className='w-full flex justify-between items-center font-poppins '>
         <div className="w-[118px] ">
             <h1 className='font-customfont  font-bold text-2xl leading-6 tracking-[0.03em]'>Exclusive</h1>
         </div>
         <ul className=" flex gap-[48px] items-center w-[367px]  font-customfont12 text-base leading-6  font-normal">
-            <Link to={"/"}>Home</Link>
-            <Link to={"/Contect"}>Contact</Link>
-            <Link to={"/About"}>About</Link>
-            <Link to ={"/Signup"}>SignUp</Link>
+            <NavLink to={"/"}>Home</NavLink>
+            <NavLink to={"/Contect"}>Contact</NavLink>
+            <NavLink to={"/About"}>About</NavLink>
+            <NavLink to ={"/Signup"}>SignUp</NavLink>
         </ul>
-        <div className=" flex justify-between items-center font-customfont12 w-[347px]">
+        <div className=" flex justify-between items-center font-customfont12 w-[395px]">
           <div className=" flex w-[243px] bg-[#F5F5F5] justify-between items-center p-[7px_12px_7px_20px] rounded-[4px]">
             <input className='font-normal text-xs leading-[18px] border-none outline-none w-[153px]' type="text"  placeholder='What are you looking for?' />
             <img src={"/src/assets/svg/search.svg"}  alt="image1" />
           </div>
-          <div className="flex w-[ 80px] justify-between items-center gap-[16px]">
+          <div className="flex w-[ 128px] justify-between items-center gap-[16px]">
                 <img src="/src/assets/svg/Wishlist.svg" alt="image2" />
-                <img src="/src/assets/svg/Cartwithbuy.svg" alt="image3" />
+                <img className='w-[32px] h-[32px]' src="/src/assets/svg/Cartwithbuy.svg" alt="image3" />
+                <img src="/src/assets/svg/user.svg" alt="image4" />
           </div>
         </div>
       </div>
-    </nav>
+    </nav >
     
-    </header>
+    </header >
     </>
   )
 }

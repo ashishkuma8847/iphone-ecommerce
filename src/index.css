@@ -13,3 +13,8 @@
 .padingheader {
     padding: 7px 12px 7px 20px;
 }
+.active{
+  transition: all 0.3s ease-in-out;
+  border-radius: 1px;
+  border-bottom: 1.9px solid rgba(9, 9, 9, 0.283);
+}

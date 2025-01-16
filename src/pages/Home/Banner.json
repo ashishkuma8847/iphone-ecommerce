@@ -1,5 +1,11 @@
 [
     {
-        "ashish":"taak"
+        "name":"Woman’s Fashion",
+        "img":"/src/assets/svg/arrow.svg"
+    },
+    {
+        "name":"Men’s Fashion",
+        "img":"/src/assets/svg/arrow.svg"
     }
+   
 ]
