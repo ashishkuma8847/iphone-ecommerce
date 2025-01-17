@@ -17,7 +17,7 @@ const Header = () => {
     </div>
       </div>
     </div>
-    <header className='border-b border-gray-150' >
+    <header className='border-b border-#b2b2b2' >
 
     <nav className='container mt-[40px] mb-[16px]' >
       <div className='w-full flex justify-between items-center font-poppins '>
