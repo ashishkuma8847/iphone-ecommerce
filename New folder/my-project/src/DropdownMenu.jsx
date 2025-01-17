@@ -3,32 +3,13 @@ import React, { useState } from "react";
 const DropdownMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    // Toggle menu open/close
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    const toggleMenu = () => {setIsOpen(!isOpen); };
 
     return (
         <div style={{ position: "relative", display: "inline-block" }}>
-            {/* Menu Button */}
-            <button
-                onClick={toggleMenu}
-                style={{
-                    padding: "10px 20px",
-                    backgroundColor: "#007BFF",
-                    color: "white",
-                    border: "none",
-                    borderRadius: "5px",
-                    cursor: "pointer",
-                }}
-            >
-                Menu
-            </button>
+            <button onClick={toggleMenu}className="bg-blue-600 text-white p-10 ">Menu</button>
 
-            {/* Dropdown Options */}
-            {isOpen && (
-                <div
-                    style={{
+            {isOpen && (<div style={{
                         position: "absolute",
                         top: "100%",
                         left: "0",
@@ -38,8 +19,7 @@ const DropdownMenu = () => {
                         boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
                         borderRadius: "5px",
                         zIndex: "1000",
-                    }}
-                >
+                    }} >
                     <ul style={{ listStyleType: "none", margin: 0, padding: 0 }}>
                         <li
                             style={{
@@ -47,8 +27,7 @@ const DropdownMenu = () => {
                                 cursor: "pointer",
                                 borderBottom: "1px solid #ddd",
                             }}
-                            onClick={() => alert("Option 1 clicked")}
-                        >
+                            onClick={() => alert("Option 1 clicked")} >
                             Option 1
                         </li>
                         <li
