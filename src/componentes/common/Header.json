@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Manage My Account",
+        "img":"/src/assets/svg/user2.svg"
+    },
+    {
+        "name":"My Order",
+        "img":"/src/assets/svg/icon-mallbag.svg"
+    },
+    {
+        "name":"My Cancellations",
+        "img":"/src/assets/svg/icon-cancel.svg"
+    },
+    {
+        "name":"My Reviews",
+        "img":"/src/assets/svg/Icon-Reviews.svg"
+    },
+    {
+        "name":"Logout",
+        "img":"/src/assets/svg/Icon-logout.svg"
+    }
+]

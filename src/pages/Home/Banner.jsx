@@ -3,8 +3,10 @@ import bannerr from "./Banner.json";
 import { Link } from "react-router-dom";
 import bnext from './Bannernext.json'
 import bswiper from './BanerSwiper.json'
+import banner1 from './Banner1.json'
 const Banner = () => {
   const [rotate, setRotate] = useState(false)
+  const [rotate1, setRotate1] = useState(false)
   return (
     <>
       <div className="container flex ">
@@ -18,17 +20,42 @@ const Banner = () => {
                     <button onClick={() => setRotate(!rotate)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
                       {item.name}<img src={item.img} className={`transition-all duration-300 ${rotate && 'rotate-90'} `} alt="image for arrow" />
                     </button>
-                    {rotate && <ul>
-                      <li>
-                        ashish
-                      </li>
-                    </ul>}
+                    {rotate && <ul className=" list-disc  marker:text-gray-300 font-normal text-base leading-[24px]  font-customfont12 " >
+                      <h3>Clothing</h3>
+                      <li className="ml-5"> Tops</li>
+                      <li className="ml-5"> Outerwear</li>
+                      <li className="ml-5"> Bottoms</li>
+                      <li className="ml-5">Suits </li>
+                    </ul> }
 
                   </div>
                 </Link>
               </div>
             </div>
           ))}
+          {banner1.map((item, index) => (
+            <div key={index}>
+              <div className=" flex pb-4">
+                <Link to={item.to}>
+                  <div className=" flex flex-col w-[217px]   ">
+                    <button onClick={() => setRotate1(!rotate1)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
+                      {item.name}<img src={item.img} className={`transition-all duration-300 ${rotate1 && 'rotate-90'} `} alt="image for arrow" />
+                    </button>
+                    {rotate1 && <ul className=" list-disc  marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12 " >
+                      <h4>Clothing</h4>
+                      <li className="ml-5"> Tops</li>
+                      <li className="ml-5"> Outerwear</li>
+                      <li className="ml-5"> Bottoms</li>
+                      <li className="ml-5">Suits </li>
+                    </ul> 
+
+                    }
+                  </div>
+                </Link>
+              </div>
+            </div>
+          ))}
+          
           {
             bnext.map((item, index) => (
               <div key={index} className="flex pb-4">
