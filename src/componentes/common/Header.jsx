@@ -3,23 +3,27 @@ import { Link, NavLink } from 'react-router-dom'
 import hjson from './Header.json'
 const Header = () => {
   const [user, setUser] = useState(false)
+  const [search ,setSearch]=useState(false)
   return (
     <>
-      <div className='bg-black flex items-center justify-center w-screen text-white pl-[310px] py-[12px] ' >
-        <div className="flex w-[859px] gap-[231px] items-center">
+    <header className='border-b border-#b2b2b2' >
+    <div className="bg-black">
 
-          <div className='flex gap-[8px] items-center'>
+      <div className='container bg-black flex items-center justify-end w-full text-white  py-[12px] ' >
+        <div className="flex  max-w-[859px] w-full justify-between  ">
 
-            <h1 className='font-customfont12 font-normal text-sm leading-[21px] '>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</h1>
-            <a className='font-customfont12 font-semibold text-sm leading-[24px] underline decoration-1'>ShopNow</a>
+          <div className='max-w-[550px] w-full flex gap-[8px] items-center '>
+
+            <h1 className='sm:text-xs md:text-sm font-customfont12 font-normal text-sm leading-[21px] '>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</h1>
+            <a className='sm:text-xs md:text-sm font-customfont12 font-semibold  leading-[24px] underline decoration-1'>ShopNow</a>
           </div>
-          <div className='flex items-end justify-end gap-[5px] ]'>
+          <div className='flex w-[78px]  gap-[5px] md:text-sm items-center sm:text-xs '>
             <h1>English</h1>
             <img src="/src/assets/svg/DropDown.svg" alt="" />
           </div>
         </div>
       </div>
-      <header className='border-b border-#b2b2b2' >
+    </div>
 
         <nav className='container mt-[40px] mb-[16px]' >
           <div className='w-full flex justify-between items-center font-poppins '>
@@ -33,9 +37,12 @@ const Header = () => {
               <NavLink to={"/Signup"}>SignUp</NavLink>
             </ul>
             <div className=" flex justify-between items-center font-customfont12 w-[395px]">
-              <div className=" flex w-[243px] bg-[#F5F5F5] justify-between items-center p-[7px_12px_7px_20px] rounded-[4px]">
-                <input className='font-normal text-xs leading-[18px] border-none outline-none w-[153px]' type="text" placeholder='What are you looking for?' />
-                <img src={"/src/assets/svg/search.svg"} alt="image1" />
+              <div className=" flex w-[243px]  justify-end items-center p-[7px_12px_7px_20px] rounded-[4px]">
+              
+                
+                <button onClick={()=>setSearch(!search)}> <img className={`transition-all duration-300 ${search && ' pr-[34px]'}`} src={"/src/assets/svg/search.svg"} alt="image1" /></button>
+               {search &&   <input className='font-normal  text-xs leading-[18px] border-none outline-none w-[153px]' type="text" placeholder='What are you looking for?' />}
+              
               </div>
               <div className="flex  w-[ 128px] justify-between items-center gap-[16px]">
                 <img src="/src/assets/svg/Wishlist.svg" alt="image2" />
@@ -61,7 +68,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </nav >
+        </nav > 
 
       </header >
     </>
