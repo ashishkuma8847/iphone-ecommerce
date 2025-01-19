@@ -15,16 +15,16 @@ const Banner = () => {
     <>
       <div className="container flex mb-[127px] ">
 
-        <div className="bannerr w-[217px] h-[344px] mt-10 ">
+        <div className="bannerr min-w-[217px] w-full h-[344px] mt-10 overflow-hidden ">
           {bannerr.map((item, index) => (
             <div key={index}>
-              <div className=" flex pb-4">
+              <div className=" flex pb-4 ">
                 <Link to={item.to}>
                   <div className=" flex flex-col w-[217px]   ">
-                    <button onClick={() => setRotate(!rotate)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
+                    <button onMouseOver={() => setRotate(true)}  onMouseLeave={() => setRotate(false)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
                       {item.name}<img src={item.img} className={`transition-all duration-300 ${rotate && 'rotate-90'} `} alt="image for arrow" />
                     </button>
-                    <ul className={`list-disc transition-all duration-300 ${rotate ? "h-[120px] opacity-100 z-10" :"h-0 opacity-0 -z-10" } marker:text-gray-300 font-normal text-base leading-[24px]  font-customfont12 `} >
+                    <ul className={`list-disc transition-all duration-300 ${rotate ? "h-[120px] opacity-100 z-10" :"h-0 opacity-0 -z-10" } marker:text-gray-300 font-normal text-base leading-[24px]  font-customfont12 `}  onMouseOver={() => setRotate(true)}  onMouseLeave={() => setRotate(false)} >
                       Clothing
                       <li className="ml-5"> Tops</li>
                       <li className="ml-5"> Outerwear</li>
@@ -42,10 +42,10 @@ const Banner = () => {
               <div className=" flex pb-4">
                 <Link to={item.to}>
                   <div className=" flex flex-col w-[217px]   ">
-                    <button onClick={() => setRotate1(!rotate1)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
+                    <button onMouseOver={() => setRotate1(true)}  onMouseLeave={() => setRotate1(false)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
                       {item.name}<img src={item.img} className={`transition-all duration-300 ${rotate1 && 'rotate-90'} `} alt="image for arrow" />
                     </button>
-                     <ul className={`list-disc  marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12 ${rotate1 ? "h-[120px] opacity-100  z-10 " :"h-0 opacity-0 -z-10 "}`  }>
+                     <ul className={`list-disc transition-all duration-300 marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12  ${rotate1 ? "h-[120px] opacity-100  z-10 " :"h-0 opacity-0 -z-10 "}`  }  onMouseOver={() => setRotate1(true)}  onMouseLeave={() => setRotate1(false)} >
                       <h4>Clothing</h4>
                       <li className="ml-5"> Tops</li>
                       <li className="ml-5"> Outerwear</li>
