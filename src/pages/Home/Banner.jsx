@@ -13,7 +13,7 @@ const Banner = () => {
   const [rotate1, setRotate1] = useState(false)
   return (
     <>
-      <div className="container flex ">
+      <div className="container flex mb-[127px] ">
 
         <div className="bannerr w-[217px] h-[344px] mt-10 ">
           {bannerr.map((item, index) => (
@@ -24,13 +24,13 @@ const Banner = () => {
                     <button onClick={() => setRotate(!rotate)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
                       {item.name}<img src={item.img} className={`transition-all duration-300 ${rotate && 'rotate-90'} `} alt="image for arrow" />
                     </button>
-                    {rotate && <ul className=" list-disc  marker:text-gray-300 font-normal text-base leading-[24px]  font-customfont12 " >
-                      <h3>Clothing</h3>
+                    <ul className={`list-disc transition-all duration-300 ${rotate ? "h-[120px] opacity-100 z-10" :"h-0 opacity-0 -z-10" } marker:text-gray-300 font-normal text-base leading-[24px]  font-customfont12 `} >
+                      Clothing
                       <li className="ml-5"> Tops</li>
                       <li className="ml-5"> Outerwear</li>
                       <li className="ml-5"> Bottoms</li>
                       <li className="ml-5">Suits </li>
-                    </ul> }
+                    </ul> 
 
                   </div>
                 </Link>
@@ -45,7 +45,7 @@ const Banner = () => {
                     <button onClick={() => setRotate1(!rotate1)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
                       {item.name}<img src={item.img} className={`transition-all duration-300 ${rotate1 && 'rotate-90'} `} alt="image for arrow" />
                     </button>
-                    {rotate1 && <ul className=" list-disc  marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12 " >
+                     <ul className={`list-disc  marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12 ${rotate1 ? "h-[120px] opacity-100  z-10 " :"h-0 opacity-0 -z-10 "}`  }>
                       <h4>Clothing</h4>
                       <li className="ml-5"> Tops</li>
                       <li className="ml-5"> Outerwear</li>
@@ -53,7 +53,7 @@ const Banner = () => {
                       <li className="ml-5">Suits </li>
                     </ul> 
 
-                    }
+                    
                   </div>
                 </Link>
               </div>

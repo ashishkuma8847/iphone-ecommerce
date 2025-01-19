@@ -10,6 +10,9 @@ export default {
       fontFamily:{
         customfont:['"Inter"', 'serif'],
         customfont12:['"Poppins"', 'serif']
+      },
+      colors:{
+        CustomRed:['#DB4444'],
       }
     },
   },
