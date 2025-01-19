@@ -26,10 +26,13 @@ const Banner = () => {
                     </button>
                     <ul className={`list-disc transition-all duration-300 ${rotate ? "h-[120px] opacity-100 z-10" :"h-0 opacity-0 -z-10" } marker:text-gray-300 font-normal text-base leading-[24px]  font-customfont12 `}  onMouseOver={() => setRotate(true)}  onMouseLeave={() => setRotate(false)} >
                       Clothing
-                      <li className="ml-5"> Tops</li>
-                      <li className="ml-5"> Outerwear</li>
-                      <li className="ml-5"> Bottoms</li>
-                      <li className="ml-5">Suits </li>
+                      {
+                          ["Tops","Outerwear","Bottoms","Suits"].map((item,index)=>(
+                          <div key={index}>
+                             <li className="ml-5  "> {item} </li>
+                          </div>       
+                          ))
+                        }
                     </ul> 
 
                   </div>
@@ -45,12 +48,15 @@ const Banner = () => {
                     <button onMouseOver={() => setRotate1(true)}  onMouseLeave={() => setRotate1(false)} className="flex  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px] ">
                       {item.name}<img src={item.img} className={`transition-all duration-300 ${rotate1 && 'rotate-90'} `} alt="image for arrow" />
                     </button>
-                     <ul className={`list-disc transition-all duration-300 marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12  ${rotate1 ? "h-[120px] opacity-100  z-10 " :"h-0 opacity-0 -z-10 "}`  }  onMouseOver={() => setRotate1(true)}  onMouseLeave={() => setRotate1(false)} >
+                     <ul className={`list-disc transition-all  duration-300 marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12  ${rotate1 ? "h-[120px] opacity-100  z-10 " :"h-0 opacity-0 -z-10 "}`  }  onMouseOver={() => setRotate1(true)}  onMouseLeave={() => setRotate1(false)} >
                       <h4>Clothing</h4>
-                      <li className="ml-5"> Tops</li>
-                      <li className="ml-5"> Outerwear</li>
-                      <li className="ml-5"> Bottoms</li>
-                      <li className="ml-5">Suits </li>
+                        {
+                          ["Tops","Outerwear","Bottoms","Suits"].map((item,index)=>(
+                          <div key={index}>
+                             <li className="ml-5 "> {item} </li>
+                          </div>       
+                          ))
+                        }
                     </ul> 
 
                     

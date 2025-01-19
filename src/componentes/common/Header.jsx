@@ -41,14 +41,14 @@ const Header = () => {
               
                 
                 <button onMouseOver={() => setSearch(true)}  onMouseLeave={() => setSearch(false)}> <img className={`transition-all duration-300 ${search && ' pr-[34px]'}`} src={"/src/assets/svg/search.svg"} alt="image1" /></button>
-               <input className={`font-normal   text-xs leading-[18px] transition-all duration-300  border-b border-solid border-gray-300 outline-none  w-[153px] ${search ? "w-[153px]":"w-[0]"} ` } placeholder='What are you looking for?'onMouseOver={() => setSearch(true)}  onMouseLeave={() => setSearch(false)} />
+               <input className={`font-normal   text-xs leading-[18px] transition-all duration-300  border-b border-solid border-gray-300 outline-none   ${search ? "w-[153px]":"w-[0]"} ` } placeholder='What are you looking for?'onMouseOver={() => setSearch(true)}  onMouseLeave={() => setSearch(false)} />
               
               </div>
               <div className="flex  w-[ 128px] justify-between items-center gap-[16px]">
                 <img src="/src/assets/svg/Wishlist.svg" alt="image2" />
                 <img className='w-[32px] h-[32px]' src="/src/assets/svg/Cartwithbuy.svg" alt="image3" />
-                <button className='relative  ' onMouseOver={() => setUser(true)}  onMouseLeave={() => setUser(false)} >   {!user && <img src="/src/assets/svg/user.svg" alt="image4" />} {user && <img src='/src/assets/svg/user-red.svg'/>}</button>
-                <ul className={`flex  flex-col gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] max-w-[244px] text-white bg-red-600 w-full  absolute top-[124px] transition-all duration-300 right-[99px] ${user ? "z-10 opacity-100" : "-z-10 opacity-0"}`}>
+                <button className='relative  ' onMouseOver={() => setUser(true)}  onMouseLeave={() => setUser(false)} >   {!user && <img  src="/src/assets/svg/user.svg" alt="image4" />} {user && <img src='/src/assets/svg/user-red.svg'/>}</button>
+                <ul className={`flex  flex-col gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] max-w-[244px] text-white backdrop-blur-2xl w-full  absolute top-[124px] transition-all duration-300 right-[99px] ${user ? "z-10 opacity-100" : "-z-50 opacity-0"}`}  onMouseOver={() => setUser(true)}  onMouseLeave={() => setUser(false)}>
                   {
                     hjson.map((item, index) => (
                       <div key={index}>
