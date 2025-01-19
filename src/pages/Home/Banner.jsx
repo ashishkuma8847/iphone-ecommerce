@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import bnext from './Bannernext.json'
 import bswiper from './BanerSwiper.json'
 import banner1 from './Banner1.json'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination } from 'swiper/modules';
 const Banner = () => {
   const [rotate, setRotate] = useState(false)
   const [rotate1, setRotate1] = useState(false)
@@ -66,9 +70,12 @@ const Banner = () => {
             ))}
         </div>
         <span className="block w-[1px] h-[384px] bg-[#b2b2b270] ml-4 mr-[45px]  "></span>
+        <Swiper pagination={true} modules={[Pagination,Autoplay]} autoplay={{delay:2500}} loop={true} className="mySwiper">
+        
+        
         {
-          bswiper.map((item, index) => (
-            <div key={index}>
+          bswiper ?.map((item, index) => (
+            <SwiperSlide key={index}>
               <Link to={item.to}>
                 <div className="flex mt-10 max-w-[892px] w-full bg-black text-white justify-between relative ]">
                   <div className="pl-16  pt-[58px]">
@@ -85,12 +92,14 @@ const Banner = () => {
                       <img src={item.img2} alt="" />
                     </ul>
                   </div>
-                  <img className="w-[496px] h-[344px] overflow-hidden " src={item.img3} alt="dassa" />
+                  <img  className="w-[480px] h-[344px] overflow-hidden pt-4 " src={item.img3} alt="dassa" />
                 </div>
               </Link>
-            </div>
+            </SwiperSlide>
           ))
         }
+      </Swiper>
+        
       </div>
     </>
   );

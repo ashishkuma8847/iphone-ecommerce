@@ -5,7 +5,7 @@
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
         "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage2.jpeg"
+        "img3":"/src/assets/images/appleimage3.png"
     },
     {
         "img1":"/src/assets/svg/appleicon.svg",
@@ -21,7 +21,7 @@
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
         "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage2.jpeg"
+        "img3":"/src/assets/images/appleimage1.png"
     },
     {
         "img1":"/src/assets/svg/appleicon.svg",
@@ -29,7 +29,7 @@
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
         "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage2.jpeg"
+        "img3":"/src/assets/images/appleimage4.png"
     },
     {
         "img1":"/src/assets/svg/appleicon.svg",
@@ -37,6 +37,6 @@
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
         "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage2.jpeg"
+        "img3":"/src/assets/images/appleimage5.jpeg"
     }
 ]

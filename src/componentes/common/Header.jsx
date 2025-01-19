@@ -41,7 +41,7 @@ const Header = () => {
               
                 
                 <button onClick={()=>setSearch(!search)}> <img className={`transition-all duration-300 ${search && ' pr-[34px]'}`} src={"/src/assets/svg/search.svg"} alt="image1" /></button>
-               {search &&   <input className='font-normal  text-xs leading-[18px] border-none outline-none w-[153px]' type="text" placeholder='What are you looking for?' />}
+               {search &&   <input className='font-normal   text-xs leading-[18px] border-b border-solid border-gray-300 outline-none  w-[153px]' type="text" placeholder='What are you looking for?' />}
               
               </div>
               <div className="flex  w-[ 128px] justify-between items-center gap-[16px]">
