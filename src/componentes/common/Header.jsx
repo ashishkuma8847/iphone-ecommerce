@@ -47,8 +47,8 @@ const Header = () => {
               <div className="flex  w-[ 128px] justify-between items-center gap-[16px]">
                 <img src="/src/assets/svg/Wishlist.svg" alt="image2" />
                 <img className='w-[32px] h-[32px]' src="/src/assets/svg/Cartwithbuy.svg" alt="image3" />
-                <button className='relative  ' onMouseOver={() => setUser(true)}  onMouseLeave={() => setUser(false)} >   {!user && <img  src="/src/assets/svg/user.svg" alt="image4" />} {user && <img src='/src/assets/svg/user-red.svg'/>}</button>
-                <ul className={`flex  flex-col gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] max-w-[244px] text-white backdrop-blur-2xl w-full  absolute top-[124px] transition-all duration-300 right-[99px] ${user ? "z-10 opacity-100" : "-z-50 opacity-0"}`}  onMouseOver={() => setUser(true)}  onMouseLeave={() => setUser(false)}>
+                <button className='relative  ' onMouseOver={() => setUser(true)}  onMouseLeave={() => setUser(false)} >   {!user && <img   src="/src/assets/svg/user.svg" alt="image4" />} {user && <img src='/src/assets/svg/user-red.svg'/>}</button>
+                <ul className={`flex  flex-col gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] max-w-[244px] text-white backdrop-blur-2xl w-full  absolute top-[124px] transition-all duration-75 right-[255px] ${user ? "z-10 opacity-100" : "-z-[999999] opacity-0"}`}  onMouseOver={() => setUser(true)}  onMouseLeave={() => setUser(false)}>
                   {
                     hjson.map((item, index) => (
                       <div key={index}>
