@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import bannerr from "./Banner.json";
 import { Link } from "react-router-dom";
-import bnext from './Bannernext.json'
-import bswiper from './BanerSwiper.json'
+import bswiper from '../../jsonfiles/BanerSwiper.json'
 import banner1 from '../../jsonfiles/Banner1.json'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -22,10 +20,10 @@ const Banner = () => {
             banner1.map((item, index) => (
               <div key={index}>
                 <Link to={item.to}>
-                <button onClick={() => setRotate(!rotate)}  className="flex  font-customfont12 w-[215px] justify-between items-center  font-normal text-base leading-[24px]  ">
-                      {item.nam.woman}<img src={item.nam.img} className={`transition-all duration-300 ${rotate && 'rotate-90'} `} alt="image for arrow" />
+                <button onClick={() => setRotate(!rotate)}  className="flex  pb-4 hover:text-CustomRed-0 transition-all duration-300 font-customfont12 w-[215px] justify-between items-center  font-normal text-base leading-[24px]  ">
+                      {item.nam.woman}<img src={item.nam.img} className={`transition-all duration-300 ${rotate && 'rotate-90 '} `} alt="image for arrow" />
                     </button>
-                    <ul className={`list-disc transition-all duration-300 ${rotate ? "h-[120px] opacity-100 z-10" :"h-0 opacity-0 -z-[99999999999999999]" } marker:text-gray-300 font-normal text-base leading-[24px]  font-customfont12  `}   >
+                    <ul className={`list-disc relative transition-all duration-300 ${rotate ? "h-[120px] opacity-100 z-10" :"h-0 opacity-0 " } marker:text-gray-300 font-normal text-base leading-[24px]  font-customfont12 -z-50  `}   >
                       Clothing
                       {
                           ["Tops","Outerwear","Bottoms","Suits"].map((item,index)=>(
@@ -35,10 +33,10 @@ const Banner = () => {
                           ))
                         }
                     </ul> 
-                    <button onClick={() => setRotate1(!rotate1)} className="flex   w-[215px] font-customfont12 justify-between items-center  font-normal text-base leading-[24px] ">
+                    <button onClick={() => setRotate1(!rotate1)} className="flex  pb-4  w-[215px] hover:text-CustomRed-0 transition-all duration-300 font-customfont12 justify-between items-center  font-normal text-base leading-[24px] ">
                       {item.name.man}<img src={item.name.img} className={`transition-all duration-300 ${rotate1 && 'rotate-90'} `} alt="image for arrow" />
                     </button>
-                     <ul className={`list-disc transition-all  duration-300 marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12  ${rotate1 ? "h-[120px] opacity-100  z-10 " :"h-0 opacity-0 -z-[999999] "}`  }  >
+                     <ul className={`list-disc transition-all relative duration-300 marker:text-gray-300 font-normal text-base leading-[24px] font-customfont12  ${rotate1 ? "h-[120px] opacity-100  z-10 " :"h-0 opacity-0  -z-50"}`  }  >
                       <h4>Clothing</h4>
                         {
                           ["Tops","Outerwear","Bottoms","Suits"].map((item,index)=>(
@@ -48,7 +46,15 @@ const Banner = () => {
                           ))
                         }
                     </ul> 
-                    <h4 className="pb-4  font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px]">{item.ids.name}</h4>
+                  <div  className=" font-customfont12 w-full justify-between items-center  font-normal text-base leading-[24px]">
+                    <h4 className="pb-4 hover:text-CustomRed-0 transition-all duration-300">{item.ids.name}</h4>
+                    <h4 className="pb-4 hover:text-CustomRed-0 transition-all duration-300 ">{item.ids.name1}</h4>
+                    <h4 className="pb-4 hover:text-CustomRed-0 transition-all duration-300">{item.ids.name2}</h4>
+                    <h4 className="pb-4 hover:text-CustomRed-0 transition-all duration-300">{item.ids.name3}</h4>
+                    <h4 className="pb-4 hover:text-CustomRed-0 transition-all duration-300">{item.ids.name4}</h4>
+                    <h4 className="pb-4 hover:text-CustomRed-0 transition-all duration-300">{item.ids.name5}</h4>
+                    <h4 className="pb-4 hover:text-CustomRed-0 transition-all duration-300">{item.ids.name6}</h4>
+                  </div>
                 </Link>
               </div>
             ))

@@ -10,7 +10,13 @@
         },
         
             "ids":{
-                "name":["Electronics","Home & Lifestyle","Medicine","Sports & Outdoor","Baby’s & Toys","Groceries & Pets","Health & Beauty"]
+                "name":"Electronics",
+                "name1":"Home & Lifestyle",
+                "name2":"Medicine",
+                "name3":"Sports & Outdoor",
+                "name4":"Baby’s & Toys",
+                "name5":"Groceries & Pets",
+                "name6":"Health & Beauty"
             }
         
     }
