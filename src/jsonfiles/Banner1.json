@@ -1,7 +1,17 @@
 [
     {
-        "name": "Men’s Fashion",
-        "img": "/src/assets/svg/arrow.svg"
-       
+        "name": {
+            "man":"Men’s Fashion",
+            "img":"/src/assets/svg/arrow.svg"
+        },
+        "nam":{
+            "woman":"Woman’s Fashion",
+             "img":"/src/assets/svg/arrow.svg"
+        },
+        
+            "ids":{
+                "name":["Electronics","Home & Lifestyle","Medicine","Sports & Outdoor","Baby’s & Toys","Groceries & Pets","Health & Beauty"]
+            }
+        
     }
 ]
