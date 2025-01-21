@@ -1,0 +1,21 @@
+[
+    {
+        "name":"Days",
+        "syns":"03",
+        "dots":":"
+    },
+    {
+        "name":"Hours",
+        "syns":"23",
+        "dots":":"
+    },
+    {
+        "name":"Minutes",
+        "syns":"19",
+        "dots":":"
+    },
+    {
+        "name":"Seconds",
+        "syns":"56"
+    }
+]

@@ -13,7 +13,11 @@ export default {
       },
       colors:{
         CustomRed:['#DB4444'],
-      }
+        customGray:['#b3b3b3']
+      },
+      boxShadow:{
+        custom:['4px 4px 15px rgba(0, 0, 0, 0.2)']
+      },
     },
   },
   plugins: [],

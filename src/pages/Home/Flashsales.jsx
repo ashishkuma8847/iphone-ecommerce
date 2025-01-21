@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import banner from "../../jsonfiles/Sbanner.json";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import left from "../../assets/svg/swiperlefticon.svg";
 import right from "../../assets/svg/swiperrighticon.svg";
-
+import couter from '../../jsonfiles/Counter.json'
 const Flashsales = () => {
   const swiperRef = useRef();
 
@@ -29,47 +29,27 @@ const Flashsales = () => {
                   Flash Sales
                 </li>
                 <ul className="flex gap-[17px] items-center">
-                  <ul className="flex flex-col gap-1">
-                    <li className="font-customfont12 font-medium text-xs leading-[18px  ]">
-                      Days
-                    </li>
-                    <li className="font-customfont font-bold text-[32px] leading-[30px] tracking-[4%]  ">
-                      03
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="w-1 h-4 text-CustomRed-0">:</li>
-                  </ul>
-                  <ul className="flex flex-col gap-1">
-                    <li className="font-customfont12 font-medium text-xs leading-[18px  ]">
-                      Hours
-                    </li>
-                    <li className="font-customfont font-bold text-[32px] leading-[30px] tracking-[4%]  ">
-                      23
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="w-1 h-4 text-CustomRed-0">:</li>
-                  </ul>
-                  <ul className="flex flex-col gap-1">
-                    <li className="font-customfont12 font-medium text-xs leading-[18px  ]">
-                      Minutes
-                    </li>
-                    <li className="font-customfont font-bold text-[32px] leading-[30px] tracking-[4%]  ">
-                      19
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className="w-1 h-4 text-CustomRed-0">:</li>
-                  </ul>
-                  <ul className="flex flex-col gap-1">
-                    <li className="font-customfont12 font-medium text-xs leading-[18px  ]">
-                      Seconds
-                    </li>
-                    <li className="font-customfont font-bold text-[32px] leading-[30px] tracking-[4%]  ">
-                      56
-                    </li>
-                  </ul>
+                  {
+                    couter.map((item, index) => (
+                      <div key={index + Date.now() + item}>
+                        <Link to={item.to}>
+                        <div className="flex items-center justify-center">
+                          <ul className="flex flex-col gap-1">
+                            <li className="font-customfont12 font-medium text-xs leading-[18px  ]">
+                              {item.name}
+                             </li>
+                            <li className="font-customfont font-bold text-[32px] leading-[30px] tracking-[4%]  ">
+                              {item.syns}
+                            </li>
+                          </ul>
+                          <ul>
+                            <li className="w-1 h-4 ml-[17px] text-CustomRed-0">{item.dots}</li>
+                          </ul>
+                        </div>
+                        </Link>
+                      </div>
+                    ))
+                  }
                 </ul>
               </div>
 
@@ -123,11 +103,15 @@ const Flashsales = () => {
                               </div>
 
                               <div className="top-[10px] right-[13px] absolute w-[34px] h-[76px] flex flex-col justify-between items-center">
-                                <img
+                                <button >
+                                   <img
                                   className="w-[34px] h-[34px] pt-[5px]"
                                   src={item.wishlist}
                                   alt="dfs"
                                 />
+                                </button>
+                               
+
                                 <img src={item.eye} alt="dfs" />
                               </div>
                             </div>
@@ -162,7 +146,9 @@ const Flashsales = () => {
               </Swiper>
             </div>
           </div>
-          <div className=""></div>
+          <div className="flex justify-center items-center   pt-[73px] pb-[60px] border-b border-customGray-0">
+                  <button className="font-customfont12 font-medium text-base leading-[24px] p-[16px_48px_16px_48px] bg-CustomRed-0 text-white rounded hover:bg-white hover:text-black hover:shadow-custom transition-all duration-300 ">View All Products</button>   
+          </div>
         </section>
       </main>
     </>
