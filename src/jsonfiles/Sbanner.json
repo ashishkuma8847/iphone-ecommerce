@@ -1,0 +1,57 @@
+[
+    {
+        "img1":"/src/assets/svg/console.svg",
+        "rednum":"-40%",
+        "wishlist":"/src/assets/svg/Wishlist.svg",
+        "eye":"/src/assets/svg/Fill-Eye.svg",
+        "font1":"HAVIT HV-G92 Gamepad",
+        "font2":"$120",
+        "font3":"$160",
+        "stars":"/src/assets/svg/Fivestar1.svg",
+        "font4":"(88)"
+    },
+    {
+        "img1":"/src/assets/svg/Framekeyboard.svg",
+        "rednum":"-35%",
+        "wishlist":"/src/assets/svg/Wishlist.svg",
+        "eye":"/src/assets/svg/Fill-Eye.svg",
+        "font1":"AK-900 Wired Keyboard",
+        "font2":"$960",
+        "font3":"$1160",
+        "stars":"/src/assets/svg/FourStar1.svg",
+        "font4":"(75)"
+    },
+    {
+        "img1":"/src/assets/svg/Framemoniter.svg",
+        "rednum":"-30%",
+        "wishlist":"/src/assets/svg/Wishlist.svg",
+        "eye":"/src/assets/svg/Fill-Eye.svg",
+        "font1":"IPS LCD Gaming Monitor",
+        "font2":"$370",
+        "font3":"$400",
+        "stars":"/src/assets/svg/Fivestar1.svg",
+        "font4":"(99)"
+    },
+    {
+        "img1":"/src/assets/svg/Framechair.svg",
+        "rednum":"-25%",
+        "wishlist":"/src/assets/svg/Wishlist.svg",
+        "eye":"/src/assets/svg/Fill-Eye.svg",
+        "font1":"S-Series Comfort Chair ",
+        "font2":"$375",
+        "font3":"$400",
+        "stars":"/src/assets/svg/FourHalfStar1.svg",
+        "font4":"(99)"
+    },
+    {
+     "img1":"/src/assets/svg/Framechair.svg",
+        "rednum":"-25%",
+        "wishlist":"/src/assets/svg/Wishlist.svg",
+        "eye":"/src/assets/svg/Fill-Eye.svg",
+        "font1":"S-Series Comfort Chair ",
+        "font2":"$375",
+        "font3":"$400",
+        "stars":"/src/assets/svg/FourHalfStar1.svg",
+        "font4":"(99)"
+    }
+]
