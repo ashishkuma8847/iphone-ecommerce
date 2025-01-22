@@ -15,7 +15,7 @@ const Banner = () => {
         <div className="bannerr h-[344px] mt-10 overflow-hidden max-w-[217px] w-full">
           {
                     banner1.map((item, index) => (
-            <div key={index + Date.now() + item}>
+            <div key={index }>
               <Link to={item.to}>
                 <button
                   onClick={() => setRotate(!rotate)}
@@ -38,7 +38,7 @@ const Banner = () => {
                   Clothing
                   {["Tops", "Outerwear", "Bottoms", "Suits"].map(
                     (item, index) => (
-                      <div key={index + Date.now() + item}>
+                      <div key={index}>
                         <li className="ml-5  "> {item} </li>
                       </div>
                     )
@@ -67,7 +67,7 @@ const Banner = () => {
                   <h4>Clothing</h4>
                   {["Tops", "Outerwear", "Bottoms", "Suits"]?.map(
                     (item, index) => (
-                      <div key={index + Date.now() + item}>
+                      <div key={index}>
                         <li className="ml-5 "> {item} </li>
                       </div>
                     )

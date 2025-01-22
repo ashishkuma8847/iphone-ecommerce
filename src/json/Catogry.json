@@ -1,26 +1,37 @@
 [
     {
-        "img":"/src/assets/svg/CellPhone.svg",
-        "name":"Phones"
+        "img":"CellPhone.svg",
+        "name":"Phones",
+         "imgwhite":"newCellPhone.svg"
     },
      {
-        "img":"/src/assets/svg/Computer.svg",
-        "name":"Computer"
+        "img":"Computer.svg",
+        "name":"Computer",
+        "imgwhite":"newComputer.svg"
     },
     {
-        "img":"/src/assets/svg/SmartWatch.svg",
-        "name":"SmartWatch"
+        "img":"SmartWatch.svg",
+        "name":"SmartWatch",
+        "imgwhite":"newwatch.svg"
     },
     {
-        "img":"/src/assets/svg/Camera.svg",
-        "name":"Camera"
+        "img":"Camera.svg",
+        "name":"Camera",
+        "imgwhite":"newCamera.svg"
     },
     {
-        "img":"/src/assets/svg/Headphone.svg",
-        "name":"Headphone"
+        "img":"Headphone.svg",
+        "name":"Headphone",
+        "imgwhite":"newHeadphone.svg"
     },
     {
-        "img":"/src/assets/svg/Gamepad.svg",
-        "name":"Gamepad"
+        "img":"Gamepad.svg",
+        "name":"Gamepad",
+        "imgwhite":"newGamepad.svg"
+    },
+    {
+        "img":"Camera.svg",
+        "name":"Camera",
+        "imgwhite":"newCamera.svg"
     }
 ]

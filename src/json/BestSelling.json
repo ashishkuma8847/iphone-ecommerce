@@ -1,0 +1,42 @@
+[
+    {
+        "bannerbg":"FrameShirt.png",
+        "wishlist":"Wishlist.svg",
+        "view":"Fill-Eye.svg",
+        "tittle":"The north coat",
+        "price":"$260",
+        "oldprice":"$360",
+        "rating":"Fivestar1.svg",
+        "reviews":"(65)"
+    },
+    {
+        "bannerbg":"FramePurce.png",
+        "wishlist":"Wishlist.svg",
+        "view":"Fill-Eye.svg",
+        "tittle":"Gucci duffle bag",
+        "price":"$960",
+        "oldprice":"$1160",
+        "rating":"FourHalfStar1.svg",
+        "reviews":"(88)"
+    },
+    {
+        "bannerbg":"FrameCpuCooler.png",
+        "wishlist":"Wishlist.svg",
+        "view":"Fill-Eye.svg",
+        "tittle":"RGB liquid CPU Cooler",
+        "price":"$160",
+        "oldprice":"$170",
+        "rating":"FourHalfStar1.svg",
+        "reviews":"(65)"
+    },
+    {
+        "bannerbg":"FrameBookShell.png",
+        "wishlist":"Wishlist.svg",
+        "view":"Fill-Eye.svg",
+        "tittle":"Small BookSelf",
+        "price":"$360",
+        "oldprice":"$390",
+        "rating":"Fivestar1.svg",
+        "reviews":"(65)"
+    }
+]

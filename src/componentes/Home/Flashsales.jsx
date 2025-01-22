@@ -60,13 +60,13 @@ const Flashsales = () => {
                   className="flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300"
                   onClick={() => swiperRef.current?.slidePrev()}
                 >
-                  <img src={left} alt="left" />
+                  <img src={"src/assets/svg/swiperlefticon.svg"} alt="left" />
                 </button>
                 <button
                   className=" flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300"
                   onClick={() => swiperRef.current?.slideNext()}
                 >
-                  <img src={right} alt="right" />
+                  <img src={"src/assets/svg/swiperrighticon.svg"} alt="right" />
                 </button>
               </div>
             </div>
@@ -93,12 +93,8 @@ const Flashsales = () => {
               </Swiper>
             </div>
           </div>
-          <div className="flex justify-center items-center   pt-[73px] pb-[60px] border-b border-customGray-0">
-                  <button className="font-customfont12 font-medium text-base leading-[24px] p-[16px_48px_16px_48px] bg-CustomRed-0 text-white rounded hover:bg-white hover:text-black hover:shadow-custom transition-all duration-300 ">View All Products</button>  
-          </div>
+            <Button variant={"solid"}  children={"View All Products"}/>
         </section>
-     <Button variant={"solid"} children={"new one"}/>
-     <Button children={"new one"}/>
       </main>
     </>
   );
