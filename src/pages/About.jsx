@@ -1,8 +1,11 @@
 import React from 'react'
+import Banner from '../componentes/Home/Banner'
 
 const About = () => {
   return (
-    <div></div>
+   <>
+   <Banner/>
+   </>
   )
 }
 

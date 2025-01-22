@@ -1,0 +1,26 @@
+[
+    {
+        "img":"/src/assets/svg/CellPhone.svg",
+        "name":"Phones"
+    },
+     {
+        "img":"/src/assets/svg/Computer.svg",
+        "name":"Computer"
+    },
+    {
+        "img":"/src/assets/svg/SmartWatch.svg",
+        "name":"SmartWatch"
+    },
+    {
+        "img":"/src/assets/svg/Camera.svg",
+        "name":"Camera"
+    },
+    {
+        "img":"/src/assets/svg/Headphone.svg",
+        "name":"Headphone"
+    },
+    {
+        "img":"/src/assets/svg/Gamepad.svg",
+        "name":"Gamepad"
+    }
+]

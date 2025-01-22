@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import HeaderJson from "../../jsonfiles/Header.json";
+import HeaderJson from "../../json/Header.json";
 const Header = () => {
   const [user, setUser] = useState(false);
   const [search, setSearch] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import bswiper from "../../jsonfiles/BanerSwiper.json";
-import banner1 from "../../jsonfiles/Banner1.json";
+import bswiper from "../../json/BanerSwiper.json";
+import banner1 from "../../json/Banner1.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
