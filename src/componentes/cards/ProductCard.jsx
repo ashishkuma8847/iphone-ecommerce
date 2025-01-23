@@ -17,7 +17,7 @@ const ProductCard = ({
       <div className="w-[270px]  flex flex-col gap-4 rounded ">
         <div className=" flex  flex-col rounded  relative overflow-hidden  bg-[#F5F5F5] ">
           <h4 className={`font-customfont12 font-normal text-xs leading-[18px] w-[55px] h-[26px] bg-CustomRed-0 text-center text-white rounded pt-1 absolute top-[12px] left-[16px] ${DiscountClass}`}>
-            {discount}
+             {discount}
           </h4>
           <div className="relative group">
             <img

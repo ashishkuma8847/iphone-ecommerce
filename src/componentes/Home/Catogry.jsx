@@ -9,7 +9,7 @@ const Catogry = () => {
   const swiperRef = useRef();
   return (
     <>
-      <main className="">
+      <main className="mb-[70px]">
         <section className="pb-[70px] border-b border-customGray-0 container flex flex-col gap-[60px]">
           <div className=" flex flex-col gap-[20px] mt-[80px]">
             <ul className="flex items-center w-[126px] justify-between ">

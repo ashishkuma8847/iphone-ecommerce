@@ -53,6 +53,17 @@
         "oldprice":"$1160",
         "rating":"Fourstar1.svg",
         "reviews":"(75)"
+    },
+    {
+        "bannerbg":"Framechair.png",
+        "discount":"-25%",
+        "wishlist":"Wishlist.svg",
+        "view":"Fill-Eye.svg",
+        "tittle":"S-Series Comfort Chair",
+        "price":"$375",
+        "oldprice":"$400",
+        "rating":"FourHalfStar1.svg",
+        "reviews":"(99)"
     }
-
+  
 ]

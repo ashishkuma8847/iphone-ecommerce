@@ -55,7 +55,7 @@ const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock})  => {
               </div>
 
              { 
-               buttonarrow === "solid" ? <Button variant={"solid"} ClassForDiv={"pb-0 pt-0 border-none"} children={"View All"}/> :
+               buttonarrow === "solid" ? <Button variant={"solid"} ClassForDiv={"pb-[0px] pb-0 pt-0 pt-[0px] border-none"} children={"View All"}/> :
              (<> <div className="flex gap-2 items-center ">
                 <button
                   className="flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300"
@@ -87,7 +87,7 @@ const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock})  => {
                   data?.map((item, index) => (
                     <SwiperSlide key={index}>
                       <NavLink to={item.to}>
-                         discaunt === "deash" ? <ProductCard bannerbg={item.bannerbg}   discount={item.discount} oldprice={item.oldprice} price={item.price} rating={item.rating} reviews={item.reviews} tittle={item.tittle} view={item.view} wishlist={item.wishlist}/>
+                          <ProductCard bannerbg={item.bannerbg}    discount={item.discount} oldprice={item.oldprice} price={item.price} rating={item.rating} reviews={item.reviews} tittle={item.tittle} view={item.view} wishlist={item.wishlist}/>
                       </NavLink>
                     </SwiperSlide>
                   ))}
@@ -95,8 +95,10 @@ const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock})  => {
             </div>
           </div>
           {show && (<>
-          
-            <Button variant={"solid"}  children={"View All Products"}/>
+              <div className=" flex justify-center items-center pt-[73px] pb-[60px] border-b border-customGray-0">
+
+              
+            <Button variant={"solid"}  children={"View All Products"}/></div>
           </>)}
         </section>
       </main>

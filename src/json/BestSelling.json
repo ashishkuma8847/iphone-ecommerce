@@ -38,5 +38,15 @@
         "oldprice":"$390",
         "rating":"Fivestar1.svg",
         "reviews":"(65)"
+    },
+    {
+        "bannerbg":"FrameCpuCooler.png",
+        "wishlist":"Wishlist.svg",
+        "view":"Fill-Eye.svg",
+        "tittle":"RGB liquid CPU Cooler",
+        "price":"$160",
+        "oldprice":"$170",
+        "rating":"FourHalfStar1.svg",
+        "reviews":"(65)"
     }
 ]
