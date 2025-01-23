@@ -5,12 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import left from "../../assets/svg/swiperlefticon.svg";
-import right from "../../assets/svg/swiperrighticon.svg";
 import couter from '../../json/Counter.json'
 import Button from "../ui/Button";
 import ProductCard from "../cards/ProductCard";
-const Flashsales = () => {
+const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock})  => {
   const swiperRef = useRef();
 
   return (
@@ -18,21 +16,22 @@ const Flashsales = () => {
       <main>
         <section className="container">
           <div className="flex gap-6 flex-col">
-            <ul className="flex items-center w-[100px] justify-between ">
+            <ul className="flex items-center w-[126px] justify-between ">
               <li className="w-[20px] h-[40px] rounded bg-CustomRed-0"></li>
               <li className="font-customfont12 text-CustomRed-0 leading-[20px] font-semibold text-base">
-                Today's
+               {heading}
               </li>
             </ul>
 
-            <div className="flex gap-[87px] justify-between">
-              <div className="flex gap-[87px]">
+            <div className="flex gap-[87px] items-end justify-between">
+              <div className="flex gap-[87px] items-end ">
                 <li className="font-customfont list-none leading-[48px] font-semibold text-4xl tracking-[4%]">
-                  Flash Sales
+                 {tittle}
                 </li>
-                <ul className="flex gap-[17px] items-center">
+                <ul className="flex gap-[17px]  ">
                   {
-                    couter.map((item, index) => (
+                   clock && (
+                   couter.map((item, index) => (
                       <div key={index + Date.now() + item}>
                         <Link to={item.to}>
                         <div className="flex items-center justify-center">
@@ -50,12 +49,14 @@ const Flashsales = () => {
                         </div>
                         </Link>
                       </div>
-                    ))
+                    )) )
                   }
                 </ul>
               </div>
 
-              <div className="flex gap-2 items-center ">
+             { 
+               buttonarrow === "solid" ? <Button variant={"solid"} ClassForDiv={"pb-0 pt-0 border-none"} children={"View All"}/> :
+             (<> <div className="flex gap-2 items-center ">
                 <button
                   className="flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300"
                   onClick={() => swiperRef.current?.slidePrev()}
@@ -68,7 +69,7 @@ const Flashsales = () => {
                 >
                   <img src={"src/assets/svg/swiperrighticon.svg"} alt="right" />
                 </button>
-              </div>
+              </div></>)}
             </div>
             <div className="flex  w-full gap-[30px]">
               <Swiper
@@ -81,19 +82,22 @@ const Flashsales = () => {
                 }}
                 className="mySwiper"
               >
-                {banner.length > 0 &&
-                  banner &&
-                  banner?.map((item, index) => (
+                {data.length > 0 &&
+                  data &&
+                  data?.map((item, index) => (
                     <SwiperSlide key={index}>
                       <NavLink to={item.to}>
-                        <ProductCard bannerbg={item.bannerbg} discount={item.discount} oldprice={item.oldprice} price={item.price} rating={item.rating} reviews={item.reviews} tittle={item.tittle} view={item.view} wishlist={item.wishlist}/>
+                         discaunt === "deash" ? <ProductCard bannerbg={item.bannerbg}   discount={item.discount} oldprice={item.oldprice} price={item.price} rating={item.rating} reviews={item.reviews} tittle={item.tittle} view={item.view} wishlist={item.wishlist}/>
                       </NavLink>
                     </SwiperSlide>
                   ))}
               </Swiper>
             </div>
           </div>
+          {show && (<>
+          
             <Button variant={"solid"}  children={"View All Products"}/>
+          </>)}
         </section>
       </main>
     </>

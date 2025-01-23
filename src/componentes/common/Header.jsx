@@ -9,7 +9,7 @@ const Header = () => {
       <header className="border-b border-#b2b2b2">
         <div className="bg-black">
           <div className="container bg-black flex items-center justify-end w-full text-white  py-[12px] ">
-            <div className="flex  max-w-[859px] w-full justify-between  ">
+            <div className="flex  max-w-[859px]  w-full justify-between  ">
               <div className="max-w-[550px] w-full flex gap-[8px] items-center ">
                 <h1 className="sm:text-xs md:text-sm font-customfont12 font-normal text-sm leading-[21px] ">
                   Summer Sale For All Swim Suits And Free Express Delivery - OFF
