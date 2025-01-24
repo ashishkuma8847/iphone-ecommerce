@@ -8,7 +8,7 @@ import { Navigation } from "swiper/modules";
 import couter from '../../json/Counter.json'
 import Button from "../ui/Button";
 import ProductCard from "../cards/ProductCard";
-const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock})  => {
+const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock })  => {
   const swiperRef = useRef();
 
   return (
@@ -16,7 +16,7 @@ const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock})  => {
       <main>
         <section className="container">
           <div className="flex gap-6 flex-col">
-            <ul className="flex items-center w-[126px] justify-between ">
+            <ul className="flex items-center gap-[16px] w-[126px]  ">
               <li className="w-[20px] h-[40px] rounded bg-CustomRed-0"></li>
               <li className="font-customfont12 text-CustomRed-0 leading-[20px] font-semibold text-base">
                {heading}

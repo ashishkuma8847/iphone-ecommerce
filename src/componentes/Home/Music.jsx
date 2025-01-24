@@ -48,7 +48,7 @@ const Music = () => {
                         </div>
                         <div>
                         </div>
-                           <img className='w-[568px] h-[330px]  ' src="/src/assets/images/musicbox.png" alt="box" />
+                           <img className='w-[568px] h-[330px] drop-shadow-custom12  ' src="/src/assets/images/musicbox.png" alt="box" />
                     </div>
                 </section>
             </main>

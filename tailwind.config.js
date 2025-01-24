@@ -18,8 +18,11 @@ export default {
       },
       boxShadow:{
         custom:['4px 4px 15px rgba(0, 0, 0, 0.2)'],
-     
+       
       },
+       dropShadow:{
+        custom12:'0px 0px 100px #ffffff57 ',
+       }
     },
   },
   plugins: [],

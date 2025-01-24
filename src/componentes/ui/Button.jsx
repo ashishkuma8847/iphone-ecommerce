@@ -5,16 +5,12 @@ const Button = ({ className, onClick, children, variant }) => {
     <>
       {variant === "solid" ? (
         <>
-          {" "}
-         
-            <button
-              className={` ${className} font-customfont12 font-medium text-base leading-[24px] p-[16px_48px_16px_48px] bg-CustomRed-0 text-white rounded hover:bg-white hover:text-black hover:shadow-custom transition-all duration-300 `}
-              onClick={onClick}
-            >
-              {" "}
-              {children}
-            </button>
-         
+          <button
+            className={` ${className} font-customfont12 border border-transparent hover:text-CustomRed-0 font-medium text-base leading-[24px] p-[16px_48px_16px_48px] bg-CustomRed-0 text-white rounded hover:bg-white hover:border-[red] transition-all duration-300 `}
+            onClick={onClick}
+          >
+            {children}
+          </button>
         </>
       ) : (
         <>
@@ -25,7 +21,7 @@ const Button = ({ className, onClick, children, variant }) => {
             {children}
           </button>
         </>
-      ) }
+      )}
     </>
   );
 };

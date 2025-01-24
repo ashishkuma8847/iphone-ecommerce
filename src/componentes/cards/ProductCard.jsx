@@ -1,4 +1,5 @@
 import React from "react";
+import { FreeMode } from "swiper/modules";
 // import hjjhj from "../../../src/assets/svg"
 const ProductCard = ({
   DiscountClass,
@@ -12,13 +13,26 @@ const ProductCard = ({
   rating,
   reviews,
 }) => {
+  // console.log(nextSibling, "nextSiblingnextSiblingnextSibling");
+
   return (
     <>
-      <div className="w-[270px]  flex flex-col gap-4 rounded ">
+      {/* <div>
+        <div>sdfsdfsdfsdf</div>
+        <div></div>
+      </div> */}
+
+      <div
+        className={`w-[270px] flex flex-col sm:gap-4 md:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8 rounded`}
+      >
         <div className=" flex  flex-col rounded  relative overflow-hidden  bg-[#F5F5F5] ">
-          <h4 className={`font-customfont12 font-normal text-xs leading-[18px] w-[55px] h-[26px] bg-CustomRed-0 text-center text-white rounded pt-1 absolute top-[12px] left-[16px] ${DiscountClass}`}>
-             {discount}
-          </h4>
+          {discount !== undefined && (
+            <h4
+              className={`font-customfont12 font-normal text-xs leading-[18px] w-[55px] h-[26px] bg-CustomRed-0 text-center text-white rounded pt-1 absolute top-[12px] left-[16px] `}
+            >
+              {discount}
+            </h4>
+          )}
           <div className="relative group">
             <img
               className=" p-[35px_40px_35px_40px] flex justify-center transition-all duration-200 hover:scale-75 "

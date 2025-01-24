@@ -1,0 +1,30 @@
+[{
+    "categorydata" : {
+        "Womans"  :{
+            "name":"Woman’s Fashion",
+            "img":"/src/assets/svg/arrow.svg"
+        },
+        "Mens":{
+             "name":"Men’s Fashion",
+            "img":"/src/assets/svg/arrow.svg"
+        }
+    },
+    "links" : [
+        {
+            "name" : "Electronics" 
+        },
+        {
+            "name" : "Home & Lifestyle" 
+        },{
+            "name" : "Medicine" 
+        },{
+            "name" : "Sports & Outdoor" 
+        },{
+            "name" : "Baby’s & Toys" 
+        },{
+            "name" : "Groceries & Pets" 
+        },{
+            "name" : "Health & Beauty" 
+        }
+    ]
+}]
