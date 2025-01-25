@@ -5,6 +5,7 @@ import Catogry from "../componentes/Home/Catogry";
 import Flashsalesdata from "../../src/json/Sbanner.json";
 import Bestselling from '.././json/BestSelling.json'
 import Music from "../componentes/Home/Music";
+import Explore from "../componentes/Home/Explore";
 
  const Home = () => {
   return (
@@ -14,6 +15,7 @@ import Music from "../componentes/Home/Music";
       <Catogry/>
       <Flashsales  buttonarrow={"solid"} show={false} tittle={"Best Selling Products"} heading={"This Month"} data={Bestselling} />
      <Music/>
+     <Explore/>
     </>
   );
 };

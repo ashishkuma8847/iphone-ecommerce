@@ -2,7 +2,6 @@ import React from "react";
 import { FreeMode } from "swiper/modules";
 // import hjjhj from "../../../src/assets/svg"
 const ProductCard = ({
-  DiscountClass,
   discount,
   bannerbg,
   wishlist,
@@ -13,7 +12,6 @@ const ProductCard = ({
   rating,
   reviews,
 }) => {
-  // console.log(nextSibling, "nextSiblingnextSiblingnextSibling");
 
   return (
     <>

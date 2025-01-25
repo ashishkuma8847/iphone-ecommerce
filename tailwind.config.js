@@ -22,6 +22,9 @@ export default {
       },
        dropShadow:{
         custom12:'0px 0px 100px #ffffff57 ',
+       },
+       outline:{
+        customoutline:['1px solid black'],
        }
     },
   },
