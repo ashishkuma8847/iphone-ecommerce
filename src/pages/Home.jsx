@@ -6,6 +6,7 @@ import Flashsalesdata from "../../src/json/Sbanner.json";
 import Bestselling from '.././json/BestSelling.json'
 import Music from "../componentes/Home/Music";
 import Explore from "../componentes/Home/Explore";
+import Newartical from "../componentes/Home/Newartical";
 
  const Home = () => {
   return (
@@ -16,6 +17,7 @@ import Explore from "../componentes/Home/Explore";
       <Flashsales  buttonarrow={"solid"} show={false} tittle={"Best Selling Products"} heading={"This Month"} data={Bestselling} />
      <Music/>
      <Explore/>
+     <Newartical/>
     </>
   );
 };
