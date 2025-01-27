@@ -4,11 +4,7 @@ import { motion } from "framer-motion";
 
 const Newartical = () => {
     const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
+        window.scrollTo({top: 0,  behavior: "smooth", }); };
 
     const services = [
         {
@@ -94,7 +90,7 @@ const Newartical = () => {
                             </div>
                         </div>
 
-                        <div className="flex justify-evenly">
+                        <div className="flex justify-between">
                             {services.map((item, index) => (
                                 <div key={index}>
                                     <Link to={item.to}>
@@ -115,7 +111,7 @@ const Newartical = () => {
                         </div>
 
                         <motion.div
-                            className=" sticky bottom-[200px]  "
+                            className="fixed bottom-4 right-4"
                         >
                             <button
                                 onClick={scrollToTop}
