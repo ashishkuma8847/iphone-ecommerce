@@ -2,6 +2,7 @@ import React from 'react'
 import footer from '../../json/Footer.json'
 import { Link } from 'react-router-dom'
 const Footer = () => {
+  const linkNames = footer[0].name.map((link) => link.name);
   return (
     <>
       <footer>
@@ -29,10 +30,10 @@ const Footer = () => {
                       <div className="flex flex-col">
                         <h2>{item.heading}</h2>
                         {
-                          footer.map((item, index) => (
-                            <div className='' key={index  + item}>
+                          linkNames.map((item, index) => (
+                            <div  key={index  + item}>
                               <div className="flex flex-col">
-                                    
+                                    {item}
                         </div>
                             </div>
                           ))
