@@ -94,7 +94,7 @@ const Newartical = () => {
                             </div>
                         </div>
 
-                        <div className="flex justify-between">
+                        <div className="flex justify-evenly">
                             {services.map((item, index) => (
                                 <div key={index}>
                                     <Link to={item.to}>
@@ -115,7 +115,7 @@ const Newartical = () => {
                         </div>
 
                         <motion.div
-                            className="fixed bottom-4 right-4"
+                            className=" sticky bottom-[200px]  "
                         >
                             <button
                                 onClick={scrollToTop}

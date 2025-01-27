@@ -18,14 +18,25 @@ const Explore = () => {
 
     const getDotColor = (index) => {
         const uniqueColors = {
-            0: "bg-[#FB1314]",
-            1: "bg-[#EEFF61]",
-            2: "bg-[#000000]",
-            3: "bg-[#184A48]",
+            0: "hidden",
+            1: "hidden",
+            2: "hidden",
+            3: "hidden",
             4: "bg-[#FB1314]",
             5: "bg-[#EEFF61]",
             6: "bg-[#000000]",
             7: "bg-[#184A48]",
+        };
+        return uniqueColors[index] || "bg-CustomRed-0";
+    };
+
+    const getDotColor1 = (index) => {
+        const uniqueColors = {
+            0: "hidden",
+            1: "hidden",
+            2: "hidden",
+            3: "hidden",
+            
         };
         return uniqueColors[index] || "bg-CustomRed-0";
     };
@@ -110,7 +121,8 @@ const Explore = () => {
                                                 ></button>
                                                 <button
                                                     onClick={() => toggleDot(index, "inputdot1")}
-                                                    className={`w-[20px] h-[20px] bg-CustomRed-0 rounded-[50%] ${dotStates[index]?.inputdot1
+                                                    className={`w-[20px] h-[20px] ${getDotColor1(index)
+                                                        } bg-CustomRed-0 rounded-[50%] ${dotStates[index]?.inputdot1
                                                             ? "outline outline-black border-[3px] border-white"
                                                             : "outline-0 border-0"
                                                         }`}
