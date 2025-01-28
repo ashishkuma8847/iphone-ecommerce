@@ -6,7 +6,7 @@ const Explore = () => {
    
 
     
-const clr = ["#000000","#FB1314","#EEFF61","#184A48" ]
+const clr = ["#000000","#DB4444"]
     
 
     return (
