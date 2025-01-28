@@ -1,14 +1,13 @@
 import React, { Fragment, useState } from "react";
-import explore from "../../json/Explore.json";
 import { Link } from "react-router-dom";
-const Featurecard = ({ colgroup }) => {
+const Featurecard = ({ colgroup,data }) => {
   const [isborder, setIsborder] = useState(0);
 
   return (
     <>
     <div className="grid grid-cols-4 gap-x-[8px] gap-y-[60px]">
          {
-          explore.map((item,index)=>(
+          data.map((item,index)=>(
             <div key={index + Date.now()+item}>
               <Link to={item.to}>
               <div className="w-[270px] flex flex-col sm:gap-4 md:gap-5 lg:gap-[16px] rounded">

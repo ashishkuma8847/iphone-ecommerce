@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../ui/Button";
 import Featurecard from "../cards/Featurecard";
+import explore from "../../json/Explore.json";
 
 const Explore = () => {
    
@@ -24,7 +25,7 @@ const clr = ["#000000","#DB4444"]
                             Explore Our Products
                         </div>
                     </div>
-                    <Featurecard colgroup={clr}/>
+                    <Featurecard colgroup={clr} data={explore}/>
                     
                     <div className="flex justify-center items-center">
                         <Button variant={"solid"} children={"View All Products"} />
