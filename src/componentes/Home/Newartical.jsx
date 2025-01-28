@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Newartical = () => {
     const scrollToTop = () => {
-        window.scrollTo({top: 0,  behavior: "smooth", }); };
+        window.scrollTo({top:0 ,  behavior: "smooth", }); };
 
     const services = [
         {
@@ -27,9 +27,9 @@ const Newartical = () => {
     return (
         <>
             <main>
-                <section className="mb-[140px]">
-                    <div className="container flex flex-col gap-[140px]">
-                        <div className="flex">
+                <section className="pb-[140px] relative">
+                    <div className="container  flex flex-col gap-[140px]">
+                        <div className="flex ">
                             <div className="mr-[30px] rounded bg-no-repeat bg-bottom w-[570px] pl-[32px] pb-[32px] h-[600px] bg-black bg-[url('/src/assets/images/ps5.png')]">
                                 <div className="flex h-full flex-col w-[242px] justify-end gap-[16px]">
                                     <h2 className="text-[#FAFAFA] font-semibold lg:text-2xl font-customfont leading-6 tracking-[0.03em]">
@@ -88,6 +88,7 @@ const Newartical = () => {
                                     </div>
                                 </div>
                             </div>
+                         
                         </div>
 
                         <div className="flex justify-between">
@@ -110,17 +111,18 @@ const Newartical = () => {
                             ))}
                         </div>
 
-                        <motion.div
-                            className="fixed bottom-4 right-4"
+                      
+                    </div>
+                    <motion.div
+                            className="absolute bottom-10 right-32"
                         >
                             <button
                                 onClick={scrollToTop}
-                                className="flex justify-center items-center rounded-[50%] w-[46px] h-[46px] group hover:bg-gray-200 "
+                                className="flex justify-center items-center rounded-[50%] w-[46px] h-[46px] group bg-[#F5F5F5] "
                             >
-                                <img className=" group-hover:bg-gray-200" src={"/src/assets/svg/arrow-up.svg"} alt="arrow up" />
+                                <img className="bg-[#F5F5F5] " src={"/src/assets/svg/arrow-up.svg"} alt="arrow up" />
                             </button>
                         </motion.div>
-                    </div>
                 </section>
             </main>
         </>
