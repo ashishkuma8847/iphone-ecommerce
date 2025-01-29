@@ -7,7 +7,7 @@ import Bestselling from '.././json/BestSelling.json'
 import Music from "../componentes/Home/Music";
 import Explore from "../componentes/Home/Explore";
 import Newartical from "../componentes/Home/Newartical";
-
+import explorejson from '../json/Explore.json';
  const Home = () => {
   return (
     <>
@@ -16,7 +16,7 @@ import Newartical from "../componentes/Home/Newartical";
       <Catogry/>
       <Flashsales  buttonarrow={"solid"} show={false} tittle={"Best Selling Products"} heading={"This Month"} data={Bestselling} />
      <Music/>
-     <Explore/>
+     <Explore data={explorejson}/>
      <Newartical/>
     </>
   );

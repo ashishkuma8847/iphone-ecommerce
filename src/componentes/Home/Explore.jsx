@@ -1,14 +1,13 @@
 import React from "react";
 import Button from "../ui/Button";
 import Featurecard from "../cards/Featurecard";
-import explore from "../../json/Explore.json";
+import { Link } from "react-router-dom";
 
-const Explore = () => {
+const Explore = ({data}) => {
    
 
     
-const clr = ["#000000","#DB4444"]
-    
+    const colors=["#FB1314","#EEFF61"];
 
     return (
         <main>
@@ -25,9 +24,22 @@ const clr = ["#000000","#DB4444"]
                             Explore Our Products
                         </div>
                     </div>
-                    <Featurecard colgroup={clr} data={explore}/>
-                    
+                    <div className="grid grid-cols-4 gap-x-[8px] gap-y-[60px]">
+
+                    {
+                        data.map((item,index)=>(
+                           <div key={index+ Date.now() + item}>
+                            <Link to={item.to}>
+                            <div className="w-[270px] flex flex-col sm:gap-4 md:gap-5 lg:gap-[16px] rounded">
+
+                            <Featurecard colgroup={colors} headimg={item.headimg}  stars={item.stars} recents={item.recents} price={item.price} tittle={item.tittle} />
+                           </div> </Link>
+                           </div>
+                        ))
+                    }
+                    </div>
                     <div className="flex justify-center items-center">
+
                         <Button variant={"solid"} children={"View All Products"} />
                     </div>
                 </div>
