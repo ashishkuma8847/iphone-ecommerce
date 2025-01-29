@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Explore = ({data}) => {
    
-
+ 
     
     const colors=["#FB1314","#EEFF61"];
 
@@ -32,7 +32,7 @@ const Explore = ({data}) => {
                             <Link to={item.to}>
                             <div className="w-[270px] flex flex-col sm:gap-4 md:gap-5 lg:gap-[16px] rounded">
 
-                            <Featurecard colgroup={colors} headimg={item.headimg}  stars={item.stars} recents={item.recents} price={item.price} tittle={item.tittle} />
+                            <Featurecard type={true}  colgroup={colors} headimg={item.headimg}  stars={item.stars} recents={item.recents} price={item.price} tittle={item.tittle} />
                            </div> </Link>
                            </div>
                         ))

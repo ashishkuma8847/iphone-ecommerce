@@ -1,6 +1,4 @@
 import React from "react";
-import { FreeMode } from "swiper/modules";
-// import hjjhj from "../../../src/assets/svg"
 const ProductCard = ({
   discount,
   bannerbg,
@@ -15,10 +13,7 @@ const ProductCard = ({
 
   return (
     <>
-      {/* <div>
-        <div>sdfsdfsdfsdf</div>
-        <div></div>
-      </div> */}
+  
 
       <div
         className={`w-[270px] flex flex-col sm:gap-4 md:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8 rounded`}

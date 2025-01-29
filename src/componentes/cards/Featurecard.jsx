@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import clsx from "clsx";
-const Featurecard = ({ colgroup,headimg,stars,recents,price,tittle }) => {
+const Featurecard = ({ colgroup,headimg,stars,recents,price,tittle,type }) => {
   const [isborder, setIsborder] = useState(0);
   return (
     <>
@@ -52,7 +52,7 @@ const Featurecard = ({ colgroup,headimg,stars,recents,price,tittle }) => {
             </h4>
           </div>
           <div className="flex gap-[8px] relative z-50">
-            {colgroup?.map((item, index) => (
+            {type && (colgroup.map((item, index) => (
               <Fragment key={index}>
                 <div
                   className={`flex items-center  justify-center rounded-full border-[3px] bg-[${item}] ${isborder === index ? " border-black" : " border-none"}`}
@@ -60,10 +60,10 @@ const Featurecard = ({ colgroup,headimg,stars,recents,price,tittle }) => {
                   <button
                     onClick={() => setIsborder(index)}
                     className={`w-5 h-5 m-[2px]   rounded-full !bg-[${item}] !text-[${item}]`}
-                  >sss</button>
+                  ></button>
                 </div>
               </Fragment>
-            ))}
+            )))}
           </div>
         </div>
      
