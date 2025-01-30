@@ -7,7 +7,7 @@ const Explore = ({data}) => {
    
  
     
-    const colors=["#FB1314","#EEFF61"];
+   
 
     return (
         <main>
@@ -32,7 +32,7 @@ const Explore = ({data}) => {
                             <Link to={item.to}>
                             <div className="w-[270px] flex flex-col sm:gap-4 md:gap-5 lg:gap-[16px] rounded">
 
-                            <Featurecard type={true}  colgroup={colors} headimg={item.headimg}  stars={item.stars} recents={item.recents} price={item.price} tittle={item.tittle} />
+                            <Featurecard type={true} color={item.color}   headimg={item.headimg}  stars={item.stars} recents={item.recents} price={item.price} tittle={item.tittle} topnew={item.topnew}/>
                            </div> </Link>
                            </div>
                         ))
