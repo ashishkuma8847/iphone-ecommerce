@@ -1,5 +1,4 @@
 import React, { Fragment, useState } from "react";
-import clsx from "clsx";
 const Featurecard = ({
  color,
   headimg,
@@ -7,7 +6,6 @@ const Featurecard = ({
   recents,
   price,
   tittle,
-  type,
   topnew,
 }) => {
   const [isborder, setIsborder] = useState(0);
