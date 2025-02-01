@@ -47,7 +47,7 @@
         "recents":"(65)"
     },
     {
-        "color":["#FB1314","#DB4444"],
+        "color":["#EEFF61","#DB4444"],
         "headimg":"shoos.png",
         "wishlistimg":"Wishlist.svg",
         "viewimg":"Fill-Eye.svg",
@@ -57,7 +57,7 @@
         "recents":"(35)"
     },
     {
-        "color":["#FB1314","#DB4444"],
+        "color":["#000000","#DB4444"],
         "topnew":"new",
         "headimg":"consoleblack.png",
         "wishlistimg":"Wishlist.svg",
@@ -68,7 +68,7 @@
         "recents":"(55)"
     },
     {
-        "color":["#FB1314","#DB4444"],
+        "color":["#184A48","#DB4444"],
         "headimg":"jacket.png",
         "wishlistimg":"Wishlist.svg",
         "viewimg":"Fill-Eye.svg",

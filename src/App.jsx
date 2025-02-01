@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Contect from './pages/Contect'
 import About from './pages/About'
 import Signup from './pages/Signup'
+import Signupforlogin from './componentes/SignUp/Signupforlogin'
 const App = () => {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => {
       <Route path='/contact' element={<Contect/> }/>
       <Route path='/about' element={<About/> }/>
       <Route path='/signup' element={<Signup/> }/>
+      <Route path='/signupforlogin' element={<Signupforlogin/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
