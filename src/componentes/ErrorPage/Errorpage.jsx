@@ -8,7 +8,7 @@ const Errorpage = () => {
       <div className="container">
         <div className="pt-[80px] pb-[140px] flex flex-col gap-[140px] ">
           <div className="flex gap-3 font-customfont12 font-normal text-sm leading-[21px] ">
-            <h4 className="opacity-[50%]">Home</h4>
+            <Link to={"/"} className="opacity-[50%]">Home</Link>
             <h4 className="opacity-[50%]">/</h4>
             <h4>404 Error</h4>
           </div>

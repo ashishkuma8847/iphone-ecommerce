@@ -13,7 +13,7 @@ const SignupCard = ({ heading, title, inpotforname, variant }) => {
               alt="signup"
             />
           </div>
-          <div className="flex flex-col ">
+          <div className="flex flex-col max-w-[371px] w-full">
             <div className="flex flex-col gap-[24px] mb-[48px]">
               <h4 className="font-customfont font-medium text-4xl leading-[30px] tracking-[0.04em]">
                 {heading}
@@ -51,7 +51,7 @@ const SignupCard = ({ heading, title, inpotforname, variant }) => {
                 <div className="mt-[16px] flex flex-col gap-[32px]">
                   <Link to={"/Error"}>
                     {" "}
-                    <Button children={"Sign up with Google"} />
+                    <Button className={"w-full"} children={"Sign up with Google"} />
                   </Link>
 
                   <div
