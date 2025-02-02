@@ -1,0 +1,28 @@
+[
+    {
+        "discount":"-35%",
+        "mainimage":"FramePurce.png",
+        "heading":"Gucci duffle bag",
+        "price":"$960",
+        "lessprice":"$1160"
+    },
+    {
+        "mainimage":"FrameCpuCooler.png",
+        "heading":"RGB liquid CPU Cooler",
+        "price":"$1960",
+        "lessprice":"2460"
+    },
+    {
+        "mainimage":"consoleblack.png",
+        "heading":"GP11 Shooter USB Gamepad",
+        "price":"$550",
+        "lessprice":"$760"
+    },
+    {
+        "mainimage":"jacket.png",
+        "heading":"Quilted Satin Jacket",
+        "price":"$750",
+        "lessprice":"$960"
+    }
+
+]

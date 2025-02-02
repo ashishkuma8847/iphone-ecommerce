@@ -110,7 +110,9 @@ const Header = () => {
                  sm:gap-[8px] 
                  md:gap-[8px] 
                  lg:gap-[10px]">
-                  <img src="/src/assets/svg/Wishlist.svg" alt="image2" />
+
+                 <Link to={"/Wishlist"}> <img src="/src/assets/svg/Wishlist.svg" alt="image2" /></Link>
+
                   <img
                     className="w-[32px] h-[32px]"
                     src="/src/assets/svg/Cartwithbuy.svg"

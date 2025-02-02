@@ -1,0 +1,31 @@
+[
+    {
+        "youheadimage":"laptop.png",
+        "style":"bg-CustomRed-0",
+        "discountforyou":"-35%",
+        "headingyou":"ASUS FHD Gaming Laptop",
+        "priceyou":"$960",
+        "lesspriceyou":"$1160"
+    },
+    {
+        "youheadimage":"Framemoniter.png",
+        "headingyou":"IPS LCD Gaming Monitor    ",
+        "priceyou":"$1160",
+        "lesspriceyou":"$1780"
+    },
+    {
+        "youheadimage":"console.png",
+        "style":"bg-customgreen-0",
+        "discountforyou":"NEW",
+        "headingyou":"HAVIT HV-G92 Gamepad",
+        "priceyou":"$560",
+        "lesspriceyou":"$960"
+    }, 
+    {
+        "youheadimage":"Framekeyboard.png",
+        "headingyou":"AK-900 Wired Keyboard",
+        "priceyou":"$200",
+        "lesspriceyou":"$560"
+    }
+
+]

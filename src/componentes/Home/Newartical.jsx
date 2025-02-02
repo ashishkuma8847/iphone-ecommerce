@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import newartical from '../../json/Newartical.json'
 const Newartical = () => {
     const scrollToTop = () => {
         window.scrollTo({ top: 0, behavior: "smooth", });
@@ -30,33 +29,75 @@ const Newartical = () => {
             <main>
                 <section className="pb-[140px] relative">
                     <div className="container  flex flex-col gap-[140px]">
-                        <div className="flex ">
-                            {
-                                newartical.map((item, index) => (
-                                    <div className={`${item.key}`} key={index + Date.now() + item}>
-                                        <Link to={item.to}>
-                                        <div className={` grid ${item.stylemain} grid-cols-1 `}>
-                                            <div className={`${item.stylehead} rounded bg-no-repeat  bg-[url('${item.bg}')]`} >
-                                                <div className={`${item.style2} flex h-full flex-col   justify-end`}>
-                                                    <h2 className="text-[#FAFAFA] font-semibold lg:text-2xl font-customfont leading-6 tracking-[0.03em]">
-                                                        {item.heading}
-                                                    </h2>
-                                                    <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] ${item.styleh4}`} >
-                                                        {item.tittle}
-                                                    </h4>
-                                                    <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
-                                                        {item.shopnow}
-                                                    </h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                ))
-                            }
+                        <div className="flex  justify-between ">
 
-                            
+
+                            <div className={`bg-bottom  w-[570px] pl-[32px] pb-[32px] h-[600px] bg-black rounded bg-no-repeat  bg-[url('/src/assets/images/ps5.png')]`} >
+                                <div className={` w-[242px] gap-[16px]  flex h-full flex-col   justify-end`}>
+                                    <h2 className="text-[#FAFAFA] font-semibold lg:text-2xl font-customfont leading-6 tracking-[0.03em]">
+                                        PlayStation 5
+                                    </h2>
+                                    <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] `} >
+                                        Black and White version of the PS5 coming out on sale.
+                                    </h4>
+                                    <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
+                                        Shop Now
+                                    </h4>
                                 </div>
+                            </div>
+
+
+                            <div className="flex flex-col justify-between">
+                                <div className="flex">
+                                    <div className={`pl-[24px] pb-[24px] w-[570px] h-[286px] bg-[#0D0D0D]  bg-right rounded bg-no-repeat  bg-[url('/src/assets/images/woman-character.png')]`} >
+                                        <div className={` w-[242px] gap-[16px]  flex h-full flex-col   justify-end`}>
+                                            <h2 className="text-[#FAFAFA] font-semibold lg:text-2xl font-customfont leading-6 tracking-[0.03em]">
+                                                Women’s Collections
+                                            </h2>
+                                            <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] `} >
+                                                Featured woman collections that give you another vibe.
+                                            </h4>
+                                            <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
+                                                Shop Now
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex justify-between">
+                                    <div className="flex">
+                                    <div className={` pl-[24px] pb-[24px] w-[270px] h-[284px] bg-[#242424]  bg-center rounded bg-no-repeat  bg-[url('/src/assets/images/speacer.png')]`} >
+                                        <div className={` w-[242px] gap-[8px]  flex h-full flex-col   justify-end`}>
+                                            <h2 className="text-[#FAFAFA] font-semibold lg:text-2xl font-customfont leading-6 tracking-[0.03em]">
+                                            Speakers
+                                            </h2>
+                                            <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] `} >
+                                            Amazon wireless speakers
+                                            </h4>
+                                            <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
+                                                Shop Now
+                                            </h4>
+                                        </div>
+                                    </div>
+
+                                    </div>
+                                    <div className="flex">
+                                    <div className={` pl-[24px] pb-[24px] w-[270px] h-[284px] bg-[#242424]  bg-center rounded bg-no-repeat  bg-[url('/src/assets/images/perfume.png')]`} >
+                                        <div className={` w-[242px] gap-[8px]  flex h-full flex-col   justify-end`}>
+                                            <h2 className="text-[#FAFAFA] font-semibold lg:text-2xl font-customfont leading-6 tracking-[0.03em]">
+                                            Perfume
+                                            </h2>
+                                            <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] `} >
+                                            GUCCI INTENSE OUD EDP
+                                            </h4>
+                                            <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
+                                                Shop Now
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
                         <div className="flex justify-between">
