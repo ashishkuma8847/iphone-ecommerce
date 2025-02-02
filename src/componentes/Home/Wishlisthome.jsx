@@ -39,7 +39,7 @@ const Wishlisthome = ({ data ,data2 }) => {
                                 Just For You
                                 </li>
                             </ul>
-                            <Button google={"hidden"} className={"w-[152px] "} children={"See All"}/>
+                            <Button google={"hidden"} className={"max-w-[152px] w-[152px]"} children={"See All"}/>
                         </div>
                         <div className=" flex justify-between">
                             {
