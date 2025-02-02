@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { data, Link, NavLink } from "react-router-dom";
 import HeaderJson from "../../json/Header.json";
+import jsonwishlist from '../../json/Wishlist.json'
 const Header = () => {
   const [user, setUser] = useState(false);
   const [search, setSearch] = useState(false);
@@ -111,7 +112,7 @@ const Header = () => {
                  md:gap-[8px] 
                  lg:gap-[10px]">
 
-                 <Link to={"/Wishlist"}> <img src="/src/assets/svg/Wishlist.svg" alt="image2" /></Link>
+                 <Link className="relative" to={"/Wishlist"}> <span className="absolute rounded-full right-0 bg-CustomRed-0 w-[16px] h-[17px] text-white font-customfont12 font-normal text-xs leading-[18px] text-center">{jsonwishlist.length}</span>  <img src="/src/assets/svg/Wishlist.svg" alt="image2" /></Link>
 
                   <img
                     className="w-[32px] h-[32px]"
