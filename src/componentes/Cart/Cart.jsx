@@ -131,7 +131,9 @@ const Cart = () => {
               <h4>${formatPrice(totalSubtotal)}</h4>
             </div>
             <div className="flex justify-center">
+              <Link to={"/checkout"}>
               <Button variant={"solid"} children={"Proceed to Checkout"} />
+              </Link>
             </div>
           </div>
         </div>
