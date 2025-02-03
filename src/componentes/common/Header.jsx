@@ -114,13 +114,14 @@ const Header = () => {
 
                  <Link className="relative" to={"/Wishlist"}> <span className="absolute rounded-full right-0 bg-CustomRed-0 w-[16px] h-[17px] text-white font-customfont12 font-normal text-xs leading-[18px] text-center">{jsonwishlist.length}</span>  <img src="/src/assets/svg/Wishlist.svg" alt="image2" /></Link>
 
-                  <img
+                <Link to={"/Cart"}>  <img
                     className="w-[32px] h-[32px]"
                     src="/src/assets/svg/Cartwithbuy.svg"
                     alt="image3"
-                  />
+                  /></Link>
+                  <div className="relative">
                   <button
-                    className="relative  "
+                    className="  flex flex-col justify-center items-center"
                     onMouseOver={() => setUser(true)}
                     onMouseLeave={() => setUser(false)}
                   >
@@ -131,7 +132,7 @@ const Header = () => {
                     {user && <img src="/src/assets/svg/user-red.svg" />}
                   </button>
                   <ul
-                    className={`flex  flex-col gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] max-w-[244px] text-white backdrop-blur-3xl w-full  absolute top-[124px] transition-all duration-300 right-[255px] ${user ? "block opacity-100" : "hidden opacity-0"
+                    className={`flex  flex-col  gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] w-[244px] text-white backdrop-blur-3xl   absolute top-[33px] right-[0px] transition-all duration-300  ${user ? "block opacity-100" : "hidden opacity-0"
                       }`}
                     onMouseOver={() => setUser(true)}
                     onMouseLeave={() => setUser(false)}
@@ -148,7 +149,7 @@ const Header = () => {
                           </Link>
                         </div>
                       ))}
-                  </ul>
+                  </ul></div>
                 </div>
               </div>
             </div>

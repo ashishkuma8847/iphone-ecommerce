@@ -11,9 +11,19 @@ const Banner = () => {
     const [rotate1, setRotate1] = useState(false);
 
     const linkNames = bannerstyle[0].links.map((link) => link.name);
+    const [count, setcount] = useState(0)
 
     return (
         <>
+            {/* <div className="">
+                <h2>count:{count}</h2>
+                <div className="flex gap-2">
+
+                    <button onClick={() => setcount(count + 1)} >increment</button>
+                    <button onClick={() => setcount(count === 0 ? count : count - 1)} >decrement</button>
+                    <button onClick={() => setcount(0)} >reset</button>
+                </div>
+            </div> */}
             <div className="container flex lg:flex-row mb-[127px] sm:flex-col ">
                 <div className="bannerr flex  
                  lg:h-[344px]  lg:mt-10

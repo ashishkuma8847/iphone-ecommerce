@@ -11,6 +11,7 @@ import Wishlisthome from './componentes/Home/Wishlisthome'
 import wishlistjson from './json/Wishlist.json'
 import datapart2 from './json/WiishlistForyou.json'
 import Errorpage from './componentes/ErrorPage/Errorpage'
+import Cart from './componentes/Home/Cart'
 const App = () => {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ const App = () => {
       <Route path='/signupforlogin' element={<Signupforlogin/>}/>
       <Route path='/Wishlist' element={<Wishlisthome data={wishlistjson} data2={datapart2}/>}/>
       <Route path='/Error' element={<Errorpage/>}/>
+      <Route path='/Cart' element={<Cart/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
