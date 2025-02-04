@@ -4,12 +4,14 @@
         "product":"LCD Monitor",
         "Price":"$650",
         "Subtotal":"$650",
+        "price2":"$1100",
         "cencel":"cencel.svg"
     },
     {
         "imagehead":"Gamepad-Cart-Small.svg",
         "product":"H1 Gamepad",
         "Price":"$550",
+        "price2":"$650",
         "Subtotal":"$1100"
     }
 ]

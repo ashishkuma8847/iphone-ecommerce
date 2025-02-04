@@ -1,0 +1,43 @@
+[
+    {
+      "title": "First Name",
+      "star":"*",
+      "for": "text1",
+      "id": "text1"
+    },
+    {
+      "title": "Company Name",
+      "for": "text2",
+      "id": "text2"
+    },
+    {
+      "title": "Street Address",
+      "star":"*",
+      "for": "text3",
+      "id": "text3"
+    },
+    {
+      "title": "Apartment, floor, etc. (optional)",
+      "for": "text4",
+      "id": "text4"
+    },
+    {
+      "title": "Town/City",
+      "star":"*",
+      "for": "text5",
+      "id": "text5"
+    },
+    {
+      "title": "Phone Number",
+      "star":"*",
+      "for": "text6",
+      "id": "text6"
+    },
+    {
+      "title": "Email Address",
+      "star":"*",
+      "for": "text7",
+      "id": "text7"
+    }
+    
+  ]

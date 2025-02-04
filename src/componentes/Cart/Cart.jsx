@@ -126,7 +126,7 @@ const Cart = () => {
               <h4>Shipping:</h4>
               <h4>Free</h4>
             </div>
-            <div className="flex border-b border-customGray-0 pb-[16px] mb-[16px] justify-between">
+            <div className="flex  pb-[16px] justify-between">
               <h4>Total:</h4>
               <h4>${formatPrice(totalSubtotal)}</h4>
             </div>
