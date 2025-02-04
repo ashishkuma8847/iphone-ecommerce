@@ -29,7 +29,7 @@ const Checkout = () => {
                   Home
                 </Link>
                 <h4 className="opacity-[50%]">/</h4>
-                <Link to={"/error"} className="opacity-[50%]">
+                <Link to={"/Account"} className="opacity-[50%]">
                   My Account
                 </Link>
                 <h4 className="opacity-[50%]">/</h4>

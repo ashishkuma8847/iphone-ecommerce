@@ -13,6 +13,7 @@ import datapart2 from './json/WiishlistForyou.json'
 import Errorpage from './componentes/ErrorPage/Errorpage'
 import Cart from './componentes/Cart/Cart'
 import Checkout from './componentes/Cart/Checkout'
+import Account from './componentes/Account/Account'
 const App = () => {
   return (
     <BrowserRouter>
@@ -27,6 +28,7 @@ const App = () => {
       <Route path='/Error' element={<Errorpage/>}/>
       <Route path='/Cart' element={<Cart/>}/>
       <Route path='/checkout' element={<Checkout/>}/>
+      <Route path='/Account' element={<Account/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

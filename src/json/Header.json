@@ -1,22 +1,31 @@
 [
     {
         "name":"Manage My Account",
-        "img":"/src/assets/svg/user2.svg"
+        "img":"/src/assets/svg/user2.svg",
+        "link":"/Account"
     },
     {
         "name":"My Order",
-        "img":"/src/assets/svg/icon-mallbag.svg"
+        "img":"/src/assets/svg/icon-mallbag.svg",
+        "link":"/error"
+
     },
     {
         "name":"My Cancellations",
-        "img":"/src/assets/svg/icon-cancel.svg"
+        "img":"/src/assets/svg/icon-cancel.svg",
+        "link":"/error"
+
     },
     {
         "name":"My Reviews",
-        "img":"/src/assets/svg/Icon-Reviews.svg"
+        "img":"/src/assets/svg/Icon-Reviews.svg",
+        "link":"/error"
+
     },
     {
         "name":"Logout",
-        "img":"/src/assets/svg/Icon-logout.svg"
+        "img":"/src/assets/svg/Icon-logout.svg",
+        "link":"/error"
+
     }
 ]

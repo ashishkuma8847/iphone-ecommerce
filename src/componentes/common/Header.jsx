@@ -167,8 +167,8 @@ const Header = () => {
                       {user && <img src="/src/assets/svg/user-red.svg" />}
                     </button>
                     <ul
-                      className={`flex  flex-col  gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] w-[244px] text-white backdrop-blur-3xl   absolute top-[33px] right-[0px] transition-all duration-300  ${
-                        user ? "block opacity-100" : "hidden opacity-0"
+                      className={`flex  flex-col  gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] w-[244px] text-white backdrop-blur-3xl bg-black bg-opacity-35   absolute top-[33px] right-[0px] transition-all duration-200  ${
+                        user ? "z-10 opacity-100 w-[244px] h-[208px] " : "-z-10 opacity-0 h-[180px] w-[200px]"
                       }`}
                       onMouseOver={() => setUser(true)}
                       onMouseLeave={() => setUser(false)}
@@ -177,7 +177,7 @@ const Header = () => {
                         HeaderJson &&
                         HeaderJson?.map((item, index) => (
                           <div key={Date.now() + index + item?.name}>
-                            <Link to={item.to}>
+                            <Link to={item.link}>
                               <ul className="flex w-full items-center gap-4 font-customfont12 font-normal text-sm leading-[21px]">
                                 <img src={item.img} alt="dsaj" />
                                 <li>{item.name}</li>
