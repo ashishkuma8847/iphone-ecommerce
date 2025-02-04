@@ -15,6 +15,7 @@ const Banner = () => {
 
   return (
     <>
+   
       {/* <div className="">
                 <h2>count:{count}</h2>
                 <div className="flex gap-2">
