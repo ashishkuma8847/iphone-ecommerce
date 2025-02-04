@@ -57,53 +57,53 @@
 // };
 
 // export default DropdownMenu;
-import React, { useState, useEffect, useRef } from "react";
+// import React, { useState, useEffect, useRef } from "react";
 
-function ClickOutsideExample() {
-  const [isOpen, setIsOpen] = useState(false);
-  const boxRef = useRef(null);
+// function ClickOutsideExample() {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const boxRef = useRef(null);
 
-  const handleOutsideClick = (event) => {
-    // अगर क्लिक boxRef के अंदर नहीं है
-    if (boxRef.current && !boxRef.current.contains(event.target)) {
-      setIsOpen(false);
-    }
-  };
+//   const handleOutsideClick = (event) => {
+//     // अगर क्लिक boxRef के अंदर नहीं है
+//     if (boxRef.current && !boxRef.current.contains(event.target)) {
+//       setIsOpen(false);
+//     }
+//   };
 
-  useEffect(() => {
-    // "mousedown" इवेंट को document पर add करें
-    document.addEventListener("mousedown", handleOutsideClick);
+//   useEffect(() => {
+//     // "mousedown" इवेंट को document पर add करें
+//     document.addEventListener("mousedown", handleOutsideClick);
 
-    // Cleanup function
-    return () => {
-      document.removeEventListener("mousedown", handleOutsideClick);
-    };
-  }, []);
+//     // Cleanup function
+//     return () => {
+//       document.removeEventListener("mousedown", handleOutsideClick);
+//     };
+//   }, []);
 
-  return (
-    <div>
-      <button onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? "Close Box" : "Open Box"}
-      </button>
+//   return (
+//     <div>
+//       <button onClick={() => setIsOpen(!isOpen)}>
+//         {isOpen ? "Close Box" : "Open Box"}
+//       </button>
 
-      {isOpen && (
-        <div
-          ref={boxRef}
-          style={{
-            width: "200px",
-            height: "200px",
-            backgroundColor: "lightblue",
-            marginTop: "20px",
-          }}
-        >
-          Click outside this box to close.
-        </div>
-      )}
-    </div>
-  );
-}
+//       {isOpen && (
+//         <div
+//           ref={boxRef}
+//           style={{
+//             width: "200px",
+//             height: "200px",
+//             backgroundColor: "lightblue",
+//             marginTop: "20px",
+//           }}
+//         >
+//           Click outside this box to close.
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
 
-export default ClickOutsideExample
+// export default ClickOutsideExample
 
 // import React, { useRef } from "react";
 
@@ -146,3 +146,27 @@ export default ClickOutsideExample
 
 // export default Counter
 
+// import { useState, useEffect } from "react";
+
+// export default function BorderButton() {
+//   const [border, setBorder] = useState(false);
+
+//   const handleClick = () => {
+//     setBorder(true);
+
+//     setTimeout(() => {
+//       setBorder(false);
+//     }, 2000); // 2 second ke baad border remove
+//   };
+
+//   return (
+//     <button
+//       onClick={handleClick}
+//       className={`px-4 py-2 text-white bg-blue-500 rounded ${
+//         border ? "border-2 border-red-500" : "border-none"
+//       } transition-all duration-300`}
+//     >
+//       Click Me
+//     </button>
+//   );
+// }
