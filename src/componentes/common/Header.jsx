@@ -157,8 +157,7 @@ const Header = () => {
                   <div className="relative">
                     <button
                       className="  flex flex-col justify-center items-center"
-                      onMouseOver={() => setUser(true)}
-                      onMouseLeave={() => setUser(false)}
+                      onClick={() => setUser(!user)}
                     >
                       {" "}
                       {!user && (
@@ -170,8 +169,8 @@ const Header = () => {
                       className={`flex  flex-col  gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] w-[244px] text-white backdrop-blur-3xl bg-black bg-opacity-35   absolute top-[33px] right-[0px] transition-all duration-200  ${
                         user ? "z-10 opacity-100 w-[244px] h-[208px] " : "-z-10 opacity-0 h-[180px] w-[200px]"
                       }`}
-                      onMouseOver={() => setUser(true)}
-                      onMouseLeave={() => setUser(false)}
+                     onMouseLeave={()=>setUser(false)}
+                    
                     >
                       {HeaderJson.length > 0 &&
                         HeaderJson &&

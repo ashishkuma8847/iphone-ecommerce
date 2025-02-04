@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import banner from "../../json/Sbanner.json";
 import { Link, NavLink } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,9 +10,18 @@ import Button from "../ui/Button";
 import ProductCard from "../cards/ProductCard";
 const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock })  => {
   const swiperRef = useRef();
+  const [border, setBorder] = useState(false);
 
+  const handleClick = () => {
+    setBorder(true);
+
+    setTimeout(() => {
+      setBorder(false);
+    }, 1000); 
+  };
   return (
     <>
+    {/* <button onClick={handleClick} className={`${border ? "border " : "border-none"}`}>adsa</button> */}
       <main>
         <section className="container">
           <div className="flex gap-6 flex-col">
@@ -58,8 +67,10 @@ const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock })  => {
                buttonarrow === "solid" ? <Button variant={"solid"} ClassForDiv={"pb-[0px] pb-0 pt-0 pt-[0px] border-none"} children={"View All"}/> :
              (<> <div className="flex gap-2 items-center ">
                 <button
-                  className="flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300"
-                  onClick={() => swiperRef.current?.slidePrev()}
+                  className={`flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300`}
+                  
+                  onClick={() => (swiperRef.current?.slidePrev()
+                  )}
                 >
                   <img src={"src/assets/svg/swiperlefticon.svg"} alt="left" />
                 </button>
