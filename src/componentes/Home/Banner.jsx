@@ -6,16 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
+import Dropdown from "../ui/Dropdown";
+const data = bannerstyle.map((item) => item.categorydata.Womans.item);
+const data1 = bannerstyle.map((item) => item.categorydata.Mens.item);
 const Banner = () => {
-  const [rotate, setRotate] = useState(false);
-  const [rotate1, setRotate1] = useState(false);
+  // const [rotate, setRotate] = useState(false);
+  // const [rotate1, setRotate1] = useState(false);
 
   const linkNames = bannerstyle[0].links.map((link) => link.name);
-  const [count, setcount] = useState(0);
 
   return (
     <>
-   
       {/* <div className="">
                 <h2>count:{count}</h2>
                 <div className="flex gap-2">
@@ -27,14 +28,17 @@ const Banner = () => {
             </div> */}
       <div className="container flex lg:flex-row mb-[127px] sm:flex-col ">
         <div
-          className="bannerr flex  
-                 lg:h-[344px]  lg:mt-10
+          className="bannerr   
+                 lg:h-[344px]  lg:mt-10 
                  sm:h-[100px] sm:mt-5   sm:overflow-auto lg:overflow-hidden lg:w-[217px]"
         >
+          <div className="flex items-center flex-col">
+          <Dropdown items={data} label={"Woman’s Fashion"} />
+          <Dropdown items={data1} label={"Men’s Fashion"} /></div>
           {bannerstyle?.map((item, index) => (
             <div key={index}>
               <Link to={item.to} className="lg:max-w-[1170px]  ">
-                <button
+                {/* <button
                   onClick={() => setRotate(!rotate)}
                   className="flex
                    sm:text-sm sm:leading-5  sm:items-center  sm:w-[150px] sm:pb-[4px]
@@ -103,7 +107,7 @@ const Banner = () => {
                       </div>
                     )
                   )}
-                </ul>
+                </ul> */}
                 <div
                   className={` font-customfont12  sm:flex-col
                sm:text-sm sm:leading-5   

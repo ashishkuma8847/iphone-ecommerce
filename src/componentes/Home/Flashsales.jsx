@@ -8,6 +8,7 @@ import { Navigation } from "swiper/modules";
 import couter from '../../json/Counter.json'
 import Button from "../ui/Button";
 import ProductCard from "../cards/ProductCard";
+import Countdown from "../ui/Countdown";
 const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock })  => {
   const swiperRef = useRef();
   const [border, setBorder] = useState(false);
@@ -38,27 +39,31 @@ const Flashsales = ({heading,tittle,data ,show  ,buttonarrow,clock })  => {
                  {tittle}
                 </li>
                 <ul className="flex gap-[17px]  ">
+                
                   {
-                   clock && (
-                   couter.map((item, index) => (
-                      <div key={index + Date.now() + item}>
-                        <Link to={item.to}>
-                        <div className="flex items-center justify-center">
-                          <ul className="flex flex-col gap-1">
-                            <li className="font-customfont12 font-medium text-xs leading-[18px  ]">
-                              {item.name}
-                             </li>
-                            <li className="font-customfont font-bold text-[32px] leading-[30px] tracking-[4%]  ">
-                              {item.syns}
-                            </li>
-                          </ul>
-                          <ul>
-                            <li className="w-1 h-4 ml-[17px] text-CustomRed-0">{item.dots}</li>
-                          </ul>
-                        </div>
-                        </Link>
-                      </div>
-                    )) )
+                   clock && (<>
+                   <Countdown targetDate="2025-02-20"/>
+                   </>
+                  //  couter.map((item, index) => (
+                  //     <div key={index + Date.now() + item}>
+                  //       <Link to={item.to}>
+                  //       <div className="flex items-center justify-center">
+                  //         <ul className="flex flex-col gap-1">
+                  //           <li className="font-customfont12 font-medium text-xs leading-[18px  ]">
+                  //             {item.name}
+                  //            </li>
+                  //           <li className="font-customfont font-bold text-[32px] leading-[30px] tracking-[4%]  ">
+                  //             {item.syns}
+                  //           </li>
+                  //         </ul>
+                  //         <ul>
+                  //           <li className="w-1 h-4 ml-[17px] text-CustomRed-0">{item.dots}</li>
+                  //         </ul>
+                  //       </div>
+                  //       </Link>
+                  //     </div>
+                  //   )) 
+                  )
                   }
                 </ul>
               </div>
