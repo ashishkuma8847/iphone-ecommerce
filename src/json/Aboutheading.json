@@ -1,0 +1,26 @@
+[
+    {
+        "img1":"activatecopy.svg",
+        "img2":"activate.svg",
+        "heading":"10.5k ",
+        "title":"Sallers active our site"
+    },
+    {
+        "img1":"grosssalecopy.svg",
+        "img2":"grosssale.svg",
+        "heading":"33k",
+        "title":"Mopnthly Produduct Sale"
+    },
+    {
+        "img1":"productsalecopy.svg",
+        "img2":"productsale.svg",
+        "heading":"45.5k",
+        "title":"Customer active in our site"
+    },
+    {
+        "img1":"Servicescopy.svg",
+        "img2":"Services.svg",
+        "heading":"25k",
+        "title":"Anual gross sale in our site"
+    }
+]

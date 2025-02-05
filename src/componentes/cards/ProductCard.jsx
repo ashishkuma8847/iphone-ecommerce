@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const ProductCard = ({
   discount,
   bannerbg,
@@ -32,9 +33,9 @@ const ProductCard = ({
               src={`/src/assets/images/${bannerbg}`}
               alt="sdkf"
             />
-            <h4 className=" flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
+            <Link to={"/Cart"} className=" flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
               Add To Cart
-            </h4>
+            </Link>
           </div>
 
           <div className="top-[10px] right-[13px] absolute w-[34px] h-[76px] flex flex-col justify-between items-center">

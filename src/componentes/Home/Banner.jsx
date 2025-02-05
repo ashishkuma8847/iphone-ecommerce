@@ -115,14 +115,14 @@ const Banner = () => {
                 >
                   {linkNames.map((item, index) => {
                     return (
-                      <Fragment key={item + index + Date.now() + "links"}>
+                      <Link to={"/error"} key={item + index + Date.now() + "links"}>
                         <h4
                           className=" 
                         lg:pb-4 sm:pb-[4px] hover:text-CustomRed-0 transition-all duration-300"
                         >
                           {item}
                         </h4>
-                      </Fragment>
+                      </Link>
                     );
                   })}
                 </div>
@@ -178,9 +178,9 @@ const Banner = () => {
                         </li>
                       </ul>
                       <ul className="flex items-center w-113px font-customfont12  w-[113px] justify-between">
-                        <li className="font-medium lg:text-base sm:text-sm leading-6 border-b ">
+                        <Link to={"/error"} className="font-medium lg:text-base sm:text-sm leading-6 border-b ">
                           {item.name3}
-                        </li>
+                        </Link>
                         <img
                           className="transition-all duration-300 hover:translate-x-[10px]"
                           src={item.img2}

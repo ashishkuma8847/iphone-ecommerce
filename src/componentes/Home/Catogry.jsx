@@ -53,22 +53,22 @@ const Catogry = () => {
                 Catogryjson &&
                 Catogryjson?.map((item, index) => (
                   <SwiperSlide key={index + Date.now() + item}>
-                    <Link to={item?.to}>
-                      <div className=" group hover:bg-CustomRed-0 hover:border-none  hover:text-white     transition-all duration-300  w-[170px] flex flex-col gap-4 border border-customGray-0 rounded h-[145px] justify-center items-center ">
-                        <img
-                          className="hidden group-hover:block"
-                          src={`/src/assets/svg/${item?.imgwhite}`}
-                          alt="dhsd"
-                        />
-                        <img
-                          className=" group-hover:hidden"
-                          src={`/src/assets/svg/${item?.img}`}
-                          alt="items"
-                        />
-                        <h4 className="font-customfont12 font-normal text-base leading-[24px]">
-                          {item?.name}
-                        </h4>
-                      </div>
+                    <Link to={"/error"}>
+                        <div className=" group hover:bg-CustomRed-0 hover:border-none  hover:text-white     transition-all duration-300  w-[170px] flex flex-col gap-4 border border-customGray-0 rounded h-[145px] justify-center items-center ">
+                          <img
+                            className="hidden group-hover:block"
+                            src={`/src/assets/svg/${item?.imgwhite}`}
+                            alt="dhsd"
+                          />
+                          <img
+                            className=" group-hover:hidden"
+                            src={`/src/assets/svg/${item?.img}`}
+                            alt="items"
+                          />
+                          <h4 className="font-customfont12 font-normal text-base leading-[24px]">
+                            {item?.name}
+                          </h4>
+                        </div>
                     </Link>
                   </SwiperSlide>
                 ))}

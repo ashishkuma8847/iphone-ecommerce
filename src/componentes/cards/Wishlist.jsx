@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youheadimage,discountforyou,headingyou,priceyou,lesspriceyou ,style}) => {
   return (
@@ -23,10 +24,10 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
               alt="sdkf"
             />
                 
-            <div className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
+            <Link to={"/checkout"} className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
              <img  src="/src/assets/svg/Cartinwhite.svg" alt="cart" />
              <h4>Add To Cart</h4> 
-            </div>
+            </Link>
           </div>
 
           <div className="top-[10px] right-[13px] absolute w-[34px] h-[76px] flex flex-col justify-between items-center">
@@ -73,10 +74,10 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
               src={`/src/assets/images/${youheadimage}`}
               alt="sdkf"
             />
-            <div className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
+            <Link to={"/checkout"} className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
              <img  src="/src/assets/svg/Cartinwhite.svg" alt="cart" />
              <h4>Add To Cart</h4> 
-            </div>
+            </Link>
           </div>
 
           <div className="top-[10px] right-[13px] absolute w-[34px] h-[76px] flex flex-col justify-between items-center">

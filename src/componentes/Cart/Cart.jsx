@@ -101,8 +101,10 @@ const Cart = () => {
       </div>
 
       <div className="flex justify-between pb-[80px]">
-        <Button google={"hidden"} children={"Return To Shop"} />
-        <Button google={"hidden"} children={"Update Cart"} />
+        <Link to={"/"}><Button google={"hidden"} children={"Return To Shop"} /></Link>
+        <Link to={"/Wishlist"}><Button google={"hidden"} children={"Update Cart"} /></Link>
+        
+        
       </div>
 
       <div className="flex font-customfont12 font-normal text-base leading-6 justify-between">

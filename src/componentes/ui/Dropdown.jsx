@@ -43,15 +43,16 @@ const Dropdown = ({ label, items }) => {
       >
         <div className="py-2 ">
           {items?.map((item, index) => (
+            <div key={item+index+Date.now()}>
             <>
               {item.map((item, index) => (
-                <div key={index + item + Date.now()}>
+                <div key={index}>
                   <ul className="list-disc">
                     <li className="ml-[25px] font-p pb-2">{item}</li>
                   </ul>
                 </div>
               ))}
-            </>
+            </></div>
           ))}
         </div>
       </div>

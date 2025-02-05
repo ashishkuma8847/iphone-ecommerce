@@ -41,10 +41,10 @@ const Music = () => {
                                     ))
                                 }
                             </div>
-                            <div className="pt-[8px]">
+                            <Link to={"/checkout"} className="pt-[8px]">
 
                                 <Button variant={"solid"} className={"bg-customgreen-0 w-[173px]  hover:border-customgreen-0 hover:text-customgreen-0"}  children={"Buy Now!"} />
-                            </div>
+                            </Link>
                         </div>
                         <div>
                         </div>

@@ -40,9 +40,9 @@ const Newartical = () => {
                                     <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] `} >
                                         Black and White version of the PS5 coming out on sale.
                                     </h4>
-                                    <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
+                                    <Link to={"/checkout"} className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
                                         Shop Now
-                                    </h4>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -57,9 +57,9 @@ const Newartical = () => {
                                             <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] `} >
                                                 Featured woman collections that give you another vibe.
                                             </h4>
-                                            <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
+                                            <Link to={"/checkout"} className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
                                                 Shop Now
-                                            </h4>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -73,9 +73,9 @@ const Newartical = () => {
                                             <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] `} >
                                             Amazon wireless speakers
                                             </h4>
-                                            <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
+                                            <Link to={"/checkout"} className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
                                                 Shop Now
-                                            </h4>
+                                            </Link>
                                         </div>
                                     </div>
 
@@ -89,9 +89,9 @@ const Newartical = () => {
                                             <h4 className={`text-[#FAFAFA] font-normal lg:text-sm font-customfont12 leading-[21px] `} >
                                             GUCCI INTENSE OUD EDP
                                             </h4>
-                                            <h4 className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
+                                            <Link to={"/checkout"} className="text-white w-[81px] font-medium lg:text-base font-customfont12 leading-6 border-b">
                                                 Shop Now
-                                            </h4>
+                                            </Link>
                                         </div>
                                     </div>
                                     </div>

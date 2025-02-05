@@ -80,7 +80,7 @@ const Header = () => {
               items-center font-customfont12    font-normal "
               >
                 <NavLink to={"/"}>Home</NavLink>
-                <NavLink to={"/Contect"}>Contact</NavLink>
+                <NavLink to={"/contact"}>Contact</NavLink>
                 <NavLink to={"/About"}>About</NavLink>
                 <NavLink to={"/Signup"}>SignUp</NavLink>
               </ul>
