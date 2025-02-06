@@ -166,7 +166,7 @@ const Gamepad = () => {
                     ))}
                   </div>
                 </div>
-                <div className="flex mb-10  ">
+                <div className="flex mb-10 h-[40px]  ">
                   <div className="flex w-[159px] items-center h-[44px]   justify-between mr-4">
                     <button
                       className="group hover:border-transparent transition-all duration-200 hover:bg-CustomRed-0 w-[40px] p-[10px_8px] rounded-l border-l border-t  border-b border-customGray-0"
@@ -203,9 +203,9 @@ const Gamepad = () => {
                     </button>
                   </div>
                   <div className="mr-[19px]">
-                    <Button variant={"solid"} children={"Buy Now"} className={"font-medium text-base p-[10px_46px] h-[44px] w-[165px]"}/>
+                    <Button variant={"solid"} children={"Buy Now"} className={"font-medium text-base p-[8px_46px] h-[44px] w-[165px]"}/>
                   </div>
-                  <div className="flex  items-center justify-center w-10 border border-customGray-0 rounded">
+                  <div className="flex w-[40px] h-[40px]  items-center justify-center border border-customGray-0 rounded">
                     <img src="/src/assets/svg/Wishlist.svg" alt="Wishlist" />
                   </div>
                 </div>
