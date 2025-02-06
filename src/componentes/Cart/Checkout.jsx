@@ -37,7 +37,7 @@ const Checkout = () => {
                   Product
                 </Link>
                 <h4 className="opacity-[50%]">/</h4>
-                <Link to={"/error"} className="opacity-[50%]">
+                <Link to={"/Cart"} className="opacity-[50%]">
                   View Cart
                 </Link>
                 <h4 className="opacity-[50%]">/</h4>
@@ -63,7 +63,7 @@ const Checkout = () => {
                         <input
                           className="outline-none pl-[10px] h-[50px] rounded bg-[#F5F5F5]"
                           id={item.id}
-                          type="text"
+                          type={` ${item.type}`}
                         />
                       </div>
                     ))}

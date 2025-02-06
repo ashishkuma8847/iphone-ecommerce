@@ -47,7 +47,6 @@
     stroke-linecap: round;
 }
 
-/* Shape Animations */
 .loader svg polygon {
     stroke-dasharray: 145 76 145 76;
     stroke-dashoffset: 0;
@@ -66,7 +65,6 @@
     animation: pathCircle var(--duration) ease-in-out infinite;
 }
 
-/* Smooth Path Animations */
 @keyframes pathTriangle {
     0% { stroke-dashoffset: 0; }
     33% { stroke-dashoffset: 74; }
@@ -90,7 +88,6 @@
     100% { stroke-dashoffset: 275; }
 }
 
-/* Smoother Dot Movement */
 @keyframes dotMove {
     0% { transform: translate(-18px, -18px); }
     25% { transform: translate(0, 0); }

@@ -3,41 +3,48 @@
       "title": "First Name",
       "star":"*",
       "for": "text1",
-      "id": "text1"
+      "id": "text1",
+      "type":"text"
     },
     {
       "title": "Company Name",
       "for": "text2",
-      "id": "text2"
+      "id": "text2",
+      "type":"text"
     },
     {
       "title": "Street Address",
       "star":"*",
       "for": "text3",
-      "id": "text3"
+      "id": "text3",
+      "type":"text"
     },
     {
       "title": "Apartment, floor, etc. (optional)",
       "for": "text4",
-      "id": "text4"
+      "id": "text4",
+      "type":"text"
     },
     {
       "title": "Town/City",
       "star":"*",
       "for": "text5",
-      "id": "text5"
+      "id": "text5",
+      "type":"text"
     },
     {
       "title": "Phone Number",
       "star":"*",
       "for": "text6",
-      "id": "text6"
+      "id": "text6",
+      "type":"number"
     },
     {
       "title": "Email Address",
       "star":"*",
       "for": "text7",
-      "id": "text7"
+      "id": "text7",
+      "type":"email"
     }
     
   ]

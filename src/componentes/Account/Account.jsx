@@ -57,10 +57,11 @@ const Account = () => {
                     <div className="flex flex-col gap-[8px] ">
                       <Input
                         title={"First Name"}
-                        className={"text-black opacity-[100%] "}
-                        inputclass={"w-[330px] pl-[16px]"}
+                        className={"text-black   "}
+                        inputclass={"w-[330px] pl-[16px] "}
                         placeholder={"Md"}
                         id={"item1"}
+                        type={"text"}
                       />
                     </div>
                     <div className="flex flex-col gap-[8px] ">
@@ -70,6 +71,7 @@ const Account = () => {
                         inputclass={"w-[330px] pl-[16px]"}
                         placeholder={"Rimel"}
                         id={"item2"}
+                        type={"text"}
                       />
                     </div>
                   </div>
@@ -81,6 +83,7 @@ const Account = () => {
                         inputclass={"w-[330px] pl-[16px]"}
                         placeholder={"rimel1111@gmail.com"}
                         id={"item3"}
+                        type={"email"}
                       />
                     </div>
                     <div className="flex flex-col gap-[8px] ">
@@ -90,6 +93,7 @@ const Account = () => {
                         inputclass={"w-[330px] pl-[16px]"}
                         placeholder={"Kingston, 5236, United State"}
                         id={"item4"}
+                        type={"text"}
                       />
                     </div>
                   </div>
@@ -102,17 +106,21 @@ const Account = () => {
                       inputclass={" pl-[16px] "}
                       placeholder={"Current Passwod"}
                       id={"type5"}
+                      type={"text"}
                     />
                   </div>
                   <Input
                     className={"hidden "}
                     inputclass={" pl-[16px] "}
                     placeholder={"New Passwod"}
+                    type={"Password"}
                   />{" "}
                   <Input
                     className={"hidden "}
                     inputclass={" pl-[16px] "}
                     placeholder={"Confirm New Passwod"}
+                    type={"Password"}
+
                   />
                 </div>
                 <div className="flex gap-[32px] justify-end items-center">

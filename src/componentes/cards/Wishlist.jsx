@@ -82,11 +82,11 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
 
           <div className="top-[10px] right-[13px] absolute w-[34px] h-[76px] flex flex-col justify-between items-center">
             <button className="flex w-[34px] items-center justify-center bg-white rounded-[50%] h-[34px]">
-              <img
+             <Link to={"/gamepad"}> <img
                 className="w-[24px]  h-[24px] "
                 src={`/src/assets/svg/Fill-Eye.svg`}
                 alt="dfs"
-              />
+              /></Link>
             </button>
 
           </div>

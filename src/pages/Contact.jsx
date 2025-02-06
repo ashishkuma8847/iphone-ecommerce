@@ -16,7 +16,7 @@ const Contact = () => {
             <h4>Contact</h4>
           </div>
           <div className="flex justify-between">
-            <div className="flex flex-col p-[40px_35px_51px_35px] w-[340px]">
+            <div className="flex flex-col p-[40px_35px_51px_35px] w-[340px] hover:shadow-custom transition-all duration-200">
               <div className="flex flex-col gap-[24px] pb-[32px] border-b border-customGray-0">
                 <div className="flex gap-[16px] items-center font-customfont12 font-medium text-base">
                   <img
@@ -44,7 +44,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="max-w-[800px] w-full p-[40px_32px] flex flex-col gap-[32px]">
+            <div className="max-w-[800px] w-full p-[40px_32px] flex flex-col gap-[32px] transition-all duration-200 hover:shadow-custom">
               <div className="flex justify-between">
                 <div>
                   <Input

@@ -38,7 +38,7 @@ const Featurecard = ({
             />
           </button>
 
-          <img src={`/src/assets/svg/Fill-Eye.svg`} alt="view" />
+         <Link to={"/gamepad"}> <img src={`/src/assets/svg/Fill-Eye.svg`} alt="view" /></Link>
         </div>
       </div>
       <div className="flex flex-col gap-2">

@@ -47,7 +47,7 @@ const ProductCard = ({
               />
             </button>
 
-            <img src={`/src/assets/svg/${view}`} alt="dfs" />
+           <Link to={"/gamepad"}> <img src={`/src/assets/svg/${view}`} alt="dfs" /></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2">

@@ -61,18 +61,16 @@ const Cart = () => {
           <div key={index}>
             <Link to={item.to}>
               <div className="flex items-center p-[24px_66px_24px_40px] shadow-Customnew rounded">
-                <div className="relative flex items-center gap-5 mr-[167px]">
+                <div className="relative flex items-center gap-5 mr-[167px] group ">
                   <img
                     src={`src/assets/svg/${item.imagehead}`}
                     alt={item.product}
                   />
-                  {item.cencel && (
                     <img
-                      className="absolute top-[-5px] left-[-12px]"
+                      className="absolute top-[-5px] left-[-12px] w-[0] h-[0] transition-all duration-200 group-hover:w-[24px] group-hover:h-[24px]"
                       src={`src/assets/svg/${item.cencel}`}
                       alt="Cancel icon"
                     />
-                  )}
                   <h4 className="w-[107px]">{item.product}</h4>
                 </div>
                 <h4 className="mr-[282px]">${formatPrice(item.Price)}</h4>
