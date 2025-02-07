@@ -11,8 +11,8 @@ const Explore = ({data}) => {
 
     return (
         <main>
-            <section className="mb-[140px]">
-                <div className="container flex flex-col gap-[60px]">
+            <section className="lg:mb-[140px] sm:mb-[80px]" >
+                <div className="container flex flex-col sm:gap-[24px] lg:gap-[60px]">
                     <div className="flex flex-col gap-[20px]">
                         <ul className="flex items-center gap-[16px] w-[142px]">
                             <li className="w-[20px] h-[40px] rounded bg-CustomRed-0"></li>
@@ -24,7 +24,7 @@ const Explore = ({data}) => {
                             Explore Our Products
                         </div>
                     </div>
-                    <div className="grid grid-cols-4 gap-x-[8px] gap-y-[60px]">
+                    <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-x-[8px] sm:gap-y-[24px] lg:gap-y-[60px]">
 
                     {
                         data.map((item,index)=>(

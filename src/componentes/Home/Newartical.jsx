@@ -27,13 +27,13 @@ const Newartical = () => {
     return (
         <>
             <main>
-                <section className="pb-[140px] relative">
-                    <div className="container  flex flex-col gap-[140px]">
-                        <div className="flex  justify-between ">
+                <section className="lg:pb-[140px] sm:pb-[80px] relative">
+                    <div className="container  flex flex-col lg:gap-[140px] sm:gap-[80px] ">
+                        <div className="flex sm:flex-col lg:flex-row sm:gap-[24px] lg:gap-0  lg:justify-between sm:justify-center ">
 
 
-                            <div className={`bg-bottom  w-[570px] pl-[32px] pb-[32px] h-[600px] bg-black rounded bg-no-repeat  bg-[url('/src/assets/images/ps5.png')]`} >
-                                <div className={` w-[242px] gap-[16px]  flex h-full flex-col   justify-end`}>
+                            <div className={`bg-bottom  max-w-[570px] w-full pl-[32px] pb-[32px] sm:h-[500px] lg:h-[600px] bg-black rounded  bg-no-repeat flex sm:m-auto lg:m-0  bg-[url('/src/assets/images/ps5.png')]`} >
+                                <div className={` max-w-[242px]  w-full gap-[16px]  flex h-full flex-col   justify-end`}>
                                     <h2 className="text-[#FAFAFA] font-semibold lg:text-2xl font-customfont leading-6 tracking-[0.03em]">
                                         PlayStation 5
                                     </h2>
@@ -47,8 +47,8 @@ const Newartical = () => {
                             </div>
 
 
-                            <div className="flex flex-col justify-between">
-                                <div className="flex">
+                            <div className="flex flex-col justify-between sm:gap-[24px] lg:gap-0">
+                                <div className="flex sm:m-auto lg:m-0">
                                     <div className={`pl-[24px] pb-[24px] w-[570px] h-[286px] bg-[#0D0D0D]  bg-right rounded bg-no-repeat  bg-[url('/src/assets/images/woman-character.png')]`} >
                                         <div className={` w-[242px] gap-[16px]  flex h-full flex-col   justify-end`}>
                                             <h2 className="text-[#FAFAFA] font-semibold lg:text-2xl font-customfont leading-6 tracking-[0.03em]">
@@ -63,7 +63,7 @@ const Newartical = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex justify-between">
+                                <div className="flex lg:justify-between sm:gap-[30px] lg:gap-0 sm:m-auto lg:m-0">
                                     <div className="flex">
                                     <div className={` pl-[24px] pb-[24px] w-[270px] h-[284px] bg-[#242424]  bg-center rounded bg-no-repeat  bg-[url('/src/assets/images/speacer.png')]`} >
                                         <div className={` w-[242px] gap-[8px]  flex h-full flex-col   justify-end`}>
@@ -100,11 +100,11 @@ const Newartical = () => {
                         </div>
 
 
-                        <div className="flex justify-between">
+                        <div className="flex lg:justify-between flex-wrap sm:justify-center sm:gap-x-6 lg:gap-x-0 sm:gap-y-6 lg:gap-y-0" >
                             {services.map((item, index) => (
                                 <div key={index}>
                                     <Link to={item.to}>
-                                        <div className="flex w-[262px] flex-col items-center justify-center gap-[24px]">
+                                        <div className="flex max-w-[262px]  w-full flex-col items-center justify-center gap-[24px]">
                                             <img src={`/src/assets/svg/${item.img}`} alt={item.heading} />
                                             <div className="flex flex-col gap-[8px]">
                                                 <h2 className="text-center font-semibold text-xl font-customfont12 leading-[28px]">

@@ -26,7 +26,7 @@ const Banner = () => {
                     <button onClick={() => setcount(0)} >reset</button>
                 </div>
             </div> */}
-      <div className="container flex lg:flex-row mb-[127px] sm:flex-col ">
+      <div className="container flex lg:flex-row lg:mb-[127px] sm:mb-[80px] sm:flex-col ">
         <div
           className="bannerr   
                  lg:h-[344px]  lg:mt-10 

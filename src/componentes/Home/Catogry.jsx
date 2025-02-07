@@ -9,16 +9,16 @@ const Catogry = () => {
   const swiperRef = useRef();
   return (
     <>
-      <main className="mb-[70px]">
-        <section className="pb-[70px] border-b border-customGray-0 container flex flex-col gap-[60px]">
-          <div className=" flex flex-col gap-[20px] mt-[80px]">
+      <main className="lg:mb-[70px] sm:mb-[50px]">
+        <section className="pb-[70px] border-b border-customGray-0 container flex flex-col sm:gap-[24px] lg:gap-[60px]">
+          <div className=" flex flex-col gap-[20px] sm:mt-[60px] lg:mt-[80px]">
             <ul className="flex items-center w-[126px] justify-between ">
               <li className="w-[20px] h-[40px] rounded bg-CustomRed-0"></li>
               <li className="font-customfont12 text-CustomRed-0 leading-[20px] font-semibold text-base">
                 Categories
               </li>
             </ul>
-            <div className="flex justify-between items-center font-customfont list-none leading-[48px] font-semibold text-4xl tracking-[4%]">
+            <div className="flex  justify-between  font-customfont list-none lg:leading-[48px] sm:leading-[28px] font-semibold  lg:text-4xl sm:text-2xl tracking-[4%] undefined]">
               <h4>Browse By Category</h4>
               <div className="flex gap-2 items-center ">
                 <button
@@ -45,6 +45,21 @@ const Catogry = () => {
               modules={[Navigation]}
               onBeforeInit={(swiper) => {
                 swiperRef.current = swiper;
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 3,
+                },
+                800:{
+                  slidesPerView: 4,
+
+                },
+                1024: {
+                  slidesPerView: 5,
+                },
+                1200:{
+                  slidesPerView:6,
+                }
               }}
               className="mySwiper"
             >

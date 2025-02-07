@@ -5,12 +5,12 @@ import Button from '../ui/Button'
 const Music = () => {
     return (
         <>
-            <main className='mt-[140px] mb-[71px]'>
-                <section className='container ]    text-white'>
-                    <div className="bg-black flex  justify-between items-center p-[69px_60px_68px_56px]">
-                        <div className='flex max-w-[499px] gap-[32px] w-full  flex-col'>
+            <main className= ' sm:mt-[80px] lg:mt-[140px] sm:mb-[50px] lg:mb-[71px]'>
+                <section className='container     text-white'>
+                    <div className="bg-black flex lg:flex-row sm:flex-col-reverse sm:gap-[14px] lg:gap-0  justify-between items-center sm:p-[39px_30px_38px_36px] lg:p-[69px_60px_68px_56px]">
+                        <div className='flex max-w-[499px] sm:gap-[24px] lg:gap-[32px] w-full  flex-col'>
                             <h4 className='font-customfont12 text-customgreen-0 leading-[20px] font-semibold text-base'>Categories</h4>
-                            <h1 className='font-semibold font-customfont text-5xl leading-[60px] tracking-[0.04em] max-w-[443px] w-full'>Enhance Your Music Experience</h1>
+                            <h1 className='font-semibold font-customfont lg:text-5xl leading-[60px] tracking-[0.04em] max-w-[443px] sm:text-3xl w-full'>Enhance Your Music Experience</h1>
                             <div className='flex gap-[24px] max-w-[320px] w-full'>
                                 {
                                     [{

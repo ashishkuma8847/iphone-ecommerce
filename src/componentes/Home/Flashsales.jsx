@@ -117,13 +117,28 @@ const Flashsales = ({
             </div>
             <div className="flex  w-full gap-[30px]">
               <Swiper
-                slidesPerView={4}
-                loop={true}
-                spaceBetween={10}
-                modules={[Navigation]}
-                onBeforeInit={(swiper) => {
-                  swiperRef.current = swiper;
-                }}
+              slidesPerView={2}
+              loop={true}
+              spaceBetween={10}
+              modules={[Navigation]}
+              onBeforeInit={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                },
+                800:{
+                  slidesPerView: 2.5,
+
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+                1200:{
+                  slidesPerView:4,
+                }
+              }}
                 className="mySwiper"
               >
                 {data.length > 0 &&
@@ -150,7 +165,7 @@ const Flashsales = ({
           </div>
           {show && (
             <>
-              <div className=" flex justify-center items-center pt-[73px] pb-[60px] mb-[80px] border-b border-customGray-0">
+              <div className=" flex justify-center items-center sm:pt-[53px] sm:pb-[40px] lg:pt-[73px] lg:pb-[60px] lg:mb-[80px] sm:mb-[60px] border-b border-customGray-0">
                 <Button variant={"solid"} children={"View All Products"} />
               </div>
             </>

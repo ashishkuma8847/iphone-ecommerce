@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <section className=" bg-black text-white pt-[80px] pb-[60px] ">
-          <div className="container flex justify-between">
-            <div className="flex flex-col gap-[16px] max-w-[217px]">
-              <div className="  flex flex-col gap-[24px]">
+        <section className=" bg-black text-white  lg:pt-[80px] lg:pb-[60px] sm:pt-[50px] sm:pb-[40px] ">
+          <div className="container flex sm:gap-6 lg:gap-0 lg:flex-row sm:flex-col justify-between">
+            <div className="flex flex-col gap-4 max-w-[217px]">
+              <div className="  flex flex-col lg:gap-[24px] sm:gap-4 ">
                 <h1 className="font-customfont font-bold text-2xl leading-6 tracking-[0.03em]">
                   Exclusive
                 </h1>
@@ -31,33 +31,34 @@ const Footer = () => {
                 <img src="/src/assets/svg/icon-send.svg" alt="img1" />
               </div>
             </div>
-            <div className="flex  flex-col w-[165px] gap-[24px] font-customfont12 ">
+            <div className="flex justify-between max-w-[581px] w-full">
+            <div className="flex  flex-col w-[165px] gap-[24px]  font-customfont12 ">
               <div className="">
-
-              <h4 className=" font-medium text-xl leading-7">Support</h4>
+                <h4 className=" font-medium text-xl leading-7">Support</h4>
               </div>
-              <div className="flex flex-col gap-[16px] text-[#FAFAFA] w-[175px]">
+              <div className="flex  flex-col gap-[16px] text-[#FAFAFA] w-[175px]">
                 {linkNames.map((item, index) => (
-                <div key={index + item}>
-                  <div className="flex flex-col font-customfont12 font-normal text-base leading-6">{item}</div>
-                </div>
-              ))}
+                  <div key={index + item}>
+                    <div className="flex flex-col font-customfont12 font-normal text-base leading-6">
+                      {item}
+                    </div>
+                  </div>
+                ))}
               </div>
-              
             </div>
             <div className="flex flex-col w-[123px] gap-[24px]">
               <div className=" font-medium text-xl leading-7">
                 <h4>Account</h4>
               </div>
               <div className=" flex flex-col gap-[16px]  text-[#FAFAFA] ">
-                 {linkNames1.map((item, index) => (
-                <div key={index + item}>
-                  <div className="flex flex-col font-customfont12 font-normal text-base leading-6">{item}</div>
-                </div>
-              ))}
+                {linkNames1.map((item, index) => (
+                  <div key={index + item}>
+                    <div className="flex flex-col font-customfont12 font-normal text-base leading-6">
+                      {item}
+                    </div>
+                  </div>
+                ))}
               </div>
-              
-             
             </div>
             <div className="flex flex-col w-[109px] gap-[24px]">
               <div className=" font-medium text-xl leading-7">
@@ -65,15 +66,16 @@ const Footer = () => {
               </div>
               <div className="flex flex-col gap-[16px]  text-[#FAFAFA]">
                 {linkNames2.map((item, index) => (
-                <div key={index + item}>
-                  <div className="flex flex-col font-customfont12 font-normal text-base leading-6 ">{item}</div>
-                </div>
-              ))}
+                  <div key={index + item}>
+                    <div className="flex flex-col font-customfont12 font-normal text-base leading-6 ">
+                      {item}
+                    </div>
+                  </div>
+                ))}
               </div>
-              
-              
             </div>
-            <div className="flex flex-col gap-[24px]">
+            </div>
+            <div className="flex flex-col lg:gap-[24px] sm:gap-4">
               <h1 className="font-customfont12 font-medium text-xl leading-7">
                 Download App
               </h1>
@@ -118,10 +120,17 @@ const Footer = () => {
           </div>
         </section>
         <div className="bg-black text-white border-t border-[#141414] ">
-              <div className="container flex items-center justify-center opacity-[60%] gap-[6px] pt-[16px] pb-[24px] "> 
-                <img className="pt-[2px] pb-[2px]" src="/src/assets/svg/copyright.svg" alt="" />
-                    <h4 className="font-customfont12 font-normal text-base leading-6">Copyright Rimel 2022. All right reserved</h4>
-              </div></div>
+          <div className="container flex items-center justify-center opacity-[60%] gap-[6px] pt-[16px] pb-[24px] ">
+            <img
+              className="pt-[2px] pb-[2px]"
+              src="/src/assets/svg/copyright.svg"
+              alt=""
+            />
+            <h4 className="font-customfont12 font-normal text-base leading-6">
+              Copyright Rimel 2022. All right reserved
+            </h4>
+          </div>
+        </div>
       </footer>
     </>
   );
