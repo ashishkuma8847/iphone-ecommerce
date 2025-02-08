@@ -26,7 +26,7 @@ const Banner = () => {
                     <button onClick={() => setcount(0)} >reset</button>
                 </div>
             </div> */}
-      <div className="container flex lg:flex-row lg:mb-[127px] sm:mb-[80px] sm:flex-col ">
+      <div className="container flex lg:flex-row lg:mb-[127px] sm:mb-[40px] sm:flex-col ">
         <div
           className="bannerr   
                  lg:h-[344px]  lg:mt-10 
@@ -37,7 +37,7 @@ const Banner = () => {
           <Dropdown items={data1} label={"Men’s Fashion"} /></div>
           {bannerstyle?.map((item, index) => (
             <div key={index}>
-              <Link to={item.to} className="lg:max-w-[1170px]  ">
+              <Link to={item.to} className="lg:max-w-[1170px] w-full  ">
                 {/* <button
                   onClick={() => setRotate(!rotate)}
                   className="flex
@@ -139,7 +139,8 @@ const Banner = () => {
           className="flex 
                 lg:mt-10 
                 sm:mt-5 
-                lg:max-w-[892px] sm:max-w-[500px] sm:items-center bg-black text-white justify-between relative ]"
+                lg:max-w-[892px] lg:w-full sm:max-w-[640px] sm:w-full
+                  sm:items-center bg-black text-white justify-between relative ]"
         >
           <Swiper
             modules={[Pagination, Autoplay]}
@@ -154,7 +155,7 @@ const Banner = () => {
               bswiper &&
               bswiper?.map((item, index) => (
                 <SwiperSlide key={index + Date.now() + item}>
-                  <Link to={item.to} className="flex justify-between">
+                  <Link to={item.to} className="flex justify-between sm:pb-[30px] lg:pb-0">
                     <div className="lg:pl-16  lg:pt-[58px] sm:pl-8 sm:pt-[28px] sm:pb-[28px]">
                       <ul className="lg:mb-5 sm:mb-4  flex items-center w-[190px] lg:gap-[24px]  sm:gap-[12px] font-customfont12">
                         <img
@@ -189,7 +190,7 @@ const Banner = () => {
                       </ul>
                     </div>
                     <img
-                      className="lg:w-[400px] lg:h-[344px] sm:w-[240px] sm:h-[144px]
+                      className="lg:w-[400px] lg:h-[344px] sm:w-[240px] sm:h-[204px] 
                                             overflow-hidden lg:pt-4 sm:relative sm:top-[40px] "
                       src={item.img3}
                       alt="dassa"
