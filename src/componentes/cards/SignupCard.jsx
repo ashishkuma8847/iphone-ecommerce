@@ -3,26 +3,26 @@ import Button from "../ui/Button";
 import { Link } from "react-router-dom";
 const SignupCard = ({ heading, title, inpotforname, variant }) => {
   return (
-    <main className="pt-[60px] pb-[140px] ">
+    <main className=" lg:pt-[60px] lg:pb-[140px] sm:pt-[40px]  sm:pb-[80px]">
       <section className=" ">
-        <div className=" flex justify-center items-center gap-[129px]">
+        <div className=" flex sm:flex-col lg:flex-row  justify-center lg:items-center sm:items-start sm:ml-[40px] lg:ml-0 lg:gap-[129px] sm:gap-[60px]">
           <div className="">
             <img
-              className=" w-full "
+              className=" lg:w-[805px] lg:h-[781px] sm:w-[500px] h-[500px]"
               src="/src/assets/images/SideImage.png"
               alt="signup"
             />
           </div>
           <div className="flex flex-col max-w-[371px] w-full">
-            <div className="flex flex-col gap-[24px] mb-[48px]">
-              <h4 className="font-customfont font-medium text-4xl leading-[30px] tracking-[0.04em]">
+            <div className="flex flex-col lg:gap-[24px] sm:gap-4 lg:mb-[48px] sm:mb-[24px]">
+              <h4 className="font-customfont font-medium lg:text-4xl sm:text-3xl leading-[30px] tracking-[0.04em]">
                 {heading}
               </h4>
               <h6 className="font-customfont12 font-normal text-base leading-6">
                 {title}
               </h6>
             </div>
-            <div className="flex gap-[40px] mb-[40px] flex-col text-customGray-0 font-customfont12 font-normal text-base leading-6 ">
+            <div className="flex lg:gap-[40px] sm:gap-[24px] lg:mb-[40px] sm:mb-[30px] flex-col text-customGray-0 font-customfont12 font-normal text-base leading-6 ">
               <input
                 className={`${inpotforname} border-b border-customGray-0 outline-none  `}
                 type="text"
@@ -48,7 +48,7 @@ const SignupCard = ({ heading, title, inpotforname, variant }) => {
                     className={"max-w-[371px] w-full"}
                   />
                 </Link>
-                <div className="mt-[16px] flex flex-col gap-[32px]">
+                <div className="mt-[16px] flex flex-col lg:gap-[32px] sm:gap-6">
                   <Link to={"/Error"}>
                     {" "}
                     <Button className={"w-full"} children={"Sign up with Google"} />

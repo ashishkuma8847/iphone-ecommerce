@@ -22,7 +22,7 @@ const Checkout = () => {
     <>
       <main>
         <div className="container">
-          <div className="mt-[80px] mb-[140px] flex flex-col gap-[80px] font-customfont12 font-normal text-base leading-6 ">
+          <div className="lg:mt-[80px] sm:mt-[40px] sm:mb-[80px] lg:mb-[140px] flex flex-col  lg:gap-[80px] sm:gap-[40px] font-customfont12 font-normal text-base leading-6 ">
             <div className="flex flex-col ">
               <div className="flex gap-3 font-customfont12 font-normal text-sm leading-[21px]">
                 <Link to={"/"} className="opacity-[50%]">
@@ -44,13 +44,13 @@ const Checkout = () => {
                 <h4>CheckOut</h4>
               </div>
             </div>
-            <div className="flex flex-col gap-[48px]">
-              <h4 className="font-customfont font-medium text-4xl leading-[30px] tracking-[0.04em]">
+            <div className="flex flex-col lg:gap-[48px] sm:gap-[32px]">
+              <h4 className="font-customfont font-medium lg:text-4xl sm:text-3xl leading-[30px] tracking-[0.04em]">
                 Billing Details
               </h4>
-              <div className="flex font-customfont12 font-normal text-base leading-6 gap-[173px] ">
-                <div className="flex flex-col  w-[470px]  ">
-                  <div className="flex flex-col gap-[32px]">
+              <div className="flex lg:flex-row  sm:flex-col  font-customfont12 font-normal text-base leading-6 sm:gap-[80px] lg:gap-[173px] ">
+                <div className="flex flex-col  lg:w-[470px] sm:w-full  ">
+                  <div className="flex flex-col lg:gap-[32px] sm:gap-[24px]">
                     {checkoutMap.map((item, index) => (
                       <div
                         className="flex flex-col gap-[8px]"
@@ -94,7 +94,7 @@ const Checkout = () => {
                   </div>
                   {/* ---------------------- */}
                 </div>
-                <div className="flex flex-col  gap-[32px] max-w-[527px] w-full">
+                <div className="flex flex-col  lg:gap-[32px] sm:gap-6 sm:m-auto lg:m-0 max-w-[527px] w-full">
                   <div className="flex  flex-col-reverse gap-[32px] max-w-[425px] w-full">
                     {cartjson.map((item, index) => (
                       <div key={item + index + Date.now()}>

@@ -51,13 +51,24 @@ const Ourstory = () => {
   return (
     <>
       <div className="container">
-        <div className="flex flex-col pb-[140px]">
-          <div className="flex gap-[30px] pb-[140px]">
+        <div className="flex flex-col lg:pb-[140px] sm:pb-[80px]">
+          <div className="flex gap-[30px] lg:pb-[140px] sm:pb-[80px]">
             <Swiper
               slidesPerView={3}
               modules={[Pagination, Autoplay]}
               pagination={{
                 clickable: true,
+              }}
+              breakpoints={{
+                640: {
+                  slidesPerView: 1.4,
+                },
+                800: {
+                  slidesPerView: 2,
+                },
+                1200: {
+                  slidesPerView: 3,
+                },
               }}
               autoplay={{ delay: 2500 }}
               loop={true}
@@ -67,7 +78,7 @@ const Ourstory = () => {
                 <div key={index + item + Date.now()}>
                   <Link to={item.to}>
                     <SwiperSlide>
-                      <div className="flex flex-col w-[370px] gap-[32px] pb-[56px]">
+                      <div className="flex flex-col w-[370px] gap-[32px] sm:pb-[40px] lg:pb-[56px]">
                         <img src={`src/assets/images/${item.image}`} alt="" />
                         <div className="flex flex-col gap-[16px]">
                           <div className="flex flex-col gap-[8px]">
@@ -100,18 +111,18 @@ const Ourstory = () => {
               ))}
             </Swiper>
           </div>
-            
-          <div className="flex justify-between">
+
+          <div className="flex lg:justify-between flex-wrap sm:justify-center sm:gap-x-6 lg:gap-x-0 sm:gap-y-6 lg:gap-y-0">
             {services.map((item, index) => (
               <div key={index}>
                 <Link to={item.to}>
-                  <div className="flex w-[262px] flex-col items-center justify-center gap-[24px]">
+                  <div className="flex max-w-[262px]  w-full flex-col items-center justify-center gap-[24px]">
                     <img
                       src={`/src/assets/svg/${item.img}`}
                       alt={item.heading}
                     />
                     <div className="flex flex-col gap-[8px]">
-                      <h2 className="text-center font-semibold text-xl font-customfont12 ">
+                      <h2 className="text-center font-semibold text-xl font-customfont12 leading-[28px]">
                         {item.heading}
                       </h2>
                       <h4 className="text-center font-normal text-sm font-customfont12 leading-[21px]">

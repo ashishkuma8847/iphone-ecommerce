@@ -4,10 +4,10 @@ import aboutjson from "../../json/Aboutheading.json";
 
 const Heading = () => {
   return (
-    <main className="pt-[80px] pb-[140px]">
+    <main className="lg:pt-[80px] lg:pb-[140px] sm:pt-[40px] sm:pb-[80px]">
       <div className="container">
         <div className="flex flex-col">
-          <div className="flex pb-[42px] gap-3 font-customfont12 font-normal text-sm leading-[21px]">
+          <div className="flex lg:pb-[42px] sm:pb-[24px] gap-3 font-customfont12 font-normal text-sm leading-[21px]">
             <Link to={"/"} className="opacity-[50%]">Home</Link>
             <h4 className="opacity-[50%]">/</h4>
             <h4>About</h4>
@@ -15,12 +15,12 @@ const Heading = () => {
         </div>
       </div>
 
-      <div className="flex gap-[75px] justify-center items-center pb-[140px]">
-        <div className="flex flex-col gap-10">
-          <h4 className="font-customfont font-semibold text-[54px] leading-[64px] tracking-[0.06em]">
+      <div className="flex lg:flex-row sm:flex-col-reverse lg:gap-[75px] sm:gap-6 justify-center items-center lg:pb-[140px] sm:pb-[80px]">
+        <div className="flex flex-col lg:gap-10 sm:gap-6 ">
+          <h4 className="font-customfont font-semibold lg:text-[54px] sm:text-3xl  leading-[64px] tracking-[0.06em]">
             Our Story
           </h4>
-          <div className="max-w-[525px] w-full flex flex-col gap-[24px] font-customfont12 font-normal text-base leading-[26px]">
+          <div className="max-w-[525px] w-full flex flex-col lg:gap-[24px] sm:gap-4 font-customfont12 font-normal text-base leading-[26px]">
             <p>
               Launched in 2015, Exclusive is South Asia’s premier online shopping 
               marketplace with an active presence in Bangladesh. Supported by a 
@@ -35,19 +35,19 @@ const Heading = () => {
             </p>
           </div>
         </div>
-        <img src="/src/assets/images/charatertwo.png" alt="Character Illustration" />
+        <img className="lg:w-[705px] lg:h-[609px] sm:w-[500px] sm:h-[400px]" src="/src/assets/images/charatertwo.png" alt="Character Illustration" />
       </div>
 
       <div className="container">
-        <div className="flex justify-between">
+        <div className="lg:flex lg:justify-between sm:grid sm:grid-cols-2 sm:gap-y-[32px]">
           {aboutjson.map((item, index) => (
             <div key={`${item.heading}-${index}`}>
               <Link to={item.to}>
                 <div className="group hover:bg-CustomRed-0 hover:border-transparent hover:text-white transition-all duration-300 w-[270px] flex flex-col gap-4 border border-customGray-0 rounded pt-[30px] pb-[30px] justify-center items-center">
                   <img className="hidden group-hover:block" src={`/src/assets/svg/${item.img1}`} alt={item.heading} />
                   <img className="group-hover:hidden" src={`/src/assets/svg/${item.img2}`} alt={item.heading} />
-                  <div className="flex flex-col gap-[12px] justify-center items-center">
-                    <h4 className="font-customfont font-bold text-[32px] leading-[30px] tracking-[0.04em]">
+                  <div className="flex flex-col lg:gap-[12px] sm:gap-2 justify-center items-center">
+                    <h4 className="font-customfont font-bold lg:text-[32px] sm:text-2xl   leading-[30px] tracking-[0.04em]">
                       {item.heading}
                     </h4>
                     <p className="font-customfont12 font-normal text-base">{item.title}</p>

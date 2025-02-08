@@ -38,7 +38,7 @@ const Cart = () => {
   const totalSubtotal = cart.reduce((acc, item) => acc + item.subtotal, 0);
 
   return (
-    <div className="container pt-[80px] pb-[140px]">
+    <div className="container lg:pt-[80px] sm:pt-[40px] sm:pb-[80px] lg:pb-[140px]">
       <div className="flex flex-col">
         <div className="flex gap-3 font-customfont12 font-normal text-sm leading-[21px]">
           <Link to={"/"} className="opacity-[50%]">
@@ -49,19 +49,19 @@ const Cart = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-[40px] pt-[80px] pb-[24px] font-customfont12 font-normal text-base leading-6">
-        <div className="flex justify-between items-center p-[24px_39px_24px_40px] shadow-Customnew rounded">
-          <h4>Product</h4>
-          <h4>Price</h4>
-          <h4>Quantity</h4>
+      <div className="flex flex-col lg:gap-[40px] sm:gap-[30px]  lg:pt-[80px] sm:pt-[40px] pb-[24px] font-customfont12 font-normal text-base leading-6">
+        <div className="flex lg:justify-between items-center lg:p-[24px_39px_24px_40px] sm:p-[24px] shadow-Customnew rounded">
+          <h4 className="lg:m-0 sm:mr-[190px] md:mr-[230px]">Product</h4>
+          <h4 className="lg:m-0 sm:mr-[70px] md:mr-[120px]">Price</h4>
+          <h4 className="lg:m-0 sm:mr-[70px] md:mr-[110px]">Quantity</h4>
           <h4>Subtotal</h4>
         </div>
 
         {cart.map((item, index) => (
           <div key={index}>
             <Link to={item.to}>
-              <div className="flex items-center p-[24px_66px_24px_40px] shadow-Customnew rounded">
-                <div className="relative flex items-center gap-5 mr-[167px] group ">
+              <div className="flex sm:justify-between items-center lg:p-[24px_66px_24px_40px] sm:p-[24px] shadow-Customnew rounded">
+                <div className="relative flex items-center gap-5 lg:mr-[167px] sm:m-0 group ">
                   <img
                     src={`src/assets/svg/${item.imagehead}`}
                     alt={item.product}
@@ -73,8 +73,8 @@ const Cart = () => {
                     />
                   <h4 className="w-[107px]">{item.product}</h4>
                 </div>
-                <h4 className="mr-[282px]">${formatPrice(item.Price)}</h4>
-                <div className="mr-[281px] flex items-center w-[72px] justify-between p-[6px_12px_6px_12px] border border-customGray-0 rounded">
+                <h4 className="lg:mr-[282px] sm:m-0">${formatPrice(item.Price)}</h4>
+                <div className="lg:mr-[281px] sm:m-0 flex items-center w-[72px] justify-between p-[6px_12px_6px_12px] border border-customGray-0 rounded">
                   <h2>{item.quantity}</h2>
                   <div className="flex flex-col">
                     <button onClick={() => handleQuantityChange(index, true)}>
@@ -98,14 +98,14 @@ const Cart = () => {
         ))}
       </div>
 
-      <div className="flex justify-between pb-[80px]">
+      <div className="flex justify-between lg:pb-[80px] sm:pb-[40px]">
         <Link to={"/"}><Button google={"hidden"} children={"Return To Shop"} /></Link>
         <Link to={"/Wishlist"}><Button google={"hidden"} children={"Update Cart"} /></Link>
         
         
       </div>
 
-      <div className="flex font-customfont12 font-normal text-base leading-6 justify-between">
+      <div className="flex lg:flex-row sm:flex-col sm:items-center lg:items-start sm:gap-6 lg:gap-0 font-customfont12 font-normal text-base leading-6 justify-between">
         <div className="flex max-w-[527px] h-[56px] w-full font-customfont12 font-normal text-base leading-6 justify-between">
           <input
             className="max-w-[300px] w-full p-[16px_24px_16px_24px] outline-none border border-black rounded"

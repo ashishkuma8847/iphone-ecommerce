@@ -53,7 +53,7 @@ const Gamepad = () => {
     <button onClick={()=>setcount(count === 1 ? count : count - 1)}>------------</button> */}
       <main>
         <div className="container">
-          <div className="flex flex-col pt-[80px] pb-[140px] font-customfont12 font-normal text-sm leading-[21px] gap-[140px]">
+          <div className="flex flex-col lg:pt-[80px] sm:pt-[40px] sm:pb-[80px] lg:pb-[140px] font-customfont12 font-normal text-sm leading-[21px] lg:gap-[140px] sm:gap-[80px]">
             <div className="flex gap-3 font-customfont12 font-normal text-sm leading-[21px]">
               <Link to={"/Account"} className="opacity-[50%]">
                 Account
@@ -63,7 +63,8 @@ const Gamepad = () => {
               <h4 className="opacity-[50%]">/</h4>
               <h4>Havic HV G-92 Gamepad</h4>
             </div>
-            <div className="flex ">
+            <div className="flex lg:flex-row sm:flex-col sm:items-center lg:items-start lg:gap-0 sm:gap-8  ">
+              <div className="flex">
               <div className="flex flex-col mr-[30px] gap-[16px] items-center w-[170px]">
                 {gamepadshortimg.map((item, index) => (
                   <div key={item + index + Date.now()}>
@@ -78,8 +79,9 @@ const Gamepad = () => {
                 ))}
               </div>
               {/* main image */}
-              <div className="mr-[70px]">
+              <div className="lg:mr-[70px] sm:m-0">
                 <img src="/src/assets/svg/gamepadhead.svg" alt="gamepadhead" />
+              </div>
               </div>
               {/*  */}
               <div className="flex flex-col max-w-[399px] w-full">
@@ -166,7 +168,7 @@ const Gamepad = () => {
                     ))}
                   </div>
                 </div>
-                <div className="flex mb-10 h-[40px]  ">
+                <div className="flex lg:mb-10 sm:mb-6 h-[40px]  ">
                   <div className="flex w-[159px] items-center h-[44px]   justify-between mr-4">
                     <button
                       className="group hover:border-transparent transition-all duration-200 hover:bg-CustomRed-0 w-[40px] p-[10px_8px] rounded-l border-l border-t  border-b border-customGray-0"
@@ -228,7 +230,7 @@ const Gamepad = () => {
               </div>
             </div>
                 <div className="flex flex-col ">
-      <Flashsales classmain={"hidden"}   titleclass={"hidden"} buttonclass={"hidden"} headingclass={"w-[140px]"}  heading={"Related Item"} classhead={"gap-[60px]"} data={gamepad1}/>
+      <Flashsales classmain={"hidden"}   titleclass={"hidden"} buttonclass={"hidden"} headingclass={"w-[140px]"}  heading={"Related Item"} classhead={"lg:gap-[60px] sm:gap-[32px]"} data={gamepad1}/>
 
                 </div>
           </div>

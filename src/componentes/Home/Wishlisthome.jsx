@@ -7,10 +7,10 @@ const Wishlisthome = ({ data ,data2 }) => {
     return (
         <>
             <div className="container">
-                <div className="flex flex-col pt-[80px] pb-[140px] ">
-                    <div className="flex flex-col  pb-[80px] gap-[60px]">
+                <div className="flex flex-col sm:pt-[40px] sm:pb-[80px] lg:pt-[80px] pb-[140px] ">
+                    <div className="flex flex-col  sm:pb-[40px] lg:pb-[80px] sm:gap-[40px] lg:gap-[60px]">
                         <div className=" flex items-center justify-between">
-                            <div className="flex gap-[5px] font-customfont12 font-normal text-xl leading-[26px]">
+                            <div className="flex gap-[5px] font-customfont12 font-normal lg:text-xl sm:text-lg leading-[26px]">
                                 <h4 >Wishlist </h4>
                                 <h4>({data.length}) </h4>
                             </div>
@@ -19,7 +19,7 @@ const Wishlisthome = ({ data ,data2 }) => {
                             </div>
 
                         </div>
-                        <div className="flex justify-between">
+                        <div className="lg:flex sm:grid sm:grid-cols-2 sm:gap-y-8 justify-between">
                             {
                                 data.map((item, index) => (
                                     <div key={index + Date.now() + item}>
@@ -35,13 +35,13 @@ const Wishlisthome = ({ data ,data2 }) => {
                         <div className="flex justify-between">
                             <ul className=" flex items-center max-w-[156px] w-full justify-between ">
                                 <li className="w-[20px] h-[40px] rounded bg-CustomRed-0"></li>
-                                <li className="font-customfont12  leading-[26px] font-normal text-xl">
+                                <li className="font-customfont12  leading-[26px] font-normal lg:text-xl sm:text-lg">
                                 Just For You
                                 </li>
                             </ul>
                             <Button google={"hidden"} className={"max-w-[152px] w-[152px]"} children={"See All"}/>
                         </div>
-                        <div className=" flex justify-between">
+                        <div className=" lg:flex sm:grid sm:grid-cols-2 sm:gap-y-8 justify-between">
                             {
                                 data2.map((item,index)=>(
                                     <div key={index + Date.now() + item}>
