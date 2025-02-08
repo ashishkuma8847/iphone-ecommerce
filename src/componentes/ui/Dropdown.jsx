@@ -13,7 +13,7 @@ const Dropdown = ({ label, items }) => {
   }, [isOpen]);
 
   return (
-    <div className="relative w-full bg-white flex flex-col font-customfont12  font-normal text-base">
+    <div className="relative justify-start bg-white flex flex-col font-customfont12  font-normal text-base">
       {/* <p>{value}</p> 
       <input 
         ref={inputref}
@@ -26,7 +26,7 @@ const Dropdown = ({ label, items }) => {
         onInput={(e) => setValue(e.target.value)} 
       /> */}
       <button
-        className="flex  w-full justify-between items-center   pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
+        className="flex  w-[216px] justify-between items-center   pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
         onClick={() => setIsOpen(!isOpen)}
       >
         {label}

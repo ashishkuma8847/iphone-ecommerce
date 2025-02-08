@@ -26,13 +26,13 @@ const Banner = () => {
                     <button onClick={() => setcount(0)} >reset</button>
                 </div>
             </div> */}
-      <div className="container flex lg:flex-row lg:mb-[127px] sm:mb-[40px] sm:flex-col ">
+      <div className="container flex xl:flex-row xl:mb-[127px]  sm:mb-[40px] sm:flex-col ">
         <div
           className="bannerr   
-                 lg:h-[344px]  lg:mt-10 
-                 sm:h-[100px] sm:mt-5   sm:overflow-auto lg:overflow-hidden lg:w-[217px]"
+                 xl:h-[344px]  xl:mt-10 
+                 sm:h-[100px] sm:mt-5   sm:overflow-auto xl:overflow-hidden xl:w-[217px]"
         >
-          <div className="flex items-center flex-col">
+          <div className="flex  flex-col">
           <Dropdown items={data} label={"Woman’s Fashion"} />
           <Dropdown items={data1} label={"Men’s Fashion"} /></div>
           {bannerstyle?.map((item, index) => (
@@ -131,9 +131,9 @@ const Banner = () => {
           ))}
         </div>
         <span
-          className="sm:hidden lg:block
+          className="sm:hidden xl:block
 
-        block w-[1px]  h-[384px] bg-[#b2b2b270] ml-4 mr-[45px]  "
+        block w-[1px] lg:mr-0  h-[384px] bg-[#b2b2b270] xl:ml-4 xl:mr-[45px]  "
         ></span>
         <div
           className="flex 

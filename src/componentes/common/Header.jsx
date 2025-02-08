@@ -57,7 +57,8 @@ const Header = () => {
 
            sm:flex-col sm:gap-5 sm:items-start
            md:flex-col md:gap-5 md:items-start
-           lg:flex-row  lg:gap-0   lg:items-center 
+           lg:flex-col lg:gap-5 lg:items-start
+           xl:flex-row  xl:gap-0   xl:items-center 
            justify-between items-center font-poppins "
           >
             <div className="max-w-[118px]  flex items-center justify-center  ">
@@ -66,10 +67,9 @@ const Header = () => {
               </h1>
             </div>
             <div
-              className=" flex  
-            lg:gap-[130px] 
-            md:gap-3 
-            sm:gap-3 "
+              className=" flex xl:justify-end lg:justify-between  sm:justify-between w-full
+            xl:gap-[130px] 
+           "
             >
               <ul
                 className=" flex 

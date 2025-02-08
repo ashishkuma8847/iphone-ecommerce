@@ -24,7 +24,7 @@ const Explore = ({data}) => {
                             Explore Our Products
                         </div>
                     </div>
-                    <div className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-x-[8px] sm:gap-y-[24px] lg:gap-y-[60px]">
+                    <div className="grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-2    lg:grid-cols-3 gap-x-[8px] sm:gap-y-[24px] xl:gap-y-[60px]">
 
                     {
                         data.map((item,index)=>(
