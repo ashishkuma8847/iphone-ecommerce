@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 import Featurecard from "../cards/Featurecard";
 import { Link } from "react-router-dom";
 
-const Explore = ({data}) => {
+const Explore = ({data,headingclass,classbutton}) => {
    
  
     
@@ -14,7 +14,7 @@ const Explore = ({data}) => {
             <section className="lg:mb-[140px] sm:mb-[80px]" >
                 <div className="container flex flex-col sm:gap-[24px] lg:gap-[60px]">
                     <div className="flex flex-col gap-[20px]">
-                        <ul className="flex items-center gap-[16px] w-[142px]">
+                        <ul className={`${headingclass} flex items-center gap-[16px] w-[142px]`}>
                             <li className="w-[20px] h-[40px] rounded bg-CustomRed-0"></li>
                             <li className="font-customfont12 text-CustomRed-0 leading-[20px] font-semibold text-base">
                                 Our Products
@@ -38,10 +38,10 @@ const Explore = ({data}) => {
                         ))
                     }
                     </div>
-                    <div className="flex justify-center items-center">
+                    <Link to={"/Viewallprojects"} className={`${classbutton} flex justify-center items-center`}>
 
                         <Button variant={"solid"} children={"View All Products"} />
-                    </div>
+                    </Link>
                 </div>
             </section>
         </main>

@@ -98,9 +98,9 @@ const Header = () => {
                   sm:w-[156px]    sm:p-[7px_8px_7px_10px]
                   justify-end items-center   rounded-[4px]"
                 >
+                  <Link to={"/Viewallprojects"}>
                   <button
-                    onMouseOver={() => setSearch(true)}
-                    onMouseLeave={() => setSearch(false)}
+                    onClick={() => setSearch(true)}
                   >
                     {" "}
                     <img
@@ -113,7 +113,7 @@ const Header = () => {
                       src={"/src/assets/svg/search.svg"}
                       alt="image1"
                     />
-                  </button>
+                  </button></Link>
                   <input
                     className={`font-normal   text-xs leading-[18px] transition-all duration-300  border-b border-solid truncate border-gray-300 outline-none   ${
                       search
@@ -123,7 +123,6 @@ const Header = () => {
                         : "w-[0]"
                     } `}
                     placeholder="What are you looking for?"
-                    onMouseOver={() => setSearch(true)}
                     onMouseLeave={() => setSearch(false)}
                   />
                 </div>
@@ -168,7 +167,7 @@ const Header = () => {
                     </button>
                     <ul
                       className={`flex  flex-col  gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] w-[244px] text-white backdrop-blur-3xl bg-black bg-opacity-35   absolute top-[33px] right-[0px] transition-all duration-200  ${
-                        user ? "z-10 opacity-100 w-[244px] h-[208px] " : "-z-10 opacity-0 h-[180px] w-[200px]"
+                        user ? "z-10 opacity-100 w-[244px] h-[208px] " : "-z-[99999999999999999] sm:-z-50 opacity-0 h-[180px] w-[200px]"
                       }`}
 
                      onMouseLeave={()=>setUser(false)}

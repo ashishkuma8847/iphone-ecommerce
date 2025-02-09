@@ -16,6 +16,7 @@ import Account from './componentes/Account/Account'
 import Contact from './pages/Contact'
 import Loader from './pages/Loader/Loader'
 import Gamepad from './componentes/ProductsDetalPage/Gamepad'
+import Viewallprojects from './componentes/viewallprojects/Viewallprojects'
 const App = () => {
     const [loading, setLoading] = useState(true);
   
@@ -45,6 +46,7 @@ const App = () => {
       <Route path='/checkout' element={<Checkout/>}/>
       <Route path='/Account' element={<Account/>}/>
       <Route path='gamepad' element={<Gamepad/>}/>
+      <Route path='/Viewallprojects' element={<Viewallprojects/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter></>

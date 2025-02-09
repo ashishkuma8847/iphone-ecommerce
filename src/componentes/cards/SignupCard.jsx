@@ -5,10 +5,10 @@ const SignupCard = ({ heading, title, inpotforname, variant }) => {
   return (
     <main className=" lg:pt-[60px] lg:pb-[140px] sm:pt-[40px]  sm:pb-[80px]">
       <section className=" ">
-        <div className=" flex sm:flex-col lg:flex-row  justify-center lg:items-center sm:items-start sm:ml-[40px] lg:ml-0 lg:gap-[129px] sm:gap-[60px]">
+        <div className=" flex sm:flex-col  xl:flex-row  justify-center lg:items-center sm:items-center sm:m-auto lg:ml-0 lg:gap-[129px] sm:gap-[60px]">
           <div className="">
             <img
-              className=" lg:w-[805px] lg:h-[781px] sm:w-[500px] h-[500px]"
+              className=" xl:w-[805px] xl:h-[781px] lg:w-[700px] lg:h-[681px] md:w-[600px] md:h-[581px] sm:w-[500px] h-[500px]"
               src="/src/assets/images/SideImage.png"
               alt="signup"
             />

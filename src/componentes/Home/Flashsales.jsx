@@ -81,13 +81,14 @@ const Flashsales = ({
                   )}
                 </ul>
               </div>
-              <div className={buttonclass}>
+              <div className={`${buttonclass}`}>
                 {buttonarrow === "solid" ? (
+                  <Link to={"/Viewallprojects"}>
                   <Button
                     variant={"solid"}
                     ClassForDiv={"pb-[0px] pb-0 pt-0 pt-[0px] border-none"}
                     children={"View All"}
-                  />
+                  /></Link>
                 ) : (
                   <>
                     {" "}
@@ -165,9 +166,9 @@ const Flashsales = ({
           </div>
           {show && (
             <>
-              <div className=" flex justify-center items-center sm:pt-[53px] sm:pb-[40px] lg:pt-[73px] lg:pb-[60px] lg:mb-[80px] sm:mb-[60px] border-b border-customGray-0">
+              <Link to={"/Viewallprojects"} className=" flex justify-center items-center sm:pt-[53px] sm:pb-[40px] lg:pt-[73px] lg:pb-[60px] lg:mb-[80px] sm:mb-[60px] border-b border-customGray-0">
                 <Button variant={"solid"} children={"View All Products"} />
-              </div>
+              </Link>
             </>
           )}
         </section>

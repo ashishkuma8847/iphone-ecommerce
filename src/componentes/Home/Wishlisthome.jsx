@@ -19,7 +19,7 @@ const Wishlisthome = ({ data ,data2 }) => {
                             </div>
 
                         </div>
-                        <div className="lg:flex sm:grid sm:grid-cols-2 sm:gap-y-8 justify-between">
+                        <div className="xl:flex sm:grid lg:grid-cols-3 sm:grid-cols-2 sm:gap-y-8 justify-between">
                             {
                                 data.map((item, index) => (
                                     <div key={index + Date.now() + item}>
@@ -41,7 +41,7 @@ const Wishlisthome = ({ data ,data2 }) => {
                             </ul>
                             <Button google={"hidden"} className={"max-w-[152px] w-[152px]"} children={"See All"}/>
                         </div>
-                        <div className=" lg:flex sm:grid sm:grid-cols-2 sm:gap-y-8 justify-between">
+                        <div className=" xl:flex sm:grid lg:grid-cols-3 sm:grid-cols-2 sm:gap-y-8 justify-between">
                             {
                                 data2.map((item,index)=>(
                                     <div key={index + Date.now() + item}>

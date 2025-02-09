@@ -65,12 +65,12 @@ const Gamepad = () => {
             </div>
             <div className="flex lg:flex-row sm:flex-col sm:items-center lg:items-start lg:gap-0 sm:gap-8  ">
               <div className="flex">
-              <div className="flex flex-col mr-[30px] gap-[16px] items-center w-[170px]">
+              <div className="flex  flex-col mr-[30px] gap-[16px] items-center w-[170px]">
                 {gamepadshortimg.map((item, index) => (
                   <div key={item + index + Date.now()}>
                     <Link className="" to={item.to}>
                       <img
-                        className="hover:shadow-custom transition-all duration-300"
+                        className="hover:shadow-custom  transition-all duration-300"
                         src={`/src/assets/svg/${item.img}`}
                         alt="gamepadshort"
                       />
