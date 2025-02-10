@@ -1,11 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { data, Link, NavLink } from "react-router-dom";
 import HeaderJson from "../../json/Header.json";
 import jsonwishlist from "../../json/Wishlist.json";
 import cartjson from "../../json/Cart.json";
 const Header = () => {
-  const [user, setUser] = useState(false);
   const [search, setSearch] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const boxRef = useRef(null);
+
+  const handleOutsideClick = (event) => {
+    if (boxRef.current && !boxRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
+
   return (
     <>
       <header className="border-b border-#b2b2b2">
@@ -67,7 +83,7 @@ const Header = () => {
               </h1>
             </div>
             <div
-              className=" flex xl:justify-end lg:justify-between justify-between  sm:justify-between w-full
+              className=" flex xl:justify-end lg:justify-between flex-col  sm:flex-row sm:justify-between   w-full
             xl:gap-[130px] 
            "
             >
@@ -102,22 +118,21 @@ const Header = () => {
                   justify-end items-center   rounded-[4px]"
                 >
                   <Link to={"/Viewallprojects"}>
-                  <button
-                    onClick={() => setSearch(true)}
-                  >
-                    {" "}
-                    <img
-                      className={`transition-all duration-300 ${
-                        search &&
-                        ` sm:pr-[14px]
+                    <button onClick={() => setSearch(true)}>
+                      {" "}
+                      <img
+                        className={`transition-all duration-300 ${
+                          search &&
+                          ` sm:pr-[14px]
                         pr-[14px]
                          md:pr-[14px]
                           lg:pr-[34px]`
-                      }`}
-                      src={"/src/assets/svg/search.svg"}
-                      alt="image1"
-                    />
-                  </button></Link>
+                        }`}
+                        src={"/src/assets/svg/search.svg"}
+                        alt="image1"
+                      />
+                    </button>
+                  </Link>
                   <input
                     className={`font-normal   text-xs leading-[18px] transition-all duration-300  border-b border-solid truncate border-gray-300 outline-none   ${
                       search
@@ -161,36 +176,38 @@ const Header = () => {
                   <div className="relative">
                     <button
                       className="  flex flex-col justify-center items-center"
-                      onClick={() => setUser(!user)}
-
+                      onClick={() => setIsOpen(!isOpen)}
                     >
                       {" "}
-                      {!user && (
+                      {!isOpen && (
                         <img src="/src/assets/svg/user.svg" alt="image4" />
                       )}{" "}
-                      {user && <img src="/src/assets/svg/user-red.svg" />}
+                      {isOpen && <img src="/src/assets/svg/user-red.svg" />}
                     </button>
-                    <ul
-                      className={`flex  flex-col  gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] w-[244px] text-white backdrop-blur-3xl bg-black bg-opacity-35   absolute top-[33px] right-[0px] transition-all duration-200  ${
-                        user ? "z-10 opacity-100 w-[244px] h-[208px] " : "-z-[99999999999999999] sm:-z-50 opacity-0 h-[180px] w-[200px]"
-                      }`}
-
-                     onMouseLeave={()=>setUser(false)}
-                    
-                    >
-                      {HeaderJson.length > 0 &&
-                        HeaderJson &&
-                        HeaderJson?.map((item, index) => (
-                          <div key={Date.now() + index + item?.name}>
-                            <Link to={item.link}>
-                              <ul className="flex w-full items-center gap-4 font-customfont12 font-normal text-sm leading-[21px]">
-                                <img src={item.img} alt="dsaj" />
-                                <li>{item.name}</li>
-                              </ul>
-                            </Link>
-                          </div>
-                        ))}
-                    </ul>
+                    {isOpen && (
+                      <div ref={boxRef}>
+                        <ul
+                          className={`flex  flex-col  gap-[13px] rounded  z-10  p-[18px_12px_10px_20px] w-[244px] text-white backdrop-blur-3xl bg-black bg-opacity-35   absolute top-[33px] right-[0px] transition-all duration-200  ${
+                            isOpen
+                              ? "z-10 opacity-100 w-[244px] h-[208px] "
+                              : "-z-[99999999999999999] sm:-z-50 opacity-0 h-[180px] w-[200px]"
+                          }`}
+                        >
+                          {HeaderJson.length > 0 &&
+                            HeaderJson &&
+                            HeaderJson?.map((item, index) => (
+                              <div key={Date.now() + index + item?.name}>
+                                <Link to={item.link}>
+                                  <ul className="flex w-full items-center gap-4 font-customfont12 font-normal text-sm leading-[21px]">
+                                    <img src={item.img} alt="dsaj" />
+                                    <li>{item.name}</li>
+                                  </ul>
+                                </Link>
+                              </div>
+                            ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

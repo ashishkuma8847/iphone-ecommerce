@@ -47,14 +47,14 @@ const Flashsales = ({
               </li>
             </ul>
 
-            <div className={`${classmain} flex gap-[87px] items-end justify-between`}>
-              <div className="flex lg:flex-row sm:flex-col lg:gap-[87px] sm:gap-[20px] lg:items-end sm:items-start ">
+            <div className={`${classmain} flex  items-end justify-between`}>
+              <div className="flex lg:flex-row sm:flex-col flex-col lg:gap-[87px] sm:gap-[20px] gap-[20px] lg:items-end sm:items-start ">
                 <li
                   className={`font-customfont list-none lg:leading-[48px] sm:leading-[28px] font-semibold  lg:text-4xl sm:text-2xl tracking-[4%] ${titleclass}`}
                 >
                   {tittle}
                 </li>
-                <ul className="flex gap-[17px]  ">
+                <ul className="flex gap-[17px] sm:gap-[17px]  ">
                   {clock && (
                     <>
                       <Countdown targetDate="2025-02-20" />
@@ -126,6 +126,9 @@ const Flashsales = ({
                 swiperRef.current = swiper;
               }}
               breakpoints={{
+                375: {
+                  slidesPerView: 1.1,
+                },
                 640: {
                   slidesPerView: 2,
                 },

@@ -26,7 +26,7 @@ const Banner = () => {
                     <button onClick={() => setcount(0)} >reset</button>
                 </div>
             </div> */}
-      <div className="container flex-col  sm:flex-row flex xl:flex-row xl:mb-[127px] gap-6  sm:gap-0   sm:mb-[40px]  ">
+      <div className="container flex-col  sm:flex-col flex xl:flex-row xl:mb-[127px] gap-6  sm:gap-0 mb-[40px]   sm:mb-[40px]  ">
         <div
           className="bannerr   
                  xl:h-[344px]  xl:mt-10 
@@ -191,7 +191,7 @@ const Banner = () => {
                       </ul>
                     </div>
                     <img
-                      className="lg:w-[400px] lg:h-[344px] sm:w-[240px] sm:h-[204px] 
+                      className="lg:w-[400px] m-auto sm:m-0  lg:h-[344px] sm:w-[240px] sm:h-[204px] w-[300px] h-[240px]
                                             overflow-hidden lg:pt-4 sm:relative sm:top-[40px] "
                       src={item.img3}
                       alt="dassa"

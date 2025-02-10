@@ -28,7 +28,7 @@ const Countdown = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <div className="text-black flex w-[302px]  justify-between items-center " style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>
+    <div className="text-black flex   sm:w-full sm:max-w-[302px] w-[225px]  justify-between items-center " style={{ textAlign: "center", fontSize: "20px", fontWeight: "bold" }}>
       <div className="flex flex-col items-start justify-between">
       <h2 className="font-customfont12 font-medium text-xs leading-[18px]">Days</h2>
       <span className=" font-customfont font-bold text-[32px] leading-[30px] tracking-[0.04em] ">{timeLeft.days} </span>
