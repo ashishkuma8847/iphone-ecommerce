@@ -22,7 +22,7 @@ const Account = () => {
               </h4>
             </div>
             <div className="flex xl:flex-row sm:flex-col  xl:gap-[100px] sm:gap-[50px] font-customfont12 font-normal text-sm leading-[24px]">
-              <div className="flex sm:flex-row  xl:flex-col sm:justify-between justify-start">
+              <div className="flex sm:flex-row  xl:flex-col sm:justify-between  lg:justify-start">
                 <div className="flex flex-col gap-[16px]">
                   <h4 className="font-customfont12 font-medium text-sm leading-[24px]">
                     Manage My Account

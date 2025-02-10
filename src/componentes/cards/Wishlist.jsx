@@ -24,8 +24,8 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
               alt="sdkf"
             />
                 
-            <Link to={"/checkout"} className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
-             <img  src="/src/assets/svg/Cartinwhite.svg" alt="cart" />
+            <Link to={"/checkout"} className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-[#F5F5F5] bg-black w-full group-hover:h-[41px] ">
+             <img className='hidden group-hover:block'  src="/src/assets/svg/Cartinwhite.svg" alt="cart" />
              <h4>Add To Cart</h4> 
             </Link>
           </div>
@@ -74,8 +74,8 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
               src={`/src/assets/images/${youheadimage}`}
               alt="sdkf"
             />
-            <Link to={"/checkout"} className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
-             <img  src="/src/assets/svg/Cartinwhite.svg" alt="cart" />
+            <Link to={"/checkout"} className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-[#F5F5F5] bg-black w-full group-hover:h-[41px] ">
+             <img className=' hidden group-hover:block' src="/src/assets/svg/Cartinwhite.svg" alt="cart" />
              <h4>Add To Cart</h4> 
             </Link>
           </div>

@@ -33,7 +33,7 @@ const ProductCard = ({
               src={`/src/assets/images/${bannerbg}`}
               alt="sdkf"
             />
-            <Link to={"/Cart"} className=" flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-white bg-black w-full group-hover:h-[41px] ">
+            <Link to={"/Cart"} className=" flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-[#F5F5F5] bg-black w-full  group-hover:h-[41px] ">
               Add To Cart
             </Link>
           </div>
