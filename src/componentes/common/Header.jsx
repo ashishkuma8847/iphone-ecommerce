@@ -17,7 +17,7 @@ const Header = () => {
              md:gap-[60px] 
               lg:gap-[231px]  "
             >
-              <div className="max-w-[550px] w-full flex gap-[8px] items-center ">
+              <div className="max-w-[550px] w-full flex gap-[8px] items-center text-center ">
                 <h1
                   className="
                 sm:text-xs 
@@ -28,18 +28,18 @@ const Header = () => {
                   Summer Sale For All Swim Suits And Free Express Delivery - OFF
                   50%!
                 </h1>
-                <a
-                  className="
+                <h4
+                  className=" hidden md:block
                 sm:text-xs
                  md:text-xs
                  lg:text-sm 
                  font-customfont12 font-semibold  leading-[24px] underline decoration-1"
                 >
                   ShopNow
-                </a>
+                </h4>
               </div>
               <div
-                className="flex w-[78px]  gap-[5px] items-center
+                className="md:flex w-[78px]  gap-[5px] items-center hidden sm:block
                lg:text-sm 
                md:text-xs
                 sm:text-xs "
@@ -54,12 +54,12 @@ const Header = () => {
         <nav className="container  mt-[40px] mb-[16px]">
           <div
             className=" flex 
-
+ flex-col gap-5 items-start
            sm:flex-col sm:gap-5 sm:items-start
            md:flex-col md:gap-5 md:items-start
            lg:flex-col lg:gap-5 lg:items-start
            xl:flex-row  xl:gap-0   xl:items-center 
-           justify-between items-center font-poppins "
+           justify-between  font-poppins "
           >
             <div className="max-w-[118px]  flex items-center justify-center  ">
               <h1 className="font-customfont  font-bold text-2xl leading-6 tracking-[0.03em]">
@@ -67,7 +67,7 @@ const Header = () => {
               </h1>
             </div>
             <div
-              className=" flex xl:justify-end lg:justify-between  sm:justify-between w-full
+              className=" flex xl:justify-end lg:justify-between justify-between  sm:justify-between w-full
             xl:gap-[130px] 
            "
             >
@@ -77,6 +77,7 @@ const Header = () => {
               lg:gap-[48px]  lg:w-[367px] lg:text-base lg:leading-6
               md:gap-[38px]  md:w-[305px] md:text-sm md:leading-5
               sm:gap-[38px]  sm:w-[305px] sm:text-sm sm:leading-5
+               gap-[38px]  w-[305px] text-sm leading-5
               items-center font-customfont12    font-normal "
               >
                 <NavLink to={"/"}>Home</NavLink>
@@ -89,6 +90,7 @@ const Header = () => {
               lg: lg:w-[395px] lg:justify-between
                md:gap-[13px]  md:w-[286px]
               sm:gap-[13px]  sm:w-[286px]
+              gap-[13px] w-[286px]
               items-center font-customfont12 "
               >
                 <div
@@ -96,6 +98,7 @@ const Header = () => {
                  lg:w-[243px] lg:p-[7px_12px_7px_20px]
                   md:w-[156px]    md:p-[7px_8px_7px_10px]
                   sm:w-[156px]    sm:p-[7px_8px_7px_10px]
+                  w-[156px]    p-[7px_8px_7px_10px]
                   justify-end items-center   rounded-[4px]"
                 >
                   <Link to={"/Viewallprojects"}>
@@ -107,6 +110,7 @@ const Header = () => {
                       className={`transition-all duration-300 ${
                         search &&
                         ` sm:pr-[14px]
+                        pr-[14px]
                          md:pr-[14px]
                           lg:pr-[34px]`
                       }`}
@@ -117,7 +121,7 @@ const Header = () => {
                   <input
                     className={`font-normal   text-xs leading-[18px] transition-all duration-300  border-b border-solid truncate border-gray-300 outline-none   ${
                       search
-                        ? `sm:w-[100px] 
+                        ? `sm:w-[100px] w-[100px] 
                       md:w-[100px] 
                       lg:w-[153px]`
                         : "w-[0]"
@@ -129,6 +133,7 @@ const Header = () => {
                 <div
                   className="flex  max-w-[120px] justify-between items-center
                  sm:gap-[8px] 
+                 gap-[8px] 
                  md:gap-[8px] 
                  lg:gap-[10px]"
                 >

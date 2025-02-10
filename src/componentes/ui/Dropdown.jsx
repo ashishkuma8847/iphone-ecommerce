@@ -26,19 +26,19 @@ const Dropdown = ({ label, items }) => {
         onInput={(e) => setValue(e.target.value)} 
       /> */}
       <button
-        className="flex  w-[216px] justify-between items-center   pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
+        className="flex   w-[216px] justify-between items-center   pb-3 font-p leading-6 text-base font-normal  hover:text-red_1-red1 capitalize"
         onClick={() => setIsOpen(!isOpen)}
       >
         {label}
         <img
           src={Arowicon}
-          className={`pr-1 transition-all duration-200 ${isOpen && "rotate-90"}`}
+          className={`pr-1  transition-all duration-200 ${isOpen && "rotate-90"}`}
           alt=""
         />
       </button>
       <div
         ref={dropdownRef}
-        className="overflow-hidden transition-all duration-300 bg-white"
+        className="overflow-hidden   transition-all duration-300 bg-white"
         style={{ height: `${height}px` }}
       >
         <div className="py-2 ">
@@ -46,8 +46,8 @@ const Dropdown = ({ label, items }) => {
             <div key={item+index+Date.now()}>
             <>
               {item.map((item, index) => (
-                <div key={index}>
-                  <ul className="list-disc">
+                <div className="" key={index}>
+                  <ul className="list-disc flex flex-row sm:flex-col ">
                     <li className="ml-[25px] font-p pb-2">{item}</li>
                   </ul>
                 </div>

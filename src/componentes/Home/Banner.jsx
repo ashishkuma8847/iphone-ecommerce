@@ -26,13 +26,14 @@ const Banner = () => {
                     <button onClick={() => setcount(0)} >reset</button>
                 </div>
             </div> */}
-      <div className="container flex xl:flex-row xl:mb-[127px]  sm:mb-[40px] sm:flex-col ">
+      <div className="container flex-col  sm:flex-row flex xl:flex-row xl:mb-[127px] gap-6  sm:gap-0   sm:mb-[40px]  ">
         <div
           className="bannerr   
                  xl:h-[344px]  xl:mt-10 
-                 sm:h-[100px] sm:mt-5   sm:overflow-auto xl:overflow-hidden xl:w-[217px]"
+                 sm:h-[100px] sm:mt-5   sm:overflow-auto
+                  h-[100px] overflow-auto mt-5  flex flex-col   xl:overflow-hidden xl:w-[217px]"
         >
-          <div className="flex  flex-col">
+          <div className="flex flex-col">
           <Dropdown items={data} label={"Woman’s Fashion"} />
           <Dropdown items={data1} label={"Men’s Fashion"} /></div>
           {bannerstyle?.map((item, index) => (
@@ -110,8 +111,8 @@ const Banner = () => {
                 </ul> */}
                 <div
                   className={` font-customfont12  sm:flex-col
-               sm:text-sm sm:leading-5   
-                 flex  justify-between lg:items-start  sm:items-start truncate font-normal lg:text-base lg:leading-[24px]`}
+               sm:text-sm sm:leading-5 text-sm leading-5   
+                 flex flex-col gap-4 sm:gap-0 justify-between lg:items-start  sm:items-start items-start truncate font-normal lg:text-base lg:leading-[24px]`}
                 >
                   {linkNames.map((item, index) => {
                     return (
@@ -131,16 +132,16 @@ const Banner = () => {
           ))}
         </div>
         <span
-          className="sm:hidden xl:block
+          className="sm:hidden xl:block hidden
 
-        block w-[1px] lg:mr-0  h-[384px] bg-[#b2b2b270] xl:ml-4 xl:mr-[45px]  "
+        w-[1px] lg:mr-0  h-[384px] bg-[#b2b2b270] xl:ml-4 xl:mr-[45px]  "
         ></span>
         <div
-          className="flex 
+          className="flex   
                 lg:mt-10 
                 sm:mt-5 
-                lg:max-w-[892px] lg:w-full sm:max-w-[640px] sm:w-full
-                  sm:items-center bg-black text-white justify-between relative ]"
+                lg:max-w-[892px]  max-w-[892px] gap-0 lg:w-full sm:max-w-[640px] sm:w-full
+                  sm:items-center  bg-black text-white justify-between relative ]"
         >
           <Swiper
             modules={[Pagination, Autoplay]}
@@ -155,9 +156,9 @@ const Banner = () => {
               bswiper &&
               bswiper?.map((item, index) => (
                 <SwiperSlide key={index + Date.now() + item}>
-                  <Link to={item.to} className="flex justify-between sm:pb-[30px] lg:pb-0">
-                    <div className="lg:pl-16  lg:pt-[58px] sm:pl-8 sm:pt-[28px] sm:pb-[28px]">
-                      <ul className="lg:mb-5 sm:mb-4  flex items-center w-[190px] lg:gap-[24px]  sm:gap-[12px] font-customfont12">
+                  <Link to={item.to} className=" justify-between gap-7 flex flex-col sm:flex-row sm:pb-[30px] lg:pb-0">
+                    <div className="lg:pl-16 pt-2 flex flex-col   items-center sm:items-start  lg:pt-[58px] sm:pl-8 sm:pt-[28px] sm:pb-[28px]">
+                      <ul className="lg:mb-5  sm:mb-4 justify-between  flex items-center  w-[190px] lg:gap-[24px]  sm:gap-[12px] font-customfont12">
                         <img
                           className="lg:w-[40px] lg:h-[49px]
                                                 sm:w-[34px] sm:h-[34px]
