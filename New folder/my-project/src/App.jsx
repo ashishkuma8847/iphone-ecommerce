@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Button from "./Button";
+import SpirographFractal from "./assets/SpirographFractal";
 
 function App() {
   // const [users, setUsers] = useState([]); // Renamed count -> users for clarity
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
     <Button/>
+    <SpirographFractal/>
     </>
     // <div>
     //   {loading ? (
