@@ -5,13 +5,13 @@ import Button from '../ui/Button'
 const Music = () => {
     return (
         <>
-            <main className= ' sm:mt-[80px] lg:mt-[140px] sm:mb-[50px] lg:mb-[71px]'>
+            <main className= ' sm:mt-[80px] mt-[80px] lg:mt-[140px] sm:mb-[50px] mb-[50px] lg:mb-[71px]'>
                 <section className='container     text-white'>
-                    <div className="bg-black flex xl:flex-row sm:flex-col-reverse sm:gap-[14px] xl:gap-0  justify-between items-center sm:p-[39px_30px_38px_36px] lg:p-[69px_60px_68px_56px]">
-                        <div className='flex max-w-[499px] sm:gap-[24px] lg:gap-[32px] w-full  flex-col'>
+                    <div className="bg-black flex xl:flex-row sm:flex-col-reverse flex-col-reverse sm:gap-[14px] gap-[14px] xl:gap-0  justify-between items-center sm:p-[39px_30px_38px_36px] p-[39px_30px_38px_36px] lg:p-[69px_60px_68px_56px]">
+                        <div className='flex max-w-[499px] sm:gap-[24px] gap-[24px] lg:gap-[32px] w-full  flex-col'>
                             <h4 className='font-customfont12 text-customgreen-0 leading-[20px] font-semibold text-base'>Categories</h4>
-                            <h1 className='font-semibold font-customfont lg:text-5xl leading-[60px] tracking-[0.04em] max-w-[443px] sm:text-3xl w-full'>Enhance Your Music Experience</h1>
-                            <div className='flex gap-[24px] max-w-[320px] w-full'>
+                            <h1 className='font-semibold font-customfont lg:text-5xl leading-[60px] tracking-[0.04em] max-w-[443px] sm:text-3xl text-3xl w-full'>Enhance Your Music Experience</h1>
+                            <div className='sm:flex grid grid-cols-2 gap-y-4  sm:gap-[24px] max-w-[320px] w-full'>
                                 {
                                     [{
                                         "name": "23",
@@ -32,7 +32,7 @@ const Music = () => {
 
                                     ].map((item, index) => (
                                         <div key={index + Date.now() + item}>
-                                            <Link to={item.to}>
+                                            <Link  to={item.to}>
                                                 <div className="flex items-center justify-center pt-[11px]  pb-[11px] flex-col w-[62px] rounded-[100%] bg-white text-black">
                                                     <h4 className='font-customfont12 font-semibold text-base leading-[20px  ]'>{item.name}</h4>
                                                     <h4 className='font-customfont12 font-normal text-[11px]  leading-[18px  ]'>{item.font}</h4>
@@ -48,7 +48,7 @@ const Music = () => {
                         </div>
                         <div>
                         </div>
-                           <img className='w-[568px] h-[330px] drop-shadow-custom12  ' src="/src/assets/images/musicbox.png" alt="box" />
+                           <img className=' sm:h-[330px] h-[230px] w-[468px] sm:w-[568px] drop-shadow-custom12  ' src="/src/assets/images/musicbox.png" alt="box" />
                     </div>
                 </section>
             </main>

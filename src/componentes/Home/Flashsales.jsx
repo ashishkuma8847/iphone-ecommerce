@@ -47,10 +47,10 @@ const Flashsales = ({
               </li>
             </ul>
 
-            <div className={`${classmain} flex  items-end justify-between`}>
-              <div className="flex lg:flex-row sm:flex-col flex-col lg:gap-[87px] sm:gap-[20px] gap-[20px] lg:items-end sm:items-start ">
+            <div className={`${classmain} flex     items-start justify-between`}>
+              <div className="flex lg:flex-row sm:flex-col flex-col lg:gap-[87px] sm:gap-[20px] gap-[20px] lg:items-end sm:items-start items-start ">
                 <li
-                  className={`font-customfont list-none lg:leading-[48px] sm:leading-[28px] font-semibold  lg:text-4xl sm:text-2xl tracking-[4%] ${titleclass}`}
+                  className={`font-customfont list-none lg:leading-[48px] sm:leading-[28px] leading-[28px] font-semibold  lg:text-4xl sm:text-3xl text-xl tracking-[4%] ${titleclass}`}
                 >
                   {tittle}
                 </li>
@@ -83,7 +83,7 @@ const Flashsales = ({
               </div>
               <div className={`${buttonclass}`}>
                 {buttonarrow === "solid" ? (
-                  <Link to={"/Viewallprojects"}>
+                  <Link  to={"/Viewallprojects"}>
                   <Button
                     variant={"solid"}
                     ClassForDiv={"pb-[0px] pb-0 pt-0 pt-[0px] border-none"}
@@ -92,7 +92,8 @@ const Flashsales = ({
                 ) : (
                   <>
                     {" "}
-                    <div className="flex gap-2 items-center ">
+                    <div className="flex justify-end items-end h-[96px] sm:h-[46px]">
+                    <div className="flex gap-2 items-end h-full  justify-end">
                       <button
                         className={`flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300`}
                         onClick={() => swiperRef.current?.slidePrev()}
@@ -111,7 +112,7 @@ const Flashsales = ({
                           alt="right"
                         />
                       </button>
-                    </div>
+                    </div></div>
                   </>
                 )}
               </div>
@@ -169,7 +170,7 @@ const Flashsales = ({
           </div>
           {show && (
             <>
-              <Link to={"/Viewallprojects"} className=" flex justify-center items-center sm:pt-[53px] sm:pb-[40px] lg:pt-[73px] lg:pb-[60px] lg:mb-[80px] sm:mb-[60px] border-b border-customGray-0">
+              <Link to={"/Viewallprojects"} className=" flex justify-center items-center sm:pt-[53px] pt-[53px] sm:pb-[40px] mb-[60px] pb-[40px] lg:pt-[73px] lg:pb-[60px] lg:mb-[80px] sm:mb-[60px] border-b border-customGray-0">
                 <Button variant={"solid"} children={"View All Products"} />
               </Link>
             </>

@@ -83,7 +83,7 @@ const Header = () => {
               </h1>
             </div>
             <div
-              className=" flex xl:justify-end lg:justify-between flex-col  sm:flex-row sm:justify-between   w-full
+              className=" flex xl:justify-end lg:justify-between flex-col gap-6 sm:gap-0  sm:flex-row sm:justify-between   w-full
             xl:gap-[130px] 
            "
             >
@@ -92,8 +92,8 @@ const Header = () => {
            
               lg:gap-[48px]  lg:w-[367px] lg:text-base lg:leading-6
               md:gap-[38px]  md:w-[305px] md:text-sm md:leading-5
-              sm:gap-[38px]  sm:w-[305px] sm:text-sm sm:leading-5
-               gap-[38px]  w-[305px] text-sm leading-5
+              sm:gap-[38px] sm:justify-start  sm:w-[305px] sm:text-sm sm:leading-5
+              justify-between  w-full text-sm leading-5
               items-center font-customfont12    font-normal "
               >
                 <NavLink to={"/"}>Home</NavLink>
@@ -102,11 +102,11 @@ const Header = () => {
                 <NavLink to={"/Signup"}>SignUp</NavLink>
               </ul>
               <div
-                className=" flex 
+                className=" flex  justify-end w-full
               lg: lg:w-[395px] lg:justify-between
                md:gap-[13px]  md:w-[286px]
-              sm:gap-[13px]  sm:w-[286px]
-              gap-[13px] w-[286px]
+              sm:gap-[13px]  sm:w-[286px] sm:justify-between
+              gap-[13px] 
               items-center font-customfont12 "
               >
                 <div
@@ -134,7 +134,7 @@ const Header = () => {
                     </button>
                   </Link>
                   <input
-                    className={`font-normal   text-xs leading-[18px] transition-all duration-300  border-b border-solid truncate border-gray-300 outline-none   ${
+                    className={`font-normal    text-xs leading-[18px] transition-all duration-300  border-b border-solid truncate border-gray-300 outline-none   ${
                       search
                         ? `sm:w-[100px] w-[100px] 
                       md:w-[100px] 

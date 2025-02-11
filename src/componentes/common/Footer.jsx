@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <section className=" bg-black text-white   xl:pt-[80px] xl:pb-[60px] sm:pt-[50px] sm:pb-[40px] ">
-          <div className="container flex  sm:gap-6 xl:gap-0 xl:flex-row sm:flex-col justify-between">
+        <section className=" bg-black text-white   xl:pt-[80px] xl:pb-[60px] sm:pt-[50px] pt-[50px] sm:pb-[40px] pb-[40px] ">
+          <div className="container flex  sm:gap-6 gap-6 xl:gap-0 xl:flex-row sm:flex-col flex-col justify-between">
             <div className="flex flex-col gap-4 max-w-[217px]">
-              <div className="  flex flex-col xl:gap-[24px] sm:gap-4 ">
+              <div className="  flex flex-col xl:gap-[24px] sm:gap-4 gap-4 ">
                 <h1 className="font-customfont font-bold text-2xl leading-6 tracking-[0.03em]">
                   Exclusive
                 </h1>
@@ -31,7 +31,7 @@ const Footer = () => {
                 <img src="/src/assets/svg/icon-send.svg" alt="img1" />
               </div>
             </div>
-            <div className="flex md:m-auto xl:m-0 justify-between max-w-[581px] w-full">
+            <div className="flex sm:flex-row  flex-col gap-6 sm:gap-0 md:m-auto xl:m-0 justify-between max-w-[581px] w-full">
             <div className="flex  flex-col w-[165px] gap-[24px]  font-customfont12 ">
               <div className="">
                 <h4 className=" font-medium text-xl leading-7">Support</h4>
@@ -75,7 +75,7 @@ const Footer = () => {
               </div>
             </div>
             </div>
-            <div className="flex flex-col xl:gap-[24px] sm:gap-4">
+            <div className="flex flex-col xl:gap-[24px] sm:gap-4 gap-4">
               <h1 className="font-customfont12 font-medium text-xl leading-7">
                 Download App
               </h1>

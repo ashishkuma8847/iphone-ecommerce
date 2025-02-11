@@ -17,7 +17,7 @@ const ProductCard = ({
   
 
       <div
-        className={`w-[270px] flex flex-col sm:gap-4 md:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8 rounded`}
+        className={`w-[270px] flex flex-col sm:gap-4 gap-4 md:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8 rounded`}
       >
         <div className=" flex  flex-col rounded  relative overflow-hidden  bg-[#F5F5F5] ">
           {discount !== undefined && (
