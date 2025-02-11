@@ -8,7 +8,7 @@ const Account = () => {
     <>
       <main>
         <div className="container">
-          <div className="flex flex-col font-customfont12 font-normal text-sm leading-[21px] sm:mt-[40px] sm:mb-[80px] lg:mt-[80px] lg:mb-[140px] lg:gap-[80px] sm:gap-10">
+          <div className="flex flex-col font-customfont12 font-normal text-sm leading-[21px] sm:mt-[40px] mt-[40px] sm:mb-[80px] mb-[80px] lg:mt-[80px] lg:mb-[140px] lg:gap-[80px] sm:gap-10 gap-10">
             <div className="flex justify-between ">
               <div className="flex gap-3">
                 <Link to={"/"} className="opacity-[50%]">
@@ -21,8 +21,8 @@ const Account = () => {
                 Welcome! <span className="text-CustomRed-0"> Md Rimel</span>
               </h4>
             </div>
-            <div className="flex xl:flex-row sm:flex-col  xl:gap-[100px] sm:gap-[50px] font-customfont12 font-normal text-sm leading-[24px]">
-              <div className="flex sm:flex-row  xl:flex-col sm:justify-between  lg:justify-start">
+            <div className="flex xl:flex-row sm:flex-col flex-col  xl:gap-[100px] sm:gap-[50px] gap-[50px] font-customfont12 font-normal text-sm leading-[24px]">
+              <div className="flex sm:flex-row flex-col gap-6 sm:gap-0  xl:flex-col sm:justify-between justify-between  lg:justify-start">
                 <div className="flex flex-col gap-[16px]">
                   <h4 className="font-customfont12 font-medium text-sm leading-[24px]">
                     Manage My Account
@@ -33,7 +33,7 @@ const Account = () => {
                     <h5 className="opacity-[50%]">My Payment Options</h5>
                   </div>
                 </div>
-                <div className="flex flex-col gap-[16px] lg:pt-[24px] sm:p-0 lg:pb-[16px]">
+                <div className="flex flex-col gap-[16px] lg:pt-[24px] sm:p-0 p-0 lg:pb-[16px]">
                   <h4 className="font-customfont12 font-medium text-sm leading-[24px]">
                     My Orders
                   </h4>
@@ -47,18 +47,18 @@ const Account = () => {
                 </h4>
                 <div className=""></div>
               </div>
-              <div className="flex flex-col  sm:p-[24px_40px]    lg:p-[40px_80px]">
+              <div className="flex flex-col  sm:p-[24px_40px] p-[0px_10px]    lg:p-[40px_80px]">
                 <h4 className="pb-[16px] max-w-[155px] w-full  font-customfont12 font-medium text-xl leading-7 text-CustomRed-0">
                   {" "}
                   Edit Your Profile
                 </h4>
                 <div className="flex flex-col gap-8 pb-[24px] max-w-[710px] w-full">
-                  <div className="flex lg:flex-row sm:flex-col sm:gap-[24px] lg:gap-[50px]">
+                  <div className="flex lg:flex-row sm:flex-col flex-col sm:gap-[24px] gap-[24px] lg:gap-[50px]">
                     <div className="flex flex-col gap-[8px] ">
                       <Input
                         title={"First Name"}
                         className={"text-black   "}
-                        inputclass={"lg:w-[330px] sm:w-full pl-[16px] "}
+                        inputclass={"lg:w-[330px] sm:w-full w-full pl-[16px] "}
                         placeholder={"Md"}
                         id={"item1"}
                         type={"text"}
@@ -68,19 +68,19 @@ const Account = () => {
                       <Input
                         title={"Last Name"}
                         className={"text-black opacity-[100%] "}
-                        inputclass={"lg:w-[330px]  sm:w-full  pl-[16px]"}
+                        inputclass={"lg:w-[330px]  sm:w-full w-full  pl-[16px]"}
                         placeholder={"Rimel"}
                         id={"item2"}
                         type={"text"}
                       />
                     </div>
                   </div>
-                  <div className="flex lg:flex-row sm:flex-col sm:gap-6 lg:gap-[50px]">
+                  <div className="flex lg:flex-row sm:flex-col flex-col sm:gap-6 gap-6 lg:gap-[50px]">
                     <div className="flex flex-col gap-[8px] ">
                       <Input
                         title={"Email"}
                         className={"text-black opacity-[100%] "}
-                        inputclass={"lg:w-[330px] sm:w-full pl-[16px]"}
+                        inputclass={"lg:w-[330px] sm:w-full w-full pl-[16px]"}
                         placeholder={"rimel1111@gmail.com"}
                         id={"item3"}
                         type={"email"}
@@ -90,7 +90,7 @@ const Account = () => {
                       <Input
                         title={"Address"}
                         className={"text-black opacity-[100%] "}
-                        inputclass={"lg:w-[330px] sm:w-full pl-[16px]"}
+                        inputclass={"lg:w-[330px] sm:w-full w-full pl-[16px]"}
                         placeholder={"Kingston, 5236, United State"}
                         id={"item4"}
                         type={"text"}

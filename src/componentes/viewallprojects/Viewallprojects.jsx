@@ -9,7 +9,7 @@ const Viewallprojects = () => {
   return (
    <>
 
-   <div className="flex flex-col lg:gap-[80px] sm:gap-[32px] lg:pt-[80px]  sm:pt-[40px ] ">
+   <div className="flex flex-col lg:gap-[80px] sm:gap-[32px] gap-[32px] lg:pt-[80px]  sm:pt-[40px ] pt-[40px] ">
     <div className="">
     <Flashsales  headingclass={"hidden"}  tittle={"Flash Sales"} heading={"Today’s"} data={Flashsalesdata}/></div>
     <div className="">

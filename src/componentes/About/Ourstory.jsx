@@ -51,8 +51,8 @@ const Ourstory = () => {
   return (
     <>
       <div className="container">
-        <div className="flex flex-col lg:pb-[140px] sm:pb-[80px]">
-          <div className="flex gap-[30px] lg:pb-[140px] sm:pb-[80px]">
+        <div className="flex flex-col lg:pb-[140px] sm:pb-[80px] pb-[80px]">
+          <div className="flex gap-[30px] lg:pb-[140px] sm:pb-[80px] pb-[80px]">
             <Swiper
               slidesPerView={3}
               modules={[Pagination, Autoplay]}
@@ -60,6 +60,9 @@ const Ourstory = () => {
                 clickable: true,
               }}
               breakpoints={{
+                375: {
+                  slidesPerView: 1,
+                },
                 640: {
                   slidesPerView: 1.4,
                 },
@@ -78,7 +81,7 @@ const Ourstory = () => {
                 <div key={index + item + Date.now()}>
                   <Link to={item.to}>
                     <SwiperSlide>
-                      <div className="flex flex-col w-[370px] gap-[32px] sm:pb-[40px] lg:pb-[56px]">
+                      <div className="flex flex-col w-[370px] gap-[32px] sm:pb-[40px] pb-[40px] lg:pb-[56px]">
                         <img src={`src/assets/images/${item.image}`} alt="" />
                         <div className="flex flex-col gap-[16px]">
                           <div className="flex flex-col gap-[8px]">
@@ -112,7 +115,7 @@ const Ourstory = () => {
             </Swiper>
           </div>
 
-          <div className="flex lg:justify-between flex-wrap sm:justify-center sm:gap-x-6 lg:gap-x-0 sm:gap-y-6 lg:gap-y-0">
+          <div className="flex lg:justify-between flex-wrap sm:justify-center justify-center sm:gap-x-6 gap-x-6 lg:gap-x-0 sm:gap-y-6 gap-y-6 lg:gap-y-0">
             {services.map((item, index) => (
               <div key={index}>
                 <Link to={item.to}>

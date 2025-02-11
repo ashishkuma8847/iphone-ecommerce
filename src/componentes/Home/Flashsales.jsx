@@ -48,7 +48,7 @@ const Flashsales = ({
             </ul>
 
             <div className={`${classmain} flex     items-start justify-between`}>
-              <div className="flex lg:flex-row sm:flex-col flex-col lg:gap-[87px] sm:gap-[20px] gap-[20px] lg:items-end sm:items-start items-start ">
+              <div className="flex lg:flex-row sm:flex-col flex-col lg:gap-[87px] sm:gap-[20px] gap-[20px] lg:items-end sm:items-start items-start justify-end  ">
                 <li
                   className={`font-customfont list-none lg:leading-[48px] sm:leading-[28px] leading-[28px] font-semibold  lg:text-4xl sm:text-3xl text-xl tracking-[4%] ${titleclass}`}
                 >
@@ -92,7 +92,7 @@ const Flashsales = ({
                 ) : (
                   <>
                     {" "}
-                    <div className="flex justify-end items-end h-[96px] sm:h-[46px]">
+                    <div className="flex justify-end items-end  sm:h-[46px]">
                     <div className="flex gap-2 items-end h-full  justify-end">
                       <button
                         className={`flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300`}
