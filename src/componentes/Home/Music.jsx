@@ -11,7 +11,7 @@ const Music = () => {
                         <div className='flex max-w-[499px] sm:gap-[24px] gap-[24px] lg:gap-[32px] w-full  flex-col'>
                             <h4 className='font-customfont12 text-customgreen-0 leading-[20px] font-semibold text-base'>Categories</h4>
                             <h1 className='font-semibold font-customfont lg:text-5xl leading-[60px] tracking-[0.04em] max-w-[443px] sm:text-3xl text-3xl w-full'>Enhance Your Music Experience</h1>
-                            <div className='sm:flex grid grid-cols-2 gap-y-4  sm:gap-[24px] max-w-[320px] w-full'>
+                            <div className='flex  justify-between    sm:gap-[24px] max-w-[320px] w-full'>
                                 {
                                     [{
                                         "name": "23",

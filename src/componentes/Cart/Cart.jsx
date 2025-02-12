@@ -100,7 +100,7 @@ const Cart = () => {
 
       <div className="flex justify-between flex-col sm:flex-row lg:pb-[80px] sm:pb-[40px] pb-[40px] gap-6 sm:gap-0">
         <Link to={"/"}><Button google={"hidden"} children={"Return To Shop"} /></Link>
-        <Link to={"/Wishlist"}><Button google={"hidden"} children={"Update Cart"} className={"w-[219px] sm:w-[191px]"} /></Link>
+        <Link to={"/Wishlist"}><Button google={"hidden"} children={"Update Cart"} className={"w-[219px] sm:w-full"} /></Link>
         
         
       </div>

@@ -125,7 +125,7 @@ const Header = () => {
                           search &&
                           ` sm:pr-[14px]
                         pr-[14px]
-                         md:pr-[14px]
+                         md:pr-[14px]  
                           lg:pr-[34px]`
                         }`}
                         src={"/src/assets/svg/search.svg"}

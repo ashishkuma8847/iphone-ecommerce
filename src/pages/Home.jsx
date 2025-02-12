@@ -12,7 +12,7 @@ import { motion } from "framer-motion";
 const Home = () => {
   // const inputref = useRef();
   // const [value, setvalue] = useState("jaswant");
-  const [value, setValue] = useState(true);
+  // const [value, setValue] = useState(true);
 
   // useEffect(() => {
   //   const interval = setInterval(() => {

@@ -158,7 +158,7 @@ const Banner = () => {
                 <SwiperSlide key={index + Date.now() + item}>
                   <Link to={item.to} className=" justify-between gap-7 flex flex-col sm:flex-row sm:pb-[30px] lg:pb-0">
                     <div className="lg:pl-16 pt-2 flex flex-col   items-center sm:items-start  lg:pt-[58px] sm:pl-8 sm:pt-[28px] sm:pb-[28px]">
-                      <ul className="lg:mb-5  sm:mb-4 justify-between  flex items-center  w-[190px] lg:gap-[24px]  sm:gap-[12px] font-customfont12">
+                      <ul className="lg:mb-5  sm:mb-4 justify-between sm:justify-start flex items-center  w-[190px] lg:gap-[24px]  sm:gap-[12px] font-customfont12">
                         <img
                           className="lg:w-[40px] lg:h-[49px]
                                                 sm:w-[34px] sm:h-[34px]

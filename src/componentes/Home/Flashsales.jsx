@@ -81,7 +81,7 @@ const Flashsales = ({
                   )}
                 </ul>
               </div>
-              <div className={`${buttonclass}`}>
+              <div className={`${buttonclass} `}>
                 {buttonarrow === "solid" ? (
                   <Link  to={"/Viewallprojects"}>
                   <Button
