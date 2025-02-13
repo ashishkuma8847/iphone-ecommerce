@@ -12,32 +12,37 @@ import { motion } from "framer-motion";
 const Home = () => {
   // const inputref = useRef();
   // const [value, setvalue] = useState("jaswant");
-  // const [value, setValue] = useState(true);
+  // const [value1, setValue1] = useState(true);
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
-  //     setValue((prev) => !prev);
+  //     setValue1((prev) => !prev);
 
   //     }, 1000); 
   //   return () => clearInterval(interval); 
-  // }, [value]); 
+  // }, [value1]); 
 
  
   // useEffect(() => {
   //   inputref.current.focus();
   //   console.log("logged");
   // }, [value]);
+
+
+
+  
   return (
     <>
-   {/* <button>i am ashish {value ? "taak": "develoaper"}</button> */}
-      {/* <input
+   {/* <button>i am ashish {value1 ? "taak": "develoaper"}</button> */}
+   {/* <h4>{value}</h4>
+      <input
         value={value}
         onChange={(event) => setvalue(event.target.value)}
         type="text"
         ref={inputref}
         className="bg-red-500"
       />
-      <button>Focus Input</button> */}
+      <button  onClick={()=>inputref.current.focus()}  >Focus Input</button> */}
       <Banner />
       <Flashsales
       classmain={"sm:flex-row "}
