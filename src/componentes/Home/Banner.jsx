@@ -7,9 +7,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import Dropdown from "../ui/Dropdown";
-const data = bannerstyle.map((item) => item.categorydata.Womans.item);
-const data1 = bannerstyle.map((item) => item.categorydata.Mens.item);
+import Bannerpopup from "./Bannerpopup";
 const Banner = () => {
+  const data = bannerstyle.map((item) => item.categorydata.Womans.item);
+  const data1 = bannerstyle.map((item) => item.categorydata.Mens.item);
   // const [rotate, setRotate] = useState(false);
   // const [rotate1, setRotate1] = useState(false);
 
@@ -17,6 +18,7 @@ const Banner = () => {
   const [popup, setpopup] = useState(false);
   return (
     <>
+    
       {/* <div className="">
                 <h2>count:{count}</h2>
                 <div className="flex gap-2">
@@ -28,92 +30,27 @@ const Banner = () => {
             </div> */}
       <div className="container ">
         <div className=" flex     xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
-          <div className={` relative`}>
+        <div className="xl:hidden sm:block block">
+
+<Bannerpopup/>
+</div>
+          <div className={`sm:hidden xl:block hidden`}>
             <div
-              className="bannerr sm:absolute lg:static z-10 sm:rounded lg:mt-[40px]
+              className=" lg:mt-[40px]
                 h-[344px]  flex-col
-                   lg:block  mt-[20px]
+                   mt-[20px]
                       xl:flex   xl:overflow-hidden xl:w-[217px]"
             >
               <div className="flex">
-                <div className={`${popup ? "w-[217px] z-50 opacity-[100%]":"w-0 -z-50 opacity-0"}  transition-all duration-300 backdrop-blur-3xl bg-customGray-0 bg-opacity-80 sm:text-white  lg:bg-white rounded`}>
+                <div className={``}>
               <div className="flex flex-col ">
                 <Dropdown items={data} label={"Woman’s Fashion"} />
                 <Dropdown items={data1} label={"Men’s Fashion"} />
               </div>
               {bannerstyle?.map((item, index) => (
                 <div key={index}>
-                  <Link to={item.to} className="lg:max-w-[1170px] w-full  ">
-                    {/* <button
-                  onClick={() => setRotate(!rotate)}
-                  className="flex
-                   sm:text-sm sm:leading-5  sm:items-center  sm:w-[150px] sm:pb-[4px]
-                   lg:text-base lg:leading-[24px] lg:w-[214px] lg:pb-4
-                     hover:text-CustomRed-0 transition-all duration-300 font-customfont12  justify-between items-center  font-normal  "
-                     >
-                  {item.categorydata.Womans.name}
-                  <img
-                    src={item.categorydata.Womans.img}
-                    className={`transition-all duration-300 ${
-                      rotate && "rotate-90 "
-                      } `}
-                    alt="image for arrow"
-                    />
-                </button>
-                <ul
-                  className={`list-disc relative
-                  sm:text-sm sm:leading-5 sm:flex  
-                  lg:text-base lg:leading-[24px] lg:flex lg:flex-col
-                  transition-all duration-300 ${
-                    rotate
-                    ? "sm:h-[30px] lg:h-[120px] opacity-100 z-10"
-                    : "h-0 opacity-0 "
-                    } marker:text-gray-300 font-normal   font-customfont12 -z-50  `}
-                    >
-                    Clothing
-                    {["Tops", "Outerwear", "Bottoms", "Suits"]?.map(
-                      (item, index) => (
-                        <div key={index}>
-                        <li className="ml-5  "> {item} </li>
-                        </div>
-                        )
-                        )}
-                        </ul>
-                        <button
-                        onClick={() => setRotate1(!rotate1)}
-                        className="flex  pb-4
-                        sm:text-sm sm:leading-5 sm:pb-0 sm:items-center sm:w-[150px]
-                        lg:font-normal lg:text-base lg:leading-[24px] lg:w-[214px]
-                        hover:text-CustomRed-0 transition-all duration-300 font-customfont12 justify-between items-center  "
-                        >
-                        {item.categorydata.Mens.name}
-                        <img
-                        src={item.categorydata.Mens.img}
-                        className={`transition-all duration-300 ${
-                          rotate1 && "rotate-90"
-                          } `}
-                          alt="image for arrow"
-                          />
-                          </button>
-                          <ul
-                  className={`list-disc sm:flex
-                   sm:text-sm sm:leading-5  sm:items-center  sm:pb-[4px]
-                   lg:text-base lg:leading-[24px] lg:w-full lg:pb-4 lg:flex lg:flex-col lg:justify-start lg:items-start
-                   transition-all relative duration-300 marker:text-gray-300 font-customfont12  ${
-                    rotate1
-                        ? " sm:h-[20px] lg:h-[120px] opacity-100  z-10 "
-                        : "h-0 opacity-0  -z-50"
-                    }`}
-                >
-                  <h4>Clothing</h4>
-                  {["Tops", "Outerwear", "Bottoms", "Suits"]?.map(
-                    (item, index) => (
-                      <div key={index} className="sm:ml-[5px] lg:ml-0">
-                        <li className="ml-5 "> {item} </li>
-                      </div>
-                    )
-                  )}
-                  </ul> */}
+                  <Link to={item.to} className="  ">
+
                     <div
                       className={` font-customfont12  sm:flex-col 
                     sm:text-sm sm:leading-5 text-sm leading-5   
@@ -138,22 +75,19 @@ const Banner = () => {
                   </Link>
                 </div>
               ))}</div>
-              <button onClick={()=>setpopup(!popup )} className=" w-[30px]  flex justify-center items-start lg:hidden ">
-                <div className="bg-customGray-0 w-[30px] h-[50px] flex justify-center items-center rounded-r rounded-br">
-                <img src="/src/assets/svg/arrow.svg" alt="arrow" /></div>
-              </button></div>
+              </div>
             </div>
           </div>
           <span
             className="sm:hidden xl:block hidden
 
-        w-[1px] lg:mr-0  h-[384px] bg-[#b2b2b270] xl:ml-4 xl:mr-[45px]  "
+        w-[1px] lg:mr-0  h-[384px] bg-[#b2b2b270] xl:ml-4 xl:mr-[44px]  "
           ></span>
           <div
             className="flex   
                 lg:mt-10 
                 sm:mt-5 
-                lg:max-w-[892px]  max-w-[892px] gap-0 lg:w-full sm:max-w-[640px] sm:w-full
+                  max-w-[892px] lg:max-w-[892px] gap-0 w-full sm:max-w-[640px] sm:w-full
                   sm:items-center  bg-black text-white justify-between relative ]"
           >
             <Swiper

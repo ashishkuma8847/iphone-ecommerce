@@ -13,7 +13,7 @@ const Dropdown = ({ label, items }) => {
   }, [isOpen]);
 
   return (
-    <div className="relative justify-start backdrop-blur-3xl bg-customGray-0 bg-opacity-0 sm:text-white  lg:bg-white   flex flex-col font-customfont12  font-normal text-base">
+    <div className="relative justify-start bg-white bg-opacity-15 backdrop-blur-3xl pl-4 pt-4 xl:p-0 xl:backdrop-blur-none  text-white xl:text-black   flex flex-col font-customfont12  font-normal text-base">
       {/* <p>{value}</p> 
       <input 
         ref={inputref}
