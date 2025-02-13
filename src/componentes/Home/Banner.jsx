@@ -14,7 +14,7 @@ const Banner = () => {
   // const [rotate1, setRotate1] = useState(false);
 
   const linkNames = bannerstyle[0].links.map((link) => link.name);
-
+  const [popup, setpopup] = useState(false);
   return (
     <>
       {/* <div className="">
@@ -26,76 +26,81 @@ const Banner = () => {
                     <button onClick={() => setcount(0)} >reset</button>
                 </div>
             </div> */}
-      <div className="container flex-col  sm:flex-col flex xl:flex-row xl:mb-[127px] gap-6  sm:gap-0 mb-[40px]   sm:mb-[40px]  ">
-        <div
-          className="bannerr   
-                 xl:h-[344px]  xl:mt-10 
-                 sm:h-[100px] sm:mt-5   sm:overflow-auto
-                  h-[100px] overflow-auto mt-5  flex flex-col   xl:overflow-hidden xl:w-[217px]"
-        >
-          <div className="flex flex-col">
-          <Dropdown items={data} label={"Woman’s Fashion"} />
-          <Dropdown items={data1} label={"Men’s Fashion"} /></div>
-          {bannerstyle?.map((item, index) => (
-            <div key={index}>
-              <Link to={item.to} className="lg:max-w-[1170px] w-full  ">
-                {/* <button
+      <div className="container ">
+        <div className=" flex     xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
+          <div className={` relative`}>
+            <div
+              className="bannerr sm:absolute lg:static z-10 sm:rounded lg:mt-[40px]
+                h-[344px]  flex-col
+                   lg:block  mt-[20px]
+                      xl:flex   xl:overflow-hidden xl:w-[217px]"
+            >
+              <div className="flex">
+                <div className={`${popup ? "w-[217px] z-50 opacity-[100%]":"w-0 -z-50 opacity-0"}  transition-all duration-300 backdrop-blur-3xl bg-customGray-0 bg-opacity-80 sm:text-white  lg:bg-white rounded`}>
+              <div className="flex flex-col ">
+                <Dropdown items={data} label={"Woman’s Fashion"} />
+                <Dropdown items={data1} label={"Men’s Fashion"} />
+              </div>
+              {bannerstyle?.map((item, index) => (
+                <div key={index}>
+                  <Link to={item.to} className="lg:max-w-[1170px] w-full  ">
+                    {/* <button
                   onClick={() => setRotate(!rotate)}
                   className="flex
                    sm:text-sm sm:leading-5  sm:items-center  sm:w-[150px] sm:pb-[4px]
                    lg:text-base lg:leading-[24px] lg:w-[214px] lg:pb-4
                      hover:text-CustomRed-0 transition-all duration-300 font-customfont12  justify-between items-center  font-normal  "
-                >
+                     >
                   {item.categorydata.Womans.name}
                   <img
                     src={item.categorydata.Womans.img}
                     className={`transition-all duration-300 ${
                       rotate && "rotate-90 "
-                    } `}
+                      } `}
                     alt="image for arrow"
-                  />
+                    />
                 </button>
                 <ul
                   className={`list-disc relative
-                    sm:text-sm sm:leading-5 sm:flex  
-                    lg:text-base lg:leading-[24px] lg:flex lg:flex-col
-                    transition-all duration-300 ${
-                      rotate
-                        ? "sm:h-[30px] lg:h-[120px] opacity-100 z-10"
-                        : "h-0 opacity-0 "
+                  sm:text-sm sm:leading-5 sm:flex  
+                  lg:text-base lg:leading-[24px] lg:flex lg:flex-col
+                  transition-all duration-300 ${
+                    rotate
+                    ? "sm:h-[30px] lg:h-[120px] opacity-100 z-10"
+                    : "h-0 opacity-0 "
                     } marker:text-gray-300 font-normal   font-customfont12 -z-50  `}
-                >
-                  Clothing
-                  {["Tops", "Outerwear", "Bottoms", "Suits"]?.map(
-                    (item, index) => (
-                      <div key={index}>
+                    >
+                    Clothing
+                    {["Tops", "Outerwear", "Bottoms", "Suits"]?.map(
+                      (item, index) => (
+                        <div key={index}>
                         <li className="ml-5  "> {item} </li>
-                      </div>
-                    )
-                  )}
-                </ul>
-                <button
-                  onClick={() => setRotate1(!rotate1)}
-                  className="flex  pb-4
-                  sm:text-sm sm:leading-5 sm:pb-0 sm:items-center sm:w-[150px]
-                   lg:font-normal lg:text-base lg:leading-[24px] lg:w-[214px]
-                  hover:text-CustomRed-0 transition-all duration-300 font-customfont12 justify-between items-center  "
-                >
-                  {item.categorydata.Mens.name}
-                  <img
-                    src={item.categorydata.Mens.img}
-                    className={`transition-all duration-300 ${
-                      rotate1 && "rotate-90"
-                    } `}
-                    alt="image for arrow"
-                  />
-                </button>
-                <ul
+                        </div>
+                        )
+                        )}
+                        </ul>
+                        <button
+                        onClick={() => setRotate1(!rotate1)}
+                        className="flex  pb-4
+                        sm:text-sm sm:leading-5 sm:pb-0 sm:items-center sm:w-[150px]
+                        lg:font-normal lg:text-base lg:leading-[24px] lg:w-[214px]
+                        hover:text-CustomRed-0 transition-all duration-300 font-customfont12 justify-between items-center  "
+                        >
+                        {item.categorydata.Mens.name}
+                        <img
+                        src={item.categorydata.Mens.img}
+                        className={`transition-all duration-300 ${
+                          rotate1 && "rotate-90"
+                          } `}
+                          alt="image for arrow"
+                          />
+                          </button>
+                          <ul
                   className={`list-disc sm:flex
                    sm:text-sm sm:leading-5  sm:items-center  sm:pb-[4px]
                    lg:text-base lg:leading-[24px] lg:w-full lg:pb-4 lg:flex lg:flex-col lg:justify-start lg:items-start
-                    transition-all relative duration-300 marker:text-gray-300 font-customfont12  ${
-                      rotate1
+                   transition-all relative duration-300 marker:text-gray-300 font-customfont12  ${
+                    rotate1
                         ? " sm:h-[20px] lg:h-[120px] opacity-100  z-10 "
                         : "h-0 opacity-0  -z-50"
                     }`}
@@ -108,98 +113,113 @@ const Banner = () => {
                       </div>
                     )
                   )}
-                </ul> */}
-                <div
-                  className={` font-customfont12  sm:flex-col
-               sm:text-sm sm:leading-5 text-sm leading-5   
-                 flex flex-col gap-4 sm:gap-0 justify-between lg:items-start  sm:items-start items-start truncate font-normal lg:text-base lg:leading-[24px]`}
-                >
-                  {linkNames.map((item, index) => {
-                    return (
-                      <Link to={"/error"} key={item + index + Date.now() + "links"}>
-                        <h4
-                          className=" 
+                  </ul> */}
+                    <div
+                      className={` font-customfont12  sm:flex-col 
+                    sm:text-sm sm:leading-5 text-sm leading-5   
+                    flex flex-col gap-4 sm:gap-0 justify-between lg:items-start  sm:items-start items-start truncate font-normal lg:text-base lg:leading-[24px]`}
+                    >
+                      {linkNames.map((item, index) => {
+                        return (
+                          <Link
+                            to={"/error"}
+                            key={item + index + Date.now() + "links"}
+                          >
+                            <h4
+                              className=" 
                         lg:pb-4 sm:pb-[4px] hover:text-CustomRed-0 transition-all duration-300"
-                        >
-                          {item}
-                        </h4>
-                      </Link>
-                    );
-                  })}
+                            >
+                              {item}
+                            </h4>
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </Link>
                 </div>
-              </Link>
+              ))}</div>
+              <button onClick={()=>setpopup(!popup )} className=" w-[30px]  flex justify-center items-start lg:hidden ">
+                <div className="bg-customGray-0 w-[30px] h-[50px] flex justify-center items-center rounded-r rounded-br">
+                <img src="/src/assets/svg/arrow.svg" alt="arrow" /></div>
+              </button></div>
             </div>
-          ))}
-        </div>
-        <span
-          className="sm:hidden xl:block hidden
+          </div>
+          <span
+            className="sm:hidden xl:block hidden
 
         w-[1px] lg:mr-0  h-[384px] bg-[#b2b2b270] xl:ml-4 xl:mr-[45px]  "
-        ></span>
-        <div
-          className="flex   
+          ></span>
+          <div
+            className="flex   
                 lg:mt-10 
                 sm:mt-5 
                 lg:max-w-[892px]  max-w-[892px] gap-0 lg:w-full sm:max-w-[640px] sm:w-full
                   sm:items-center  bg-black text-white justify-between relative ]"
-        >
-          <Swiper
-            modules={[Pagination, Autoplay]}
-            pagination={{
-              clickable: true,
-            }}
-            autoplay={{ delay: 2500 }}
-            loop={true}
-            className="mySwiper"
           >
-            {bswiper.length > 0 &&
-              bswiper &&
-              bswiper?.map((item, index) => (
-                <SwiperSlide key={index + Date.now() + item}>
-                  <Link to={item.to} className=" justify-between gap-7 flex flex-col sm:flex-row sm:pb-[30px] lg:pb-0">
-                    <div className="lg:pl-16 pt-2 flex flex-col   items-center sm:items-start  lg:pt-[58px] sm:pl-8 sm:pt-[28px] sm:pb-[28px]">
-                      <ul className="lg:mb-5  sm:mb-4 justify-between sm:justify-start flex items-center  w-[190px] lg:gap-[24px]  sm:gap-[12px] font-customfont12">
-                        <img
-                          className="lg:w-[40px] lg:h-[49px]
+            <Swiper
+              modules={[Pagination, Autoplay]}
+              pagination={{
+                clickable: true,
+              }}
+              autoplay={{ delay: 2500 }}
+              loop={true}
+              className="mySwiper"
+            >
+              {bswiper.length > 0 &&
+                bswiper &&
+                bswiper?.map((item, index) => (
+                  <SwiperSlide key={index + Date.now() + item}>
+                    <Link
+                      to={item.to}
+                      className=" justify-between gap-7 flex flex-col sm:flex-row sm:pb-[30px] lg:pb-0"
+                    >
+                      <div className="lg:pl-16 pt-2 flex flex-col   items-center sm:items-start  lg:pt-[58px] sm:pl-8 sm:pt-[28px] sm:pb-[28px]">
+                        <ul className="lg:mb-5  sm:mb-4 justify-between sm:justify-start flex items-center  w-[190px] lg:gap-[24px]  sm:gap-[12px] font-customfont12">
+                          <img
+                            className="lg:w-[40px] lg:h-[49px]
                                                 sm:w-[34px] sm:h-[34px]
                                                 "
-                          src={item.img1}
-                          alt=""
-                        />
-                        <li
-                          className="font-normal lg:text-base  sm:text-xs lg:leading-6
+                            src={item.img1}
+                            alt=""
+                          />
+                          <li
+                            className="font-normal lg:text-base  sm:text-xs lg:leading-6
                                                 sm:leading-5
                                                 "
-                        >
-                          {item.name}
-                        </li>
-                      </ul>
-                      <ul className=" lg:mb-[22px] lg:w-[294px] sm:mb-[12px]  font-customfont  ">
-                        <li className="font-semibold lg:text-5xl sm:text-3xl leading-[60px] tracking-[0.04em]">
-                          {item.name2}
-                        </li>
-                      </ul>
-                      <ul className="flex items-center w-113px font-customfont12  w-[113px] justify-between">
-                        <Link to={"/error"} className="font-medium lg:text-base sm:text-sm leading-6 border-b ">
-                          {item.name3}
-                        </Link>
-                        <img
-                          className="transition-all duration-300 hover:translate-x-[10px]"
-                          src={item.img2}
-                          alt=""
-                        />
-                      </ul>
-                    </div>
-                    <img
-                      className="lg:w-[400px] m-auto sm:m-0  lg:h-[344px] sm:w-[240px] sm:h-[204px] w-[300px] h-[240px]
+                          >
+                            {item.name}
+                          </li>
+                        </ul>
+                        <ul className=" lg:mb-[22px] lg:w-[294px] sm:mb-[12px]  font-customfont  ">
+                          <li className="font-semibold lg:text-5xl sm:text-3xl leading-[60px] tracking-[0.04em]">
+                            {item.name2}
+                          </li>
+                        </ul>
+                        <ul className="flex items-center w-113px font-customfont12  w-[113px] justify-between">
+                          <Link
+                            to={"/error"}
+                            className="font-medium lg:text-base sm:text-sm leading-6 border-b "
+                          >
+                            {item.name3}
+                          </Link>
+                          <img
+                            className="transition-all duration-300 hover:translate-x-[10px]"
+                            src={item.img2}
+                            alt=""
+                          />
+                        </ul>
+                      </div>
+                      <img
+                        className="lg:w-[400px] m-auto sm:m-0  lg:h-[344px] sm:w-[240px] sm:h-[204px] w-[300px] h-[240px]
                                             overflow-hidden lg:pt-4 sm:relative sm:top-[40px] "
-                      src={item.img3}
-                      alt="dassa"
-                    />
-                  </Link>
-                </SwiperSlide>
-              ))}
-          </Swiper>
+                        src={item.img3}
+                        alt="dassa"
+                      />
+                    </Link>
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+          </div>
         </div>
       </div>
     </>

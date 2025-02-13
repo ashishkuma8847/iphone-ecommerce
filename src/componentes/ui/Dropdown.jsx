@@ -13,7 +13,7 @@ const Dropdown = ({ label, items }) => {
   }, [isOpen]);
 
   return (
-    <div className="relative justify-start bg-white flex flex-col font-customfont12  font-normal text-base">
+    <div className="relative justify-start backdrop-blur-3xl bg-customGray-0 bg-opacity-0 sm:text-white  lg:bg-white   flex flex-col font-customfont12  font-normal text-base">
       {/* <p>{value}</p> 
       <input 
         ref={inputref}
@@ -38,7 +38,7 @@ const Dropdown = ({ label, items }) => {
       </button>
       <div
         ref={dropdownRef}
-        className="overflow-hidden   transition-all duration-300 bg-white"
+        className="overflow-hidden   transition-all duration-300 "
         style={{ height: `${height}px` }}
       >
         <div className="py-2 ">
