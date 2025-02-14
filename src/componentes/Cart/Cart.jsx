@@ -79,13 +79,13 @@ const Cart = () => {
                   <div className="flex flex-col">
                     <button onClick={() => handleQuantityChange(index, true)}>
                       <img
-                        src="src/assets/svg/Drop-Up-Small.svg"
+                        src="/assets/svg/Drop-Up-Small.svg"
                         alt="Increase quantity"
                       />
                     </button>
                     <button onClick={() => handleQuantityChange(index, false)}>
                       <img
-                        src="src/assets/svg/Drop-Down-Small.svg"
+                        src="/assets/svg/Drop-Down-Small.svg"
                         alt="Decrease quantity"
                       />
                     </button>

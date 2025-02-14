@@ -82,7 +82,7 @@ const Gamepad = () => {
                 <div className="lg:mr-[70px] sm:m-0 m-0 ">
                   <img
                   className="w-[]"
-                    src="/src/assets/svg/gamepadhead.svg"
+                    src="/assets/svg/gamepadhead.svg"
                     alt="gamepadhead"
                   />
                 </div>
@@ -96,7 +96,7 @@ const Gamepad = () => {
                   <div className="flex gap-4 items-center">
                     <div className="flex gap-2 items-center">
                       <img
-                        src="/src/assets/svg/FourStar1.svg"
+                        src="/assets/svg/FourStar1.svg"
                         alt="FourStar1"
                       />
                       <h4 className="font-customfont12 font-normal text-sm leading-[21px] opacity-[50%]">
@@ -180,12 +180,12 @@ const Gamepad = () => {
                     >
                       <img
                         className="group-hover:hidden"
-                        src="/src/assets/svg/icon-minus.svg"
+                        src="/assets/svg/icon-minus.svg"
                         alt="icon-minus"
                       />
                       <img
                         className="hidden group-hover:block"
-                        src="/src/assets/svg/icon-minuscopy.svg"
+                        src="/assets/svg/icon-minuscopy.svg"
                         alt="icon-minus"
                       />
                     </button>
@@ -198,12 +198,12 @@ const Gamepad = () => {
                     >
                       <img
                         className="group-hover:hidden"
-                        src="/src/assets/svg/icon-plus.svg"
+                        src="/assets/svg/icon-plus.svg"
                         alt="icon-plus"
                       />
                       <img
                         className="hidden group-hover:block"
-                        src="/src/assets/svg/icon-pluscopy.svg"
+                        src="/assets/svg/icon-pluscopy.svg"
                         alt="icon-plus"
                       />
                     </button>
@@ -218,13 +218,13 @@ const Gamepad = () => {
                     />
                   </div>
                   <div className="flex w-[40px] h-[40px]  items-center justify-center border border-customGray-0 rounded">
-                    <img src="/src/assets/svg/Wishlist.svg" alt="Wishlist" />
+                    <img src="/assets/svg/Wishlist.svg" alt="Wishlist" />
                   </div>
                 </div>
                 <div className="max-w-[399px] w-full flex flex-col border border-customGray-0 rounded ">
                   <div className="flex border-b border-customGray-0 p-[24px_0px_16px_16px] gap-4">
                     <img
-                      src="/src/assets/svg/icon-delivery.svg"
+                      src="/assets/svg/icon-delivery.svg"
                       alt="icon-delivery"
                     />
                     <div className="flex flex-col gap-2">
@@ -239,7 +239,7 @@ const Gamepad = () => {
                   </div>
                   <div className="flex p-[24px_0px_16px_16px] gap-4">
                     <img
-                      src="/src/assets/svg/Icon-return.svg"
+                      src="/assets/svg/Icon-return.svg"
                       alt="Icon-return"
                     />
                     <div className="flex flex-col gap-2">

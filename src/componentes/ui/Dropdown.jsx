@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import Arowicon from "../../assets/svg/arrow.svg";
+// import Arowicon from "../../assets/svg/arrow.svg";
 const Dropdown = ({ label, items }) => {
   const [isOpen, setIsOpen] = useState(0);
   const [height, setHeight] = useState(0);
@@ -31,7 +31,7 @@ const Dropdown = ({ label, items }) => {
       >
         {label}
         <img
-          src={Arowicon}
+          src="/assets/svg/arrow.svg"
           className={`pr-1  transition-all duration-200 ${isOpen && "rotate-90"}`}
           alt=""
         />

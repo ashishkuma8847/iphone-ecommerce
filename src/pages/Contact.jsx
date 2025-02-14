@@ -20,7 +20,7 @@ const Contact = () => {
               <div className="flex flex-col  gap-[24px] xl:pb-[32px] sm:pb-0 pb-0 xl:border-b sm:border-none border-none border-customGray-0">
                 <div className="flex gap-[16px] items-center font-customfont12 font-medium text-base">
                   <img
-                    src="/src/assets/svg/icons-phone.svg"
+                    src="/assets/svg/icons-phone.svg"
                     alt="icons-phone"
                   />
                   <h4>Call To Us</h4>
@@ -32,7 +32,7 @@ const Contact = () => {
               </div>
               <div className="flex flex-col gap-[24px] xl:pt-[32px] sm:pt-0 pt-0">
                 <div className="flex gap-[16px] items-center font-customfont12 font-medium text-base">
-                  <img src="/src/assets/svg/icons-mail.svg" alt="icons-phone" />
+                  <img src="/assets/svg/icons-mail.svg" alt="icons-phone" />
                   <h4>Write To US</h4>
                 </div>
                 <div className="flex flex-col gap-[16px] font-customfont12 font-normal text-sm leading-[21px]">

@@ -26,13 +26,13 @@ const Catogry = () => {
                   className="flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300"
                   onClick={() => swiperRef.current?.slidePrev()}
                 >
-                  <img src={"src/assets/svg/swiperlefticon.svg"} alt="left" />
+                  <img src={"/assets/svg/swiperlefticon.svg"} alt="left" />
                 </button>
                 <button
                   className=" flex items-center justify-center w-[46px] h-[46px] rounded-[50%] hover:bg-[#F5F5F5] transition-all duration-300"
                   onClick={() => swiperRef.current?.slideNext()}
                 >
-                  <img src={"src/assets/svg/swiperrighticon.svg"} alt="right" />
+                  <img src={"/assets/svg/swiperrighticon.svg"} alt="right" />
                 </button>
               </div>
             </div>

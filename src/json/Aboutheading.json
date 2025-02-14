@@ -1,25 +1,25 @@
 [
     {
-        "img1":"src/assets/svg/activatecopy.svg",
-        "img2":"src/assets/svg/activate.svg",
+        "img1":"/assets/svg/activatecopy.svg",
+        "img2":"/assets/svg/activate.svg",
         "heading":"10.5k ",
         "title":"Sallers active our site"
     },
     {
-        "img1":"src/assets/svg/grosssalecopy.svg",
-        "img2":"src/assets/svg/grosssale.svg",
+        "img1":"/assets/svg/grosssalecopy.svg",
+        "img2":"/assets/svg/grosssale.svg",
         "heading":"33k",
         "title":"Mopnthly Produduct Sale"
     },
     {
-        "img1":"src/assets/svg/productsalecopy.svg",
-        "img2":"src/assets/svg/productsale.svg",
+        "img1":"/assets/svg/productsalecopy.svg",
+        "img2":"/assets/svg/productsale.svg",
         "heading":"45.5k",
         "title":"Customer active in our site"
     },
     {
-        "img1":"src/assets/svg/Servicescopy.svg",
-        "img2":"src/assets/svg/Services.svg",
+        "img1":"/assets/svg/Servicescopy.svg",
+        "img2":"/assets/svg/Services.svg",
         "heading":"25k",
         "title":"Anual gross sale in our site"
     }

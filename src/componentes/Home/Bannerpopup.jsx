@@ -79,7 +79,7 @@ const Bannerpopup = () => {
                   className={`transition-all duration-300 ${
                     popup ? "rotate-180" : "rotate-0"
                   }`}
-                  src="/src/assets/svg/arrow.svg"
+                  src="/assets/svg/arrow.svg"
                   alt="arrow"
                 />
               </div>

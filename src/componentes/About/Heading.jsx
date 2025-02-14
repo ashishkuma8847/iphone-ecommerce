@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import aboutjson from "../../json/Aboutheading.json";
-import characterImg from "../../assets/images/charatertwo.png"; // Ensure the correct path
+// import characterImg from "../../assets/images/charatertwo.png"; // Ensure the correct path
 
 const Heading = () => {
   return (
@@ -38,7 +38,7 @@ const Heading = () => {
         </div>
         <img 
           className="xl:max-w-[705px] xl:w-full xl:max-h-[609px] xl:h-full sm:w-[500px] w-[400px] sm:h-[400px] h-[350px]" 
-          src={characterImg} 
+          src="assets/images/charatertwo.png"
           alt="Character Illustration" 
         />
       </div>

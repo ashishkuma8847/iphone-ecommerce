@@ -1,42 +1,42 @@
 [
     {
-        "img1":"/src/assets/svg/appleicon.svg",
+        "img1":"/assets/svg/appleicon.svg",
         "name":"iPhone 14 Series",
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
-        "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage3.png"
+        "img2":"/assets/svg/icon-arrow-right.svg",
+        "img3":"/assets/images/appleimage3.png"
     },
     {
-        "img1":"/src/assets/svg/appleicon.svg",
+        "img1":"/assets/svg/appleicon.svg",
         "name":"iPhone 14 Series",
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
-        "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage2.jpeg"
+        "img2":"/assets/svg/icon-arrow-right.svg",
+        "img3":"/assets/images/appleimage2.jpeg"
     },
     {
-        "img1":"/src/assets/svg/appleicon.svg",
+        "img1":"/assets/svg/appleicon.svg",
         "name":"iPhone 14 Series",
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
-        "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage1.png"
+        "img2":"/assets/svg/icon-arrow-right.svg",
+        "img3":"/assets/images/appleimage1.png"
     },
     {
-        "img1":"/src/assets/svg/appleicon.svg",
+        "img1":"/assets/svg/appleicon.svg",
         "name":"iPhone 14 Series",
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
-        "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage4.png"
+        "img2":"/assets/svg/icon-arrow-right.svg",
+        "img3":"/assets/images/appleimage4.png"
     },
     {
-        "img1":"/src/assets/svg/appleicon.svg",
+        "img1":"/assets/svg/appleicon.svg",
         "name":"iPhone 14 Series",
         "name2":"Up to 10% off Voucher",
         "name3":"Shop Now",
-        "img2":"/src/assets/svg/icon-arrow-right.svg",
-        "img3":"/src/assets/images/appleimage5.jpeg"
+        "img2":"/assets/svg/icon-arrow-right.svg",
+        "img3":"/assets/images/appleimage5.jpeg"
     }
 ]

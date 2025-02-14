@@ -9,7 +9,7 @@ const SignupCard = ({ heading, title, inpotforname, variant }) => {
           <div className="">
             <img
               className=" xl:w-[805px] xl:h-[781px] lg:w-[700px] lg:h-[681px] md:w-[600px] md:h-[581px] sm:w-[500px] w-[500px] h-[400px]"
-              src="/src/assets/images/SideImage.png"
+              src="/assets/images/SideImage.png"
               alt="signup"
             />
           </div>

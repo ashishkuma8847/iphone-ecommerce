@@ -129,7 +129,7 @@ const Newartical = () => {
                             onClick={scrollToTop}
                             className="flex justify-center items-center rounded-[50%] w-[46px] h-[46px] group bg-[#F5F5F5] "
                         >
-                            <img className="bg-[#F5F5F5] " src={"/src/assets/svg/arrow-up.svg"} alt="arrow up" />
+                            <img className="bg-[#F5F5F5] " src={"/assets/svg/arrow-up.svg"} alt="arrow up" />
                         </button>
                     </motion.div>
                 </section>

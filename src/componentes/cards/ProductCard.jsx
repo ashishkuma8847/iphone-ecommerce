@@ -30,7 +30,7 @@ const ProductCard = ({
           <div className="relative group">
             <img
               className=" p-[35px_40px_35px_40px] flex justify-center transition-all duration-200 hover:scale-75 "
-              src={`/src/assets/images/${bannerbg}`}
+              src={`/assets/images/${bannerbg}`}
               alt="sdkf"
             />
             <Link to={"/Cart"} className=" flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-[#F5F5F5] bg-black w-full  group-hover:h-[41px] ">
@@ -42,7 +42,7 @@ const ProductCard = ({
             <button className="flex sm:w-[34px] w-[24px] h-[24px] sm:h-[34px] items-center justify-center bg-white rounded-[50%] ">
               <img
                 className="sm:w-[24px] w-[20px] h-[20px]  sm:h-[24px] "
-                src={`/src/assets/svg/${wishlist}`}
+                src={`/assets/svg/${wishlist}`}
                 alt="dfs"
               />
             </button>

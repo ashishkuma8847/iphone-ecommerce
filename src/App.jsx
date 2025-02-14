@@ -17,6 +17,7 @@ import Contact from './pages/Contact'
 import Loader from './pages/Loader/Loader'
 import Gamepad from './componentes/ProductsDetalPage/Gamepad'
 import Viewallprojects from './componentes/viewallprojects/Viewallprojects'
+import ScrollToTop from './componentes/common/ScrollToTop'
 const App = () => {
     const [loading, setLoading] = useState(true);
   
@@ -33,6 +34,7 @@ const App = () => {
     </div>
     <BrowserRouter>
     <Header/>
+    <ScrollToTop />
     <Routes>
       
       <Route path='/'    element={<Home/> }/>

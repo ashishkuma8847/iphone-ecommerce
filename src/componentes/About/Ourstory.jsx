@@ -7,31 +7,31 @@ import "./Custom.css";
 const Ourstory = () => {
   const story = [
     {
-      image: "src/assets/images/characterwithblueshirt.png",
+      image: "/assets/images/characterwithblueshirt.png",
       name: "Tom Cruise",
       title: "Founder & Chairman",
       to: "/", 
     },
     {
-      image: "src/assets/images/femalecharater.png",
+      image: "/assets/images/femalecharater.png",
       name: "Emma Watson",
       title: "Managing Director",
       to: "/",
     },
     {
-      image: "src/assets/images/characterwithblackjecket.png",
+      image: "/assets/images/characterwithblackjecket.png",
       name: "Will Smith",
       title: "Product Designer",
       to: "/",
     },
     {
-      image: "src/assets/images/femalecharater.png",
+      image: "/assets/images/femalecharater.png",
       name: "Emma Watson",
       title: "Managing Director",
       to: "/",
     },
     {
-      image: "src/assets/images/characterwithblueshirt.png",
+      image: "/assets/images/characterwithblueshirt.png",
       name: "Tom Cruise",
       title: "Founder & Chairman",
       to: "/",
@@ -40,19 +40,19 @@ const Ourstory = () => {
 
   const services = [
     {
-      img: "src/assets/svg/delevry.svg",
+      img: "/assets/svg/delevry.svg",
       heading: "FREE AND FAST DELIVERY",
       detail: "Free delivery for all orders over $140",
       to: "/",
     },
     {
-      img: "src/assets/svg/service.svg",
+      img: "/assets/svg/service.svg",
       heading: "24/7 CUSTOMER SERVICE",
       detail: "Friendly 24/7 customer support",
       to: "/",
     },
     {
-      img: "src/assets/svg/moneyback.svg",
+      img: "/assets/svg/moneyback.svg",
       heading: "MONEY BACK GUARANTEE",
       detail: "We return money within 30 days",
       to: "/",
@@ -93,9 +93,9 @@ const Ourstory = () => {
                         </h4>
                       </div>
                       <div className="flex w-[104px] justify-between">
-                        <img src="src/assets/svg/icon-Twitter.svg" alt="Twitter" />
-                        <img src="src/assets/svg/instagramblack.svg" alt="Instagram" />
-                        <img src="src/assets/svg/icon-Linkedin.svg" alt="LinkedIn" />
+                        <img src="/assets/svg/icon-Twitter.svg" alt="Twitter" />
+                        <img src="/assets/svg/instagramblack.svg" alt="Instagram" />
+                        <img src="/assets/svg/icon-Linkedin.svg" alt="LinkedIn" />
                       </div>
                     </div>
                   </div>

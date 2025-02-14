@@ -84,7 +84,7 @@ const Checkout = () => {
           ${checked ? "bg-CustomRed-0 border-CustomRed-0" : "border-gray-400"}`}
                       >
                         {checked && (
-                          <img src="/src/assets/svg/trueicon.svg" alt="" />
+                          <img src="/assets/svg/trueicon.svg" alt="" />
                         )}
                       </div>
                     </label>

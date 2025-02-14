@@ -62,7 +62,7 @@ const Header = () => {
                 sm:text-xs "
               >
                 <h1>English</h1>
-                <img src="/src/assets/svg/DropDown.svg" alt="" />
+                <img src="/assets/svg/DropDown.svg" alt="" />
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ const Header = () => {
                          md:pr-[14px]  
                           lg:pr-[34px]`
                           }`}
-                          src={"/src/assets/svg/search.svg"}
+                          src={"/assets/svg/search.svg"}
                           alt="image1"
                         />
                       </button>
@@ -166,7 +166,7 @@ const Header = () => {
                       </span>{" "}
                       <img 
                         className="sm:mt-1 mt-0  sm:w-[32px] w-[24px] h-[24px] sm:h-[32px]"
-                        src="/src/assets/svg/Wishlist.svg"
+                        src="/assets/svg/Wishlist.svg"
                         alt="image2"
                       />
                     </Link>
@@ -180,7 +180,7 @@ const Header = () => {
                       </span>{" "}
                       <img
                         className="sm:w-[24px] sm:h-[24px] w-[20px] h-[20px]"
-                        src="/src/assets/svg/Cartwithbuy.svg"
+                        src="/assets/svg/Cartwithbuy.svg"
                         alt="image3"
                       />{" "}
                     </Link>
@@ -193,14 +193,14 @@ const Header = () => {
                         {!isOpen && (
                           <img
                             className="sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]"
-                            src="/src/assets/svg/user.svg"
+                            src="/assets/svg/user.svg"
                             alt="image4"
                           />
                         )}{" "}
                         {isOpen && (
                           <img
                             className="sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]"
-                            src="/src/assets/svg/user-red.svg"
+                            src="/assets/svg/user-red.svg"
                           />
                         )}
                       </button>
@@ -236,14 +236,14 @@ const Header = () => {
                         className={`${
                           !menu ? " sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]" : " w-0 h-0"
                         } transition-all duration-200 `}
-                        src="/src/assets/images/menu.png"
+                        src="/assets/images/menu.png"
                         alt="menu"
                       />
                       <img
                         className={`${
                           menu ? "sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]" : "w-0 h-0"
                         } transition-all duration-200`}
-                        src="/src/assets/images/cross.png"
+                        src="/assets/images/cross.png"
                         alt="cross"
                       />
                     </button>

@@ -28,7 +28,7 @@ const Footer = () => {
                   type="text"
                   placeholder="Enter your email"
                 />
-                <img src="/src/assets/svg/icon-send.svg" alt="img1" />
+                <img src="/assets/svg/icon-send.svg" alt="img1" />
               </div>
             </div>
             <div className="flex sm:flex-row  flex-col gap-6 sm:gap-0 md:m-auto xl:m-0 justify-between max-w-[581px] w-full">
@@ -85,13 +85,13 @@ const Footer = () => {
                 </h2>
                 <div className="flex gap-[8px] items-center">
                   <div className="">
-                    <img src="/src/assets/images/QrCode.png" alt="qr" />
+                    <img src="/assets/images/QrCode.png" alt="qr" />
                   </div>
                   <div className="flex flex-col gap-[4px]">
                     <div className="p-[5px_3px_5px_3px]">
                       <img
                         className=" w-[104px] h-[30px]"
-                        src="/src/assets/images/playstore.png"
+                        src="/assets/images/playstore.png"
                         alt="playstore"
                       />{" "}
                     </div>
@@ -99,7 +99,7 @@ const Footer = () => {
                       {" "}
                       <img
                         className="w-[104px] h-[34px]"
-                        src="/src/assets/images/appstore.png"
+                        src="/assets/images/appstore.png"
                         alt="appstore"
                       />
                     </div>
@@ -107,14 +107,14 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-center gap-[24px]">
-                <img src="/src/assets/svg/Facebook.svg" alt="Facebook" />
+                <img src="/assets/svg/Facebook.svg" alt="Facebook" />
                 <img
                   className="mt-[2px] w-[18px] h-[18px]"
-                  src="/src/assets/images/x.png"
+                  src="/assets/images/x.png"
                   alt="x"
                 />
-                <img src="/src/assets/svg/instagram.svg" alt="instagram" />
-                <img src="/src/assets/svg/Linkedin.svg" alt="Linkedin" />
+                <img src="/assets/svg/instagram.svg" alt="instagram" />
+                <img src="/assets/svg/Linkedin.svg" alt="Linkedin" />
               </div>
             </div>
           </div>
@@ -123,7 +123,7 @@ const Footer = () => {
           <div className="container flex items-center justify-center opacity-[60%] gap-[6px] pt-[16px] pb-[24px] ">
             <img
               className="pt-[2px] pb-[2px]"
-              src="/src/assets/svg/copyright.svg"
+              src="/assets/svg/copyright.svg"
               alt=""
             />
             <h4 className="font-customfont12 font-normal text-base leading-6">

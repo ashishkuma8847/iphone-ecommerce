@@ -2,14 +2,14 @@
     "categorydata" : {
         "Womans"  :{
             "name":"Woman’s Fashion",
-            "img":"/src/assets/svg/arrow.svg",
+            "img":"/assets/svg/arrow.svg",
             "item":[
                 "Tops","shirts","jeans","pents"
             ]
         },
         "Mens":{
              "name":"Men’s Fashion",
-            "img":"/src/assets/svg/arrow.svg",
+            "img":"/assets/svg/arrow.svg",
             "item":[
                 "Caps","Shirts","jeans","pents"
             ]
