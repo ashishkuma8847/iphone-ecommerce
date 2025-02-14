@@ -56,7 +56,7 @@ const Header = () => {
                 </h4>
               </div>
               <div
-                className="md:flex w-[78px]  gap-[5px] items-center hidden sm:block
+                className="sm:flex md:flex w-[78px]  gap-[5px] items-center hidden sm:block
                lg:text-sm 
                md:text-xs
                 sm:text-xs "
@@ -71,7 +71,7 @@ const Header = () => {
         <nav className="container  mt-[40px] mb-[16px]">
           <div
             className=" flex 
- flex-row gap-5 items-start
+ flex-row gap-0 items-start
            sm:flex-col sm:gap-5 sm:items-start
            md:flex-col md:gap-5 md:items-start
            lg:flex-col lg:gap-5 lg:items-start
@@ -84,18 +84,18 @@ const Header = () => {
               </h1>
             </div>
             <div
-              className=" flex justify-end xl:justify-end lg:justify-between   sm:gap-0   sm:justify-between   w-full
+              className=" flex justify-end xl:justify-end lg:justify-between    sm:gap-0   sm:justify-between  md:w-full xl:w-[395px]
             xl:gap-[130px] 
            "
             >
               <div className="sm:block hidden ">
                 <ul
-                  className=" flex 
+                  className=" flex h-full
                
               lg:gap-[48px]  lg:w-[367px] lg:text-base lg:leading-6
               md:gap-[38px]  md:w-[305px] md:text-sm md:leading-5
               sm:gap-[38px] sm:justify-start  sm:w-[305px] sm:text-sm sm:leading-5
-              justify-between  w-[303px] text-sm leading-5
+              justify-between  sm:items-center w-[303px] text-sm leading-5
               items-center font-customfont12    font-normal "
                 >
                   <NavLink to={"/"}>Home</NavLink>
@@ -105,13 +105,12 @@ const Header = () => {
                 </ul>
               </div>
 
-              <div className=" max-w-[385px] w-full flex justify-end items-center">
+              <div className="  flex justify-end items-center ">
                 <div
-                  className=" flex    w-full justify-end
+                  className=" flex    w-[220px]  sm:max-w-[280px] 
               lg: lg:max-w-[395px]  lg:justify-between
-               md:gap-[13px]  md:max-w-[286px]
-              sm:gap-[13px]  sm:max-w-[286px] sm:justify-between
-              gap-[10px] 
+              sm:gap-[13px]  sm:justify-between
+            justify-between
               items-center font-customfont12 "
                 >
                   <div
@@ -119,7 +118,7 @@ const Header = () => {
                  lg:max-w-[243px] lg:p-[7px_12px_7px_20px]
                   md:max-w-[156px]    md:p-[7px_8px_7px_10px]
                   sm:max-w-[156px]    sm:p-[7px_8px_7px_10px]
-                  max-w-[156px]  w-full   p-[7px_8px_7px_10px]
+                  max-w-[100px]  w-full   p-[7px_8px_7px_10px]
                   justify-end items-center   rounded-[4px]"
                   >
                     <Link
@@ -154,33 +153,33 @@ const Header = () => {
                     />
                   </div>
                   <div
-                    className="flex  w-[120px] justify-between items-center
+                    className="flex  w-[80px] sm:w-[120px] justify-between items-center
                  sm:gap-[8px] 
-                 gap-[8px] 
+                 gap-0 
                  md:gap-[8px] 
                  lg:gap-[10px]"
                   >
                     <Link className="relative" to={"/Wishlist"}>
                       {" "}
-                      <span className="absolute rounded-full right-0 bg-CustomRed-0 w-[16px] h-[17px] text-white font-customfont12 font-normal text-xs leading-[18px] text-center">
+                      <span className="absolute rounded-full right-0 bg-CustomRed-0 sm:w-[16px] w-[15px] h-[15px] sm:h-[17px] text-white font-customfont12 font-normal text-xs leading-[18px] text-center">
                         {jsonwishlist.length}
                       </span>{" "}
-                      <img
-                        className="mt-1 w-[32px] h-[32px]"
+                      <img 
+                        className="sm:mt-1 mt-0  sm:w-[32px] w-[24px] h-[24px] sm:h-[32px]"
                         src="/src/assets/svg/Wishlist.svg"
                         alt="image2"
                       />
                     </Link>
 
                     <Link
-                      className="relative w-[32px] h-[32px] flex items-end justify-center "
+                      className="relative w-[32px] h-[32px] flex items-center sm:items-end justify-center "
                       to={"/Cart"}
                     >
                       <span className="absolute rounded-full right-0 top-0 bg-CustomRed-0 w-[16px] h-[17px] text-white font-customfont12 font-normal text-xs leading-[18px] text-center ">
                         {cartjson.length}
                       </span>{" "}
                       <img
-                        className="w-[24px] h-[24px]"
+                        className="sm:w-[24px] sm:h-[24px] w-[20px] h-[20px]"
                         src="/src/assets/svg/Cartwithbuy.svg"
                         alt="image3"
                       />{" "}
@@ -193,14 +192,14 @@ const Header = () => {
                         {" "}
                         {!isOpen && (
                           <img
-                            className="w-[32px] h-[32px]"
+                            className="sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]"
                             src="/src/assets/svg/user.svg"
                             alt="image4"
                           />
                         )}{" "}
                         {isOpen && (
                           <img
-                            className="w-[32px] h-[32px]"
+                            className="sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]"
                             src="/src/assets/svg/user-red.svg"
                           />
                         )}
@@ -231,18 +230,18 @@ const Header = () => {
                       )}
                     </div>
                   </div>
-                  <div className="block relative sm:hidden w-[32px] h-[32px]">
+                  <div className="block relative sm:hidden sm:w-[32px] sm:h-[32px] w-[24px] h-[24px] ">
                     <button onClick={() => setmenu(!menu)}>
                       <img
                         className={`${
-                          !menu ? " w-[32px] h-[32px]" : " w-0 h-0"
+                          !menu ? " sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]" : " w-0 h-0"
                         } transition-all duration-200 `}
                         src="/src/assets/images/menu.png"
                         alt="menu"
                       />
                       <img
                         className={`${
-                          menu ? "w-[32px] h-[32px]" : "w-0 h-0"
+                          menu ? "sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]" : "w-0 h-0"
                         } transition-all duration-200`}
                         src="/src/assets/images/cross.png"
                         alt="cross"
@@ -250,9 +249,9 @@ const Header = () => {
                     </button>
                     {menu && (
                       <>
-                        <div className="w-[200px] p-6  absolute z-10 bg-white right-0 ">
-                          <div className="flex flex-col">
-                          <NavLink  to={"/"}>Home</NavLink>
+                        <div className="w-[200px] p-6  absolute z-10 bg-black right-0 backdrop-blur-3xl bg-opacity-45 rounded-[6px]   text-white ">
+                          <div className="flex flex-col justify-center items-center gap-6  text-center ">
+                          <NavLink className=" " to={"/"}>Home</NavLink>
                           <NavLink to={"/contact"}>Contact</NavLink>
                           <NavLink to={"/About"}>About</NavLink>
                           <NavLink to={"/Signup"}>SignUp</NavLink></div>

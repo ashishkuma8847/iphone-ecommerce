@@ -11,7 +11,7 @@ const Catogry = () => {
     <>
       <main className="lg:mb-[70px] sm:mb-[50px] mb-[50px]">
         <section className="pb-[70px] border-b border-customGray-0 container flex flex-col sm:gap-[24px] gap-[24px] lg:gap-[60px]">
-          <div className=" flex flex-col gap-[20px] sm:mt-[60px] mt-[60px] lg:mt-[80px]">
+          <div className=" flex flex-col gap-[20px] sm:mt-[60px] mt-[0px] lg:mt-[80px]">
             <ul className="flex items-center w-[126px] justify-between ">
               <li className="w-[20px] h-[40px] rounded bg-CustomRed-0"></li>
               <li className="font-customfont12 text-CustomRed-0 leading-[20px] font-semibold text-base">

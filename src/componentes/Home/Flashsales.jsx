@@ -128,7 +128,7 @@ const Flashsales = ({
               }}
               breakpoints={{
                 375: {
-                  slidesPerView: 1.1,
+                  slidesPerView: 1.5,
                 },
                 640: {
                   slidesPerView: 2,

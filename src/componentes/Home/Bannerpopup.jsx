@@ -35,15 +35,15 @@ const Bannerpopup = () => {
           <div className="flex ">
             <div
               className={`${
-                popup ? "w-[240px] z-50 opacity-[100%]" : "w-0 -z-50 opacity-0"
-              }  transition-all duration-300   rounded bg-white bg-opacity-20   text-white xl:text-black `}
+                popup ? "w-[240px] z-50 opacity-[100%] pl-4  " : "w-0 -z-50 opacity-0 p-0"
+              }  transition-all duration-300   rounded  backdrop-blur-3xl pb-4 pt-4 bg-white bg-opacity-0 flex flex-col   text-white xl:text-black `}
             >
               <div className="flex flex-col   ">
                 <Dropdown items={data} label={"Woman’s Fashion"} />
                 <Dropdown items={data1} label={"Men’s Fashion"} />
               </div>
               {bannerstyle?.map((item, index) => (
-                <div className="backdrop-blur-3xl  pl-4 pb-4 flex flex-col " key={index}>
+                <div className=" " key={index}>
                   <Link to={item.to} className="lg:max-w-[1170px] w-full  ">
                     <div
                       className={` font-customfont12  sm:flex-col gap-3 sm:gap-2 
@@ -74,7 +74,7 @@ const Bannerpopup = () => {
               onClick={() => setpopup(!popup)}
               className=" w-[30px]   justify-center items-start lg:hidden sm:block block "
             >
-              <div className="backdrop-blur-3xl bg-white bg-opacity-20   text-white w-[30px] h-[50px] flex justify-center items-center rounded-r rounded-br">
+              <div className="backdrop-blur-3xl bg-white bg-opacity-[12%]   text-white w-[30px] h-[50px] flex justify-center items-center rounded-r rounded-br">
                 <img
                   className={`transition-all duration-300 ${
                     popup ? "rotate-180" : "rotate-0"

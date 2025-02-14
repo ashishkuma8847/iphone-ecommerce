@@ -17,7 +17,7 @@ const ProductCard = ({
   
 
       <div
-        className={`w-[270px] flex flex-col sm:gap-4 gap-4 md:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8 rounded`}
+        className={`sm:w-[270px] w-[200px] flex flex-col sm:gap-4 gap-4 md:gap-5 lg:gap-6 xl:gap-7 2xl:gap-8 rounded`}
       >
         <div className=" flex  flex-col rounded  relative overflow-hidden  bg-[#F5F5F5] ">
           {discount !== undefined && (
@@ -39,15 +39,15 @@ const ProductCard = ({
           </div>
 
           <div className="top-[10px] right-[13px] absolute w-[34px] h-[76px] flex flex-col justify-between items-center">
-            <button className="flex w-[34px] items-center justify-center bg-white rounded-[50%] h-[34px]">
+            <button className="flex sm:w-[34px] w-[24px] h-[24px] sm:h-[34px] items-center justify-center bg-white rounded-[50%] ">
               <img
-                className="w-[24px]  h-[24px] "
+                className="sm:w-[24px] w-[20px] h-[20px]  sm:h-[24px] "
                 src={`/src/assets/svg/${wishlist}`}
                 alt="dfs"
               />
             </button>
 
-           <Link to={"/gamepad"}> <img src={`/src/assets/svg/${view}`} alt="dfs" /></Link>
+           <Link to={"/gamepad"}> <img className="sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]" src={`/src/assets/svg/${view}`} alt="dfs" /></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2">

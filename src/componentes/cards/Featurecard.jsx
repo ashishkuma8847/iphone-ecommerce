@@ -20,7 +20,7 @@ const Featurecard = ({
         )}
         <div className="relative group">
           <img
-            className="p-[35px_40px_35px_40px] w-[269px] h-[249px] flex justify-center transition-all duration-200 hover:scale-75"
+            className="p-[35px_40px_35px_40px] sm:w-[269px] w-[200px] h-[160px] sm:h-[249px] flex justify-center transition-all duration-200 hover:scale-75"
             src={`/src/assets/images/${headimg}`}
             alt="product"
           />
@@ -42,11 +42,11 @@ const Featurecard = ({
         </div>
       </div>
       <div className="flex flex-col gap-2">
-        <h4 className="font-customfont12 font-semibold text-sm leading-[21px]">
+        <h4 className="font-customfont12 sm:font-semibold font-medium text-xs sm:text-sm leading-[21px]">
           {tittle}
         </h4>
-        <div className="flex gap-[8px]">
-          <h4 className="font-customfont12 font-medium text-base leading-[24px] text-CustomRed-0">
+        <div className="flex sm:gap-[8px] gap-[2px]">
+          <h4 className="font-customfont12 font-medium sm:text-base text-xs leading-[24px] text-CustomRed-0">
             {price}
           </h4>
           <img
@@ -54,7 +54,7 @@ const Featurecard = ({
             src={`/src/assets/svg/${stars}`}
             alt="rating"
           />
-          <h4 className="font-customfont12 font-semibold text-sm leading-[21px] text-black opacity-[50%]">
+          <h4 className="font-customfont12 font-semibold sm:text-sm text-xs leading-[21px] text-black opacity-[50%]">
             {recents}
           </h4>
         </div>

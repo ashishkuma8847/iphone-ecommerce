@@ -24,13 +24,13 @@ const Explore = ({data,headingclass,classbutton}) => {
                             Explore Our Products
                         </div>
                     </div>
-                    <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 md:grid-cols-2    lg:grid-cols-3 gap-x-[8px] sm:gap-y-[24px] gap-y-[24px] xl:gap-y-[60px]">
+                    <div className="grid xl:grid-cols-4 sm:grid-cols-2  grid-cols-2  md:grid-cols-2    lg:grid-cols-3 gap-x-[0px] sm:gap-y-[24px] gap-y-[24px] xl:gap-y-[60px]">
 
                     {
                         data.map((item,index)=>(
                            <div key={index+ Date.now() + item}>
                             <Link to={item.to}>
-                            <div className="w-[270px] flex flex-col sm:gap-4 gap-4 md:gap-5 lg:gap-[16px] rounded">
+                            <div className="sm:w-[270px] w-[160px] flex flex-col sm:gap-4 gap-4 md:gap-5 lg:gap-[16px] rounded">
 
                             <Featurecard type={true} color={item.color}   headimg={item.headimg}  stars={item.stars} recents={item.recents} price={item.price} tittle={item.tittle} topnew={item.topnew}/>
                            </div> </Link>
@@ -38,7 +38,7 @@ const Explore = ({data,headingclass,classbutton}) => {
                         ))
                     }
                     </div>
-                    <Link to={"/Viewallprojects"} className={`${classbutton} flex justify-start sm:justify-center items-center`}>
+                    <Link to={"/Viewallprojects"} className={`${classbutton} flex justify-center sm:justify-center items-center`}>
 
                         <Button variant={"solid"} children={"View All Products"} />
                     </Link>
