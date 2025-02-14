@@ -9,13 +9,27 @@ const Bannerpopup = () => {
 
   const linkNames = bannerstyle[0].links.map((link) => link.name);
   const [popup, setpopup] = useState(false);
+  // const [popupbar,setpopupbar]=useState(false)
+  // const popbarmap =[
+  //   {
+
+  //   }
+  // ]
   return (
     <>
+    {/* {
+      popup ? popbarmap.map((item,index)=>(
+        <div key={item* index +Date.now()}>
+
+          
+        </div>
+      )) :
+    } */}
       <div className={` relative `}>
         <div
           className=" absolute  sm:z-10 z-10 sm:rounded lg:mt-[40px]
                 h-[344px]  flex-col
-                    mt-[20px]
+                    mt-[40px]
                       xl:flex   xl:overflow-hidden xl:w-[217px]"
         >
           <div className="flex ">
@@ -58,7 +72,7 @@ const Bannerpopup = () => {
             </div>
             <button
               onClick={() => setpopup(!popup)}
-              className=" w-[30px]   justify-center items-start xl:hidden sm:block block "
+              className=" w-[30px]   justify-center items-start lg:hidden sm:block block "
             >
               <div className="backdrop-blur-3xl bg-white bg-opacity-20   text-white w-[30px] h-[50px] flex justify-center items-center rounded-r rounded-br">
                 <img

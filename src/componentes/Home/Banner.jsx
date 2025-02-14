@@ -29,17 +29,17 @@ const Banner = () => {
                 </div>
             </div> */}
       <div className="container ">
-        <div className=" flex     xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
+        <div className=" flex    lg:justify-between sm:justify-start xl:justify-start xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
         <div className="xl:hidden sm:block block">
 
 <Bannerpopup/>
 </div>
-          <div className={`sm:hidden xl:block hidden`}>
+          <div className={`sm:hidden lg:block hidden`}>
             <div
               className=" lg:mt-[40px]
                 h-[344px]  flex-col
                    mt-[20px]
-                      xl:flex   xl:overflow-hidden xl:w-[217px]"
+                      xl:flex   xl:overflow-hidden xl:max-w-[217px] w-full"
             >
               <div className="flex">
                 <div className={``}>
@@ -52,7 +52,7 @@ const Banner = () => {
                   <Link to={item.to} className="  ">
 
                     <div
-                      className={` font-customfont12  sm:flex-col 
+                      className={` font-customfont12  sm:flex-col  max-w-[217px] w-full
                     sm:text-sm sm:leading-5 text-sm leading-5   
                     flex flex-col gap-4 sm:gap-0 justify-between lg:items-start  sm:items-start items-start truncate font-normal lg:text-base lg:leading-[24px]`}
                     >
@@ -86,8 +86,8 @@ const Banner = () => {
           <div
             className="flex   
                 lg:mt-10 
-                sm:mt-5 
-                  max-w-[892px] lg:max-w-[892px] gap-0 w-full sm:max-w-[640px] sm:w-full
+                sm:mt-10 
+                  max-w-[892px] lg:max-w-[790px] gap-0 w-full  sm:max-w-[892px] xl:max-w-[892px] sm:h-[344px] sm:w-full
                   sm:items-center  bg-black text-white justify-between relative ]"
           >
             <Swiper
@@ -117,15 +117,14 @@ const Banner = () => {
                             alt=""
                           />
                           <li
-                            className="font-normal lg:text-base  sm:text-xs lg:leading-6
-                                                sm:leading-5
+                            className="font-normal lg:text-base  
                                                 "
                           >
                             {item.name}
                           </li>
                         </ul>
-                        <ul className=" lg:mb-[22px] lg:w-[294px] sm:mb-[12px]  font-customfont  ">
-                          <li className="font-semibold lg:text-5xl sm:text-3xl leading-[60px] tracking-[0.04em]">
+                        <ul className=" lg:mb-[22px] lg:w-[294px] sm:w-[294px]  sm:mb-[12px]  font-customfont  ">
+                          <li className="font-semibold lg:text-5xl sm:text-5xl leading-[60px] tracking-[0.04em]">
                             {item.name2}
                           </li>
                         </ul>
