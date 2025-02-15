@@ -28,12 +28,18 @@ const Home = () => {
   //   console.log("logged");
   // }, [value]);
 
-
-
+// const [time,settime]=useState(false)
+// useEffect(()=>{
+//   setTimeout(()=>{
+//     settime(false)
+//   },150)
+// },[time])
   
   return (
     <>
-    
+    {/* <button onClick={()=>settime(!time)} className={`transition-all duration-150 ${time? "text-red-700 scale-150 bg-black" :"text-black bg-white scale-100 "} `}>
+sdas
+    </button> */}
    {/* <button>i am ashish {value1 ? "taak": "develoaper"}</button> */}
    {/* <h4>{value}</h4>
       <input

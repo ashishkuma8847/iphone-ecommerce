@@ -20,7 +20,7 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
           <div className="relative group">
             <img
               className=" p-[35px_40px_35px_40px] flex justify-center transition-all duration-200 hover:scale-75 "
-              src={`/src/assets/images/${mainimage}`}
+              src={`/assets/images/${mainimage}`}
               alt="sdkf"
             />
                 
@@ -34,7 +34,7 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
             <button className="flex w-[34px] items-center justify-center bg-white rounded-[50%] h-[34px]">
               <img
                 className="w-[34px]  h-[34px] "
-                src={`/src/assets/svg/delete.svg`}
+                src={`/assets/svg/delete.svg`}
                 alt="dfs"
               />
             </button>
@@ -71,7 +71,7 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
           <div className="relative group">
             <img
               className=" p-[35px_40px_35px_40px] flex justify-center transition-all duration-200 hover:scale-75 "
-              src={`/src/assets/images/${youheadimage}`}
+              src={`/assets/images/${youheadimage}`}
               alt="sdkf"
             />
             <Link to={"/checkout"} className=" gap-[8px] flex justify-center absolute text-center duration-300 items-center h-0  bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all  text-[#F5F5F5] bg-black w-full group-hover:h-[41px] ">
@@ -84,7 +84,7 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
             <button className="flex w-[34px] items-center justify-center bg-white rounded-[50%] h-[34px]">
              <Link to={"/gamepad"}> <img
                 className="w-[24px]  h-[24px] "
-                src={`/src/assets/svg/Fill-Eye.svg`}
+                src={`/assets/svg/Fill-Eye.svg`}
                 alt="dfs"
               /></Link>
             </button>
@@ -106,7 +106,7 @@ const Wishlist = ({lessprice,discount,mainimage,heading,price,trasnsport,youhead
           <div className="flex gap-2">
             <img
               className="w-[100px] h-[20px]"
-              src={`/src/assets/svg/Fivestar1.svg`}
+              src={`/assets/svg/Fivestar1.svg`}
               alt=""
             />
             <h4 className="font-customfont12 font-semibold text-sm leading-[21px] text-black opacity-[50%]">

@@ -63,12 +63,12 @@ const Cart = () => {
               <div className="flex sm:justify-between justify-between items-center lg:p-[24px_66px_24px_40px] sm:p-[24px] p-0 shadow-Customnew rounded">
                 <div className="relative flex items-center sm:w-[181px] w-[129px] justify-between lg:mr-[167px] sm:m-0 m-0 group ">
                   <img className="sm:w-[54px] sm:h-[54px] w-[34px] h-[34px]"
-                    src={`src/assets/svg/${item.imagehead}`}
+                    src={`/assets/svg/${item.imagehead}`}
                     alt={item.product}
                   />
                     <img
                       className="absolute top-[-5px] left-[-12px] w-[0] h-[0] transition-all duration-200 group-hover:w-[24px] group-hover:h-[24px]"
-                      src={`src/assets/svg/${item.cencel}`}
+                      src={`assets/svg/${item.cencel}`}
                       alt="Cancel icon"
                     />
                   <h4 className="sm:w-[107px] w-[90px]">{item.product}</h4>

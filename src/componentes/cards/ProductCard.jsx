@@ -47,7 +47,7 @@ const ProductCard = ({
               />
             </button>
 
-           <Link to={"/gamepad"}> <img className="sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]" src={`/src/assets/svg/${view}`} alt="dfs" /></Link>
+           <Link to={"/gamepad"}> <img className="sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]" src={`/assets/svg/${view}`} alt="dfs" /></Link>
           </div>
         </div>
         <div className="flex flex-col gap-2">
@@ -65,7 +65,7 @@ const ProductCard = ({
           <div className="flex gap-2">
             <img
               className="w-[100px] h-[20px]"
-              src={`/src/assets/svg/${rating}`}
+              src={`/assets/svg/${rating}`}
               alt=""
             />
             <h4 className="font-customfont12 font-semibold text-sm leading-[21px] text-black opacity-[50%]">

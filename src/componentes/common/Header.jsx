@@ -55,15 +55,16 @@ const Header = () => {
                   ShopNow
                 </h4>
               </div>
+              <div className="sm:block hidden">
               <div
-                className="sm:flex md:flex w-[78px]  gap-[5px] items-center hidden sm:block
+                className="sm:flex md:flex w-[78px]  gap-[5px] items-center  
                lg:text-sm 
                md:text-xs
                 sm:text-xs "
               >
                 <h1>English</h1>
                 <img src="/assets/svg/DropDown.svg" alt="" />
-              </div>
+              </div></div>
             </div>
           </div>
         </div>
@@ -84,8 +85,8 @@ const Header = () => {
               </h1>
             </div>
             <div
-              className=" flex justify-end xl:justify-end lg:justify-between    sm:gap-0   sm:justify-between  md:w-full xl:w-[395px]
-            xl:gap-[130px] 
+              className=" flex justify-end  lg:justify-between    sm:gap-0   sm:justify-between  md:w-full xl:w-[890px]
+            xl:justify-between
            "
             >
               <div className="sm:block hidden ">
@@ -107,8 +108,8 @@ const Header = () => {
 
               <div className="  flex justify-end items-center ">
                 <div
-                  className=" flex    w-[220px]  sm:max-w-[280px] 
-              lg: lg:max-w-[395px]  lg:justify-between
+                  className=" flex    w-[220px]  sm:w-[280px] 
+               lg:w-[395px]  lg:justify-between
               sm:gap-[13px]  sm:justify-between
             justify-between
               items-center font-customfont12 "
@@ -153,7 +154,7 @@ const Header = () => {
                     />
                   </div>
                   <div
-                    className="flex  w-[80px] sm:w-[120px] justify-between items-center
+                    className="flex  w-[80px] sm:w-[120px] lg:w-[128px] justify-between items-center
                  sm:gap-[8px] 
                  gap-0 
                  md:gap-[8px] 

@@ -93,9 +93,9 @@ const Ourstory = () => {
                         </h4>
                       </div>
                       <div className="flex w-[104px] justify-between">
-                        <img src="/assets/svg/icon-Twitter.svg" alt="Twitter" />
+                        <img src="/assets/svg/Icon-Twitter.svg" alt="Twitter" />
                         <img src="/assets/svg/instagramblack.svg" alt="Instagram" />
-                        <img src="/assets/svg/icon-Linkedin.svg" alt="LinkedIn" />
+                        <img src="/assets/svg/Icon-Linkedin.svg" alt="LinkedIn" />
                       </div>
                     </div>
                   </div>

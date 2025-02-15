@@ -104,7 +104,7 @@ const Checkout = () => {
                         >
                           <div className="flex  items-center gap-[24px]  ">
                             <img
-                              src={`src/assets/svg/${item.imagehead}`}
+                              src={`/assets/svg/${item.imagehead}`}
                               alt=""
                             />
 
@@ -157,19 +157,19 @@ const Checkout = () => {
                               <>
                                 <div className="flex w-[192px] justify-between">
                                   <img
-                                    src={`/src/assets/svg/${item.image}`}
+                                    src={`/assets/svg/${item.image}`}
                                     alt="Bkash"
                                   />
                                   <img
-                                    src={`/src/assets/svg/${item.image2}`}
+                                    src={`/assets/svg/${item.image2}`}
                                     alt="Visa"
                                   />
                                   <img
-                                    src={`/src/assets/svg/${item.image3}`}
+                                    src={`/assets/svg/${item.image3}`}
                                     alt="Mastercard"
                                   />
                                   <img
-                                    src={`/src/assets/svg/${item.image3}`}
+                                    src={`/assets/svg/${item.image3}`}
                                     alt="Nagad"
                                   />
                                 </div>

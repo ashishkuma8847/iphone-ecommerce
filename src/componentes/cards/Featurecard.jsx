@@ -21,7 +21,7 @@ const Featurecard = ({
         <div className="relative group">
           <img
             className="p-[35px_40px_35px_40px] sm:w-[269px] w-[200px] h-[160px] sm:h-[249px] flex justify-center transition-all duration-200 hover:scale-75"
-            src={`/src/assets/images/${headimg}`}
+            src={`/assets/images/${headimg}`}
             alt="product"
           />
           <Link to={"/Cart"} className="flex justify-center absolute text-center duration-300 items-center h-0 bottom-0 font-custom font12 font-semibold text-sm leading-[21px] transform-all text-[#F5F5F5] bg-black w-full group-hover:h-[41px]">
@@ -33,12 +33,12 @@ const Featurecard = ({
           <button className="flex w-[34px] items-center justify-center bg-white rounded-[50%] h-[34px]">
             <img
               className="w-[24px] h-[24px]"
-              src={`/src/assets/svg/Wishlist.svg`}
+              src={`/assets/svg/Wishlist.svg`}
               alt="wishlist"
             />
           </button>
 
-         <Link to={"/gamepad"}> <img src={`/src/assets/svg/Fill-Eye.svg`} alt="view" /></Link>
+         <Link to={"/gamepad"}> <img src={`/assets/svg/Fill-Eye.svg`} alt="view" /></Link>
         </div>
       </div>
       <div className="flex flex-col gap-2">
@@ -51,7 +51,7 @@ const Featurecard = ({
           </h4>
           <img
             className="w-[100px] h-[20px]"
-            src={`/src/assets/svg/${stars}`}
+            src={`/assets/svg/${stars}`}
             alt="rating"
           />
           <h4 className="font-customfont12 font-semibold sm:text-sm text-xs leading-[21px] text-black opacity-[50%]">

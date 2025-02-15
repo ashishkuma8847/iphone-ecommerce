@@ -71,7 +71,7 @@ const Gamepad = () => {
                       <Link className="" to={item.to}>
                         <img
                           className="hover:shadow-custom w-[78px] h-[62px] sm:w-[170px] sm:h-[138px]  transition-all duration-300"
-                          src={`/src/assets/svg/${item.img}`}
+                          src={`/assets/svg/${item.img}`}
                           alt="gamepadshort"
                         />
                       </Link>
