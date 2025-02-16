@@ -29,10 +29,10 @@ const Newartical = () => {
             <main>
                 <section className="xl:pb-[140px] sm:pb-[80px] pb-[80px] relative">
                     <div className="container  flex flex-col xl:gap-[140px] sm:gap-[80px] gap-[80px] ">
-                        <div className="flex sm:flex-col flex-col xl:flex-row sm:gap-[24px] gap-[24px] xl:gap-0  xl:justify-between sm:justify-center  justify-center ">
+                        <div className="flex sm:flex-col lg:flex-row flex-col xl:flex-row sm:gap-[24px] gap-[24px] xl:gap-0  xl:justify-between sm:justify-center  justify-center ">
 
 
-                            <div className={`sm:bg-bottom  max-w-[570px] w-full pl-[32px] pb-[32px] sm:h-[500px] h-[400px] bg-top bg-cover xl:h-[600px] bg-black rounded  bg-no-repeat flex sm:m-auto m-auto xl:m-0  bg-[url('/assets/images/ps5.png')]`} >
+                            <div className={`sm:bg-bottom  max-w-[570px] w-full pl-[32px] pb-[32px] sm:h-[500px] h-[400px] bg-top bg-cover xl:h-[600px] lg:h-[600px] bg-black rounded  bg-no-repeat flex sm:m-auto m-auto xl:m-0  bg-[url('/assets/images/ps5.png')]`} >
                                 <div className={` max-w-[242px]  w-full gap-[16px]  flex h-full flex-col   justify-end`}>
                                     <h2 className="text-[#FAFAFA] font-semibold xl:text-2xl font-customfont leading-6 tracking-[0.03em]">
                                         PlayStation 5

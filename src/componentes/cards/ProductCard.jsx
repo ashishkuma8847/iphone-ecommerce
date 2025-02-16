@@ -29,7 +29,7 @@ const ProductCard = ({
           )}
           <div className="relative group">
             <img
-              className=" p-[35px_40px_35px_40px] flex justify-center transition-all duration-200 hover:scale-75 "
+              className=" p-[35px_40px_35px_40px] flex justify-center transition-all duration-200 group-hover:scale-75 "
               src={`/assets/images/${bannerbg}`}
               alt="sdkf"
             />
