@@ -9,6 +9,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import Dropdown from "../ui/Dropdown";
 import Bannerpopup from "./Bannerpopup";
 const Banner = () => {
+  
   const data = bannerstyle.map((item) => item.categorydata.Womans.item);
   const data1 = bannerstyle.map((item) => item.categorydata.Mens.item);
   // const [rotate, setRotate] = useState(false);
@@ -29,7 +30,7 @@ const Banner = () => {
                 </div>
             </div> */}
       <div className="container ">
-        <div className=" flex    lg:justify-between sm:justify-start xl:justify-start xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
+        <div className=" flex  mt-[40px]  lg:justify-between sm:justify-start xl:justify-start xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
         <div className="xl:hidden sm:block block">
 
 <Bannerpopup/>

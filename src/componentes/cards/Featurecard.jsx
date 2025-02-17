@@ -8,6 +8,7 @@ const Featurecard = ({
   price,
   tittle,
   topnew,
+  titleclass
 }) => {
   const [isborder, setIsborder] = useState(0);
   return (
@@ -18,7 +19,7 @@ const Featurecard = ({
             {topnew}
           </h4>
         )}
-        <div className="relative group">
+        <div className="relative group ">
           <img
             className="p-[35px_40px_35px_40px] sm:w-[269px] w-[200px] h-[160px] sm:h-[249px] flex justify-center transition-all duration-200 hover:scale-75"
             src={`/assets/images/${headimg}`}
@@ -41,8 +42,8 @@ const Featurecard = ({
          <Link to={"/gamepad"}> <img src={`/assets/svg/Fill-Eye.svg`} alt="view" /></Link>
         </div>
       </div>
-      <div className="flex flex-col gap-2">
-        <h4 className="font-customfont12 sm:font-semibold font-medium text-xs sm:text-sm leading-[21px]">
+      <div className="flex flex-col gap-2 truncate">
+        <h4 className={`${titleclass} font-customfont12  sm:font-semibold font-medium text-xs sm:text-sm leading-[21px]`}>
           {tittle}
         </h4>
         <div className="flex sm:gap-[8px] gap-[2px]">

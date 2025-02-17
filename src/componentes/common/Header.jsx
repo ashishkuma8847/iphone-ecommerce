@@ -231,9 +231,13 @@ const Header = () => {
                       )}
                     </div>
                   </div>
-                  <div className="block relative sm:hidden sm:w-[32px] sm:h-[32px] w-[24px] h-[24px] ">
-                    <button onClick={() => setmenu(!menu)}>
-                      <img
+                  <div className="flex flex-col justify-center items-center h-full relative sm:hidden sm:w-[32px] sm:h-[32px] w-[24px]   ">
+                    <button onClick={() => setmenu(!menu)} className="flex flex-col items-center gap-1 h-full   w-full  z-50">
+                      <span className={`w-5 h-[2px] bg-black transition-all duration-200 ${menu && "translate-y-[6px] rotate-[-45deg]"} `}></span>
+                      <span className={`w-5 h-[2px]  transition-all duration-200 ${menu ? "opacity-0 bg-white " :"bg-black opacity-[100%]"}`}></span>
+                      <span className={`w-5 h-[2px] bg-black transition-all duration-200 ${menu && "-translate-y-[6px] rotate-45"}`}></span>
+
+                      {/* <img
                         className={`${
                           !menu ? " sm:w-[32px] sm:h-[32px] w-[24px] h-[24px]" : " w-0 h-0"
                         } transition-all duration-200 `}
@@ -246,11 +250,11 @@ const Header = () => {
                         } transition-all duration-200`}
                         src="/assets/images/cross.png"
                         alt="cross"
-                      />
+                      /> */}
                     </button>
                     {menu && (
                       <>
-                        <div className="w-[200px] p-6  absolute z-10 bg-black right-0 backdrop-blur-3xl bg-opacity-45 rounded-[6px]   text-white ">
+                        <div className="w-[200px] p-6  absolute z-10 bg-black right-0 top-5 backdrop-blur-3xl bg-opacity-45 rounded-[6px]   text-white ">
                           <div className="flex flex-col justify-center items-center gap-6  text-center ">
                           <NavLink className=" " to={"/"}>Home</NavLink>
                           <NavLink to={"/contact"}>Contact</NavLink>

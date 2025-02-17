@@ -32,7 +32,7 @@ const Explore = ({data,headingclass,classbutton}) => {
                             <Link to={item.to}>
                             <div className="sm:w-[270px] w-[160px] flex flex-col sm:gap-4 gap-4 md:gap-5 lg:gap-[16px] rounded">
 
-                            <Featurecard type={true} color={item.color}   headimg={item.headimg}  stars={item.stars} recents={item.recents} price={item.price} tittle={item.tittle} topnew={item.topnew}/>
+                            <Featurecard type={true}  color={item.color}   headimg={item.headimg}  stars={item.stars} recents={item.recents} price={item.price} tittle={item.tittle} topnew={item.topnew}/>
                            </div> </Link>
                            </div>
                         ))
