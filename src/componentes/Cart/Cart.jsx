@@ -50,7 +50,7 @@ const Cart = () => {
       </div>
 
       <div className="flex flex-col lg:gap-[40px] sm:gap-[30px] gap-[30px]  lg:pt-[80px] sm:pt-[40px] pt-[40px] pb-[24px] font-customfont12 font-normal sm:text-base text-sm leading-6">
-        <div className="flex lg:justify-between justify-between w-full p-0 items-center lg:p-[24px_39px_24px_40px] sm:p-[24px] shadow-Customnew rounded">
+        <div className="flex lg:justify-between justify-between w-full p-2 items-center lg:p-[24px_39px_24px_40px] sm:p-[24px] shadow-Customnew rounded">
           <h4 className="lg:m-0  w-[130px] sm:w-[181px] lg:w-[68px] ">Product</h4>
           <h4 className="lg:m-0 ">Price</h4>
           <h4 className="lg:m-0 ">Quantity</h4>
@@ -60,7 +60,7 @@ const Cart = () => {
         {cart.map((item, index) => (
           <div key={index}>
             <Link to={item.to}>
-              <div className="flex sm:justify-between justify-between items-center lg:p-[24px_66px_24px_40px] sm:p-[24px] p-0 shadow-Customnew rounded">
+              <div className="flex sm:justify-between justify-between items-center lg:p-[24px_66px_24px_40px] sm:p-[24px] p-2 shadow-Customnew rounded">
                 <div className="relative flex items-center sm:w-[181px] w-[129px] justify-between lg:mr-[167px] sm:m-0 m-0 group ">
                   <img className="sm:w-[54px] sm:h-[54px] w-[34px] h-[34px]"
                     src={`/assets/svg/${item.imagehead}`}

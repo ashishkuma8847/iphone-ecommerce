@@ -30,7 +30,7 @@ const Banner = () => {
                 </div>
             </div> */}
       <div className="container ">
-        <div className=" flex  mt-[40px]  lg:justify-between sm:justify-start xl:justify-start xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
+        <div className=" flex  mt-[40px] lg:mt-0  lg:justify-between sm:justify-start xl:justify-start xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
         <div className="xl:hidden sm:block block">
 
 <Bannerpopup/>
