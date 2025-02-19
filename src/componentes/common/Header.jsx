@@ -252,9 +252,8 @@ const Header = () => {
                         alt="cross"
                       /> */}
                     </button>
-                    {menu && (
                       <>
-                        <div className="w-[200px] p-6  absolute z-10 bg-black right-0 top-5 backdrop-blur-3xl bg-opacity-45 rounded-[6px]   text-white ">
+                        <div className={` transition-all duration-300 ${menu ? "w-[200px] z-10 opacity-[100%]" :"w-0 -z-10 opacity-0"} p-6  absolute z-10 bg-black right-0 top-5 backdrop-blur-3xl bg-opacity-45 rounded-[6px]   text-white `}>
                           <div className="flex flex-col justify-center items-center gap-6  text-center ">
                           <NavLink className=" " to={"/"}>Home</NavLink>
                           <NavLink to={"/contact"}>Contact</NavLink>
@@ -262,7 +261,6 @@ const Header = () => {
                           <NavLink to={"/Signup"}>SignUp</NavLink></div>
                         </div>
                       </>
-                    )}
                   </div>
                 </div>
               </div>
