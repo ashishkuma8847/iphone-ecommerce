@@ -36,7 +36,7 @@ const Bannerpopup = () => {
             <div
               className={`${
                 popup ? "w-[240px] z-50 opacity-[100%] pl-4  " : "w-0 -z-50 opacity-0 p-0"
-              }  transition-all duration-300   rounded  backdrop-blur-3xl pb-4 pt-4 bg-white bg-opacity-0 flex flex-col   text-white xl:text-black `}
+              }  transition-all duration-300   rounded  backdrop-blur-3xl pb-4 pt-4 bg-white bg-opacity-0 flex flex-col    text-white xl:text-black `}
             >
               <div className="flex flex-col   ">
                 <Dropdown items={data} label={"Woman’s Fashion"} />
