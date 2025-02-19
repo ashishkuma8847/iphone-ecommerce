@@ -27,7 +27,7 @@ const Bannerpopup = () => {
     } */}
       <div className={` relative `}>
         <div
-          className=" absolute  sm:z-10 z-10 sm:rounded lg:mt-[40px]
+          className=" absolute  sm:z-10 z-10 sm:rounded lg:mt-[40px ]
                 h-[344px]  flex-col
                     mt-[40px]
                       xl:flex   xl:overflow-hidden xl:w-[217px]"
