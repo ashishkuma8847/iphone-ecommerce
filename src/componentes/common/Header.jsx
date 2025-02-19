@@ -162,7 +162,7 @@ const Header = () => {
                   >
                     <Link className="relative" to={"/Wishlist"}>
                       {" "}
-                      <span className="absolute rounded-full right-0 bg-CustomRed-0 sm:w-[16px] w-[15px] h-[15px] sm:h-[17px] text-white font-customfont12 font-normal text-xs leading-[18px] text-center">
+                      <span className="absolute rounded-full sm:right-0 sm:top-0 right-[-5px] top-[-5px] bg-CustomRed-0 sm:w-[16px] w-[15px] h-[15px] sm:h-[17px] text-white font-customfont12 font-normal text-xs leading-[18px] text-center">
                         {jsonwishlist.length}
                       </span>{" "}
                       <img 
