@@ -28,7 +28,7 @@
     top: 37px;
     left: 19px;
     transform-origin: center;
-    animation: dotMove var(--duration) ease-in-out infinite;
+    animation: dotMove var(--duration) ease-in-out infinite ;
 }
 
 .loader svg {
