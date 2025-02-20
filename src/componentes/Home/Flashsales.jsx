@@ -22,6 +22,10 @@ const Flashsales = ({
   classmain,
   classhead
 }) => {
+  
+  const targetDate = new Date();
+targetDate.setHours(targetDate.getHours() + 24); 
+
   const swiperRef = useRef();
   const [border, setBorder] = useState(false);
 
@@ -57,7 +61,9 @@ const Flashsales = ({
                 <ul className="flex gap-[17px] sm:gap-[17px]  ">
                   {clock && (
                     <>
-                      <Countdown targetDate="2025-02-20" />
+                   <Countdown targetDate={targetDate} />
+
+
                     </>
                     //  couter.map((item, index) => (
                     //     <div key={index + Date.now() + item}>
