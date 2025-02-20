@@ -4,6 +4,26 @@ import HeaderJson from "../../json/Header.json";
 import jsonwishlist from "../../json/Wishlist.json";
 import cartjson from "../../json/Cart.json";
 const Header = () => {
+  const pages =[
+    {
+      to:"/",
+      page:"Home"
+    },
+    {
+      to:"/contact",
+      page:"Contact"
+    },
+    {
+      to:"/About",
+      page:"About"
+    },
+    {
+      to:"/Signup",
+      page:"SignUp"
+    }
+  ]
+  
+
   const [search, setSearch] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const boxRef = useRef(null);
@@ -22,6 +42,7 @@ const Header = () => {
     };
   }, []);
   const [menu, setmenu] = useState(false);
+  const [menu1, setmenu1] = useState(0);
 
   return (
     <>
@@ -94,15 +115,18 @@ const Header = () => {
                   className=" flex h-full
                
               lg:gap-[48px]  lg:w-[367px] lg:text-base lg:leading-6
-              md:gap-[38px]  md:w-[305px] md:text-sm md:leading-5
-              sm:gap-[38px] sm:justify-start  sm:w-[305px] sm:text-sm sm:leading-5
+             md:w-[305px] 
+              sm:gap-[38px] sm:justify-start  sm:w-[305px] sm:leading-5
               justify-between  sm:items-center w-[303px] text-sm leading-5
               items-center font-customfont12    font-normal "
                 >
-                  <NavLink to={"/"}>Home</NavLink>
-                  <NavLink to={"/contact"}>Contact</NavLink>
-                  <NavLink to={"/About"}>About</NavLink>
-                  <NavLink to={"/Signup"}>SignUp</NavLink>
+                  {
+                    pages.map((item,index)=>(
+                      <button onClick={()=>setmenu1(index)} className={`${menu1 === index ? "before:w-full  ":"before:w-0"} before:content-['']  before:h-[1px]  before:hover:w-full before:bg-customGray-0 before:absolute relative before:left-0  before:bottom-0  before:transition-all before:duration-300`} key={item - index * Date.now()} >
+                      <Link to={item.to} >{item.page}</Link></button>
+                    ))
+                  }
+                  
                 </ul>
               </div>
 
