@@ -9,6 +9,11 @@ import Explore from "../componentes/Home/Explore";
 import Newartical from "../componentes/Home/Newartical";
 import explorejson from "../json/Explore.json";
 import { motion } from "framer-motion";
+const pageVariants = {
+  initial: { x: "100vw", opacity: 0 }, 
+  animate: { x: 0, opacity: 1, transition: { duration: 0.3 } }, 
+  exit: { x: "-100vw", opacity: 0, transition: { duration: 0.3 } } 
+};
 const Home = () => {
   // const inputref = useRef();
   // const [value, setvalue] = useState("jaswant");
@@ -37,6 +42,13 @@ const Home = () => {
   
   return (
     <>
+      <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="container mx-auto p-6"
+    >
     {/* <button onClick={()=>settime(!time)} className={`transition-all duration-150 ${time? "text-red-700 scale-150 bg-black" :"text-black bg-white scale-100 "} `}>
 sdas
     </button> */}
@@ -71,6 +83,7 @@ sdas
       <Music />
       <Explore data={explorejson} />
       <Newartical />
+      </motion.div>
     </>
   );
 };

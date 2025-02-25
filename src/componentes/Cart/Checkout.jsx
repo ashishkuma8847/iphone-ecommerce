@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import checkoutMap from "../../json/CheckoutMap.json";
 import cartjson from "../../json/Cart.json";
 import Button from "../ui/Button";
+import { motion } from "framer-motion";
+const pageVariants = {
+  initial: { x: "100vw", opacity: 0 }, 
+  animate: { x: 0, opacity: 1, transition: { duration: 0.3 } }, 
+  exit: { x: "-100vw", opacity: 0, transition: { duration: 0.3 } } 
+};
 const Checkout = () => {
   const [checked, setChecked] = useState(false);
   const [isborder, setIsborder] = useState(0);
@@ -20,6 +26,13 @@ const Checkout = () => {
   ];
   return (
     <>
+      <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="container mx-auto p-6"
+    >
       <main>
         <div className="container">
           <div className="lg:mt-[80px] sm:mt-[40px] sm:mb-[80px] lg:mb-[140px] flex flex-col  lg:gap-[80px] sm:gap-[40px] font-customfont12 font-normal text-base leading-6 ">
@@ -193,7 +206,7 @@ const Checkout = () => {
             </div>
           </div>
         </div>
-      </main>
+      </main></motion.div>
     </>
   );
 };

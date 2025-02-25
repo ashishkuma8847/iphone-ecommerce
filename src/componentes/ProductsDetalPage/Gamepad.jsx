@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import gamepad1 from "../../json/Gamepad.json";
 import Flashsales from "../Home/Flashsales";
+import { motion } from "framer-motion";
+const pageVariants = {
+  initial: { x: "100vw", opacity: 0 }, 
+  animate: { x: 0, opacity: 1, transition: { duration: 0.3 } }, 
+  exit: { x: "-100vw", opacity: 0, transition: { duration: 0.3 } } 
+};
 const Gamepad = () => {
   const [gamepad, setgamepad] = useState(false);
   const [isborder, setIsborder] = useState(0);
@@ -51,6 +57,13 @@ const Gamepad = () => {
       {/* <h4>{count}</h4>
     <button onClick={()=>setcount(count === 20 ? count : count + 1)}>++++++++</button>
     <button onClick={()=>setcount(count === 1 ? count : count - 1)}>------------</button> */}
+     <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="container mx-auto p-6"
+    >
       <main>
         <div className="container">
           <div className="flex flex-col lg:pt-[80px] sm:pt-[40px] pt-[40px] sm:pb-[80px] pb-[80px] lg:pb-[140px] font-customfont12 font-normal text-sm leading-[21px] lg:gap-[140px] sm:gap-[80px] gap-[80px]">
@@ -271,7 +284,7 @@ const Gamepad = () => {
             </div>
           </div>
         </div>
-      </main>
+      </main></motion.div>
     </>
   );
 };

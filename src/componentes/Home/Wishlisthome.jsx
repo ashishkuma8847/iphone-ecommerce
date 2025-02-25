@@ -2,10 +2,23 @@ import React from 'react'
 import Wishlist from '../cards/Wishlist'
 import { Link,  NavLink } from 'react-router-dom'
 import Button from '../ui/Button'
+import { motion } from "framer-motion";
 
+const pageVariants = {
+    initial: { x: "100vw", opacity: 0 }, 
+    animate: { x: 0, opacity: 1, transition: { duration: 0.3 } }, 
+    exit: { x: "-100vw", opacity: 0, transition: { duration: 0.3 } } 
+  };
 const Wishlisthome = ({ data ,data2 }) => {
     return (
         <>
+  <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="container mx-auto p-6"
+    >
             <div className="container">
                 <div className="flex flex-col sm:pt-[40px] pt-[40px] sm:pb-[80px] pb-[80px] lg:pt-[80px] lg:pb-[140px] ">
                     <div className="flex flex-col  sm:pb-[40px] pb-[40px] lg:pb-[80px] sm:gap-[40px] gap-[40px] lg:gap-[60px]">
@@ -55,7 +68,7 @@ const Wishlisthome = ({ data ,data2 }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div></motion.div>
         </>
     )
 }

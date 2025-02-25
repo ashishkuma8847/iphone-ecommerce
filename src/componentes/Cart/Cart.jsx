@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cartjson from "../../json/Cart.json";
 import Button from "../ui/Button";
-
+import { motion } from "framer-motion";
+const pageVariants = {
+  initial: { x: "100vw", opacity: 0 }, 
+  animate: { x: 0, opacity: 1, transition: { duration: 0.3 } }, 
+  exit: { x: "-100vw", opacity: 0, transition: { duration: 0.3 } } 
+};
 const Cart = () => {
   const [cart, setCart] = useState(
     cartjson.map((item) => ({
@@ -38,6 +43,15 @@ const Cart = () => {
   const totalSubtotal = cart.reduce((acc, item) => acc + item.subtotal, 0);
 
   return (
+    <>
+    
+    <motion.div
+    variants={pageVariants}
+    initial="initial"
+    animate="animate"
+    exit="exit"
+    className="container mx-auto p-6"
+  >
     <div className="container lg:pt-[80px] sm:pt-[40px] pt-[40px] sm:pb-[80px] pb-[80px] lg:pb-[140px]">
       <div className="flex flex-col">
         <div className="flex gap-3 font-customfont12 font-normal text-sm leading-[21px]">
@@ -138,7 +152,8 @@ const Cart = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div></motion.div>
+    </>
   );
 };
 

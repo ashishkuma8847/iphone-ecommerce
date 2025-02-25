@@ -2,10 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Input from "../componentes/ui/Input";
 import Button from "../componentes/ui/Button";
+import { motion } from "framer-motion";
 
+const pageVariants = {
+  initial: { x: "100vw", opacity: 0 }, 
+  animate: { x: 0, opacity: 1, transition: { duration: 0.3 } }, 
+  exit: { x: "-100vw", opacity: 0, transition: { duration: 0.3 } } 
+};
 const Contact = () => {
   return (
     <>
+      <motion.div
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="container mx-auto p-6"
+    >
       <div className="container">
         <div className="flex flex-col xl:pt-[80px] xl:pb-[140px] sm:pt-[40px] pt-[40px] sm:pb-[80px] pb-[80px] sm:gap-10 gap-10 xl:gap-[80px]">
           <div className="flex gap-3 font-customfont12 font-normal text-sm leading-[21px]">
@@ -79,7 +92,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div></motion.div>
     </>
   );
 };
