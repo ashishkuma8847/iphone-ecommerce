@@ -3,6 +3,7 @@ import { data, Link, NavLink } from "react-router-dom";
 import HeaderJson from "../../json/Header.json";
 import jsonwishlist from "../../json/Wishlist.json";
 import cartjson from "../../json/Cart.json";
+import PageTransition from "../../pages/framer_motion/PageTransition";
 const Header = () => {
   const pages =[
     {
@@ -120,13 +121,16 @@ const Header = () => {
               justify-between  sm:items-center w-[303px] text-sm leading-5
               items-center font-customfont12    font-normal "
                 >
+
+       {/* <PageTransition> */}
+
                   {
                     pages.map((item,index)=>(
                       <button onClick={()=>setmenu1(index)} className={`${menu1 === index ? "before:w-full  ":"before:w-0"} before:content-['']  before:h-[1px]  before:hover:w-full before:bg-customGray-0 before:absolute relative before:left-0  before:bottom-0  before:transition-all before:duration-300`} key={item - index * Date.now()} >
                       <Link to={item.to} >{item.page}</Link></button>
                     ))
                   }
-                  
+                  {/* </PageTransition> */}
                 </ul>
               </div>
 
