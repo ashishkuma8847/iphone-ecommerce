@@ -9,6 +9,12 @@ import couter from "../../json/Counter.json";
 import Button from "../ui/Button";
 import ProductCard from "../cards/ProductCard";
 import Countdown from "../ui/Countdown";
+import { motion } from "framer-motion";
+
+
+    
+
+
 const Flashsales = ({
   heading,
   tittle,
@@ -41,16 +47,27 @@ targetDate.setHours(targetDate.getHours() + 24);
       {/* <button onClick={handleClick} className={`${border ? "border " : "border-none"}`}>adsa</button> */}
       <main>
         <section className="container">
-          <div className={`flex gap-6 flex-col ${classhead}`}>
+          <div className={`flex gap-6 flex-col  ${classhead}`}>
+            
+    <motion.div
+      initial={{ opacity: 0, y: -100 , x:0  }}
+      whileInView={{ opacity: 1, y: 0, x:0 }}
+      transition={{ duration: 1.2 }}
+      className="w-[126px]"
+    >
             <ul
-              className={`${headingclass} flex items-center gap-[16px] w-[126px]  `}
+              className={`${headingclass} flex items-center  gap-[16px] w-[126px]  `}
             >
               <li className="w-[20px] h-[40px] rounded bg-CustomRed-0"></li>
               <li className="font-customfont12 text-CustomRed-0 leading-[20px] font-semibold text-base">
                 {heading}
               </li>
-            </ul>
-
+            </ul></motion.div>
+            <motion.div
+      initial={{ opacity: 0, y: 0 , x:-100  }}
+      whileInView={{ opacity: 1, y: 0, x:0 }}
+      transition={{ duration: 1.1 }}>
+    
             <div className={`${classmain} flex sm:flex-row flex-col    items-start justify-between`}>
               <div className="flex lg:flex-row sm:flex-col flex-col lg:gap-[87px] sm:gap-[20px] gap-[20px] lg:items-end sm:items-start items-start justify-end  ">
                 <li
@@ -123,8 +140,14 @@ targetDate.setHours(targetDate.getHours() + 24);
                   </>
                 )}
               </div>
-            </div>
-            <div className="flex  w-full gap-[30px]">
+            </div></motion.div>
+            <motion.div
+      initial={{ opacity: 0, y: 0 , x:-100  }}
+      whileInView={{ opacity: 1, y: 0, x:0 }}
+      transition={{ duration: 1.1 }}
+      className=""
+    >
+            <div className="flex   w-full gap-[30px]">
               <Swiper
               slidesPerView={2}
               loop={true}
@@ -173,13 +196,18 @@ targetDate.setHours(targetDate.getHours() + 24);
                     </SwiperSlide>
                   ))}
               </Swiper>
-            </div>
+            </div></motion.div>
           </div>
           {show && (
             <>
-              <Link to={"/Viewallprojects"} className=" flex justify-center items-center sm:pt-[53px] pt-[53px] sm:pb-[40px] mb-[60px] pb-[40px] lg:pt-[73px] lg:pb-[60px] lg:mb-[80px] sm:mb-[60px] border-b border-customGray-0">
+            <motion.div
+      initial={{ opacity: 0, y: 100 , x:0  }}
+      whileInView={{ opacity: 1, y: 0, x:0 }}
+      transition={{ duration: 1.1 }}
+    >
+              <Link to={"/Viewallprojects"} className=" flex  justify-center items-center sm:pt-[53px] pt-[53px] sm:pb-[40px] mb-[60px] pb-[40px] lg:pt-[73px] lg:pb-[60px] lg:mb-[80px] sm:mb-[60px] border-b border-customGray-0">
                 <Button variant={"solid"} children={"View All Products"} />
-              </Link>
+              </Link></motion.div>
             </>
           )}
         </section>

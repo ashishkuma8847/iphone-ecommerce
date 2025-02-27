@@ -18,7 +18,6 @@ const Viewallprojects = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="container mx-auto p-6"
     >
    <div className="flex flex-col lg:gap-[80px] sm:gap-[32px] gap-[32px] lg:pt-[80px]  sm:pt-[40px ] pt-[40px] ">
     <div className="">

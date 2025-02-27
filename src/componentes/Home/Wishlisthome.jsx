@@ -17,7 +17,6 @@ const Wishlisthome = ({ data ,data2 }) => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="container mx-auto p-6"
     >
             <div className="container">
                 <div className="flex flex-col sm:pt-[40px] pt-[40px] sm:pb-[80px] pb-[80px] lg:pt-[80px] lg:pb-[140px] ">

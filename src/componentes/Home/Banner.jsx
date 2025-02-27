@@ -8,8 +8,16 @@ import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import Dropdown from "../ui/Dropdown";
 import Bannerpopup from "./Bannerpopup";
+import "../../Animationcss/Animation.css";
+import { motion } from "framer-motion";
+
+
+    <motion.div
+      initial={{ opacity: 0, y: 50 , x:50  }}
+      whileInView={{ opacity: 1, y: 0, x:0 }}
+      transition={{ duration: 1.3 }}
+    ></motion.div>
 const Banner = () => {
-  
   const data = bannerstyle.map((item) => item.categorydata.Womans.item);
   const data1 = bannerstyle.map((item) => item.categorydata.Mens.item);
   // const [rotate, setRotate] = useState(false);
@@ -19,7 +27,6 @@ const Banner = () => {
   const [popup, setpopup] = useState(false);
   return (
     <>
-    
       {/* <div className="">
                 <h2>count:{count}</h2>
                 <div className="flex gap-2">
@@ -29,63 +36,69 @@ const Banner = () => {
                     <button onClick={() => setcount(0)} >reset</button>
                 </div>
             </div> */}
-      <div className="container ">
+      <div className="container  ">
         <div className=" flex  mt-[40px] lg:mt-0  lg:justify-between sm:justify-start xl:justify-start xl:mb-[127px]  mb-[40px]   sm:mb-[40px]  ">
-        <div className="xl:hidden sm:block block">
-
-<Bannerpopup/>
-</div>
-          <div className={`sm:hidden lg:block hidden`}>
-            <div
-              className=" lg:mt-[40px]
+          <div className="xl:hidden sm:block block">
+            <Bannerpopup />
+          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 0, x: -100 }}
+            whileInView={{ opacity: 1, y: 0, x: 0 }}
+            transition={{ duration: 1.1 }}
+          >
+          <div className="flex ">
+            <div className={`sm:hidden lg:block hidden`}>
+              <div
+                className=" lg:mt-[40px]
                 h-[344px]  flex-col
                    mt-[20px]
                       xl:flex   xl:overflow-hidden xl:max-w-[217px] w-full"
-            >
-              <div className="flex">
-                <div className={``}>
-              <div className="flex flex-col ">
-                <Dropdown items={data} label={"Woman’s Fashion"} />
-                <Dropdown items={data1} label={"Men’s Fashion"} />
-              </div>
-              {bannerstyle?.map((item, index) => (
-                <div key={index}>
-                  <Link to={item.to} className="  ">
-
-                    <div
-                      className={` font-customfont12  sm:flex-col  max-w-[217px] w-full
+              >
+                <div className="flex">
+                  <div className={``}>
+                    <div className="flex flex-col ">
+                      <Dropdown items={data} label={"Woman’s Fashion"} />
+                      <Dropdown items={data1} label={"Men’s Fashion"} />
+                    </div>
+                    {bannerstyle?.map((item, index) => (
+                      <div key={index}>
+                        <Link to={item.to} className="  ">
+                          <div
+                            className={` font-customfont12  sm:flex-col  max-w-[217px] w-full
                     sm:text-sm sm:leading-5 text-sm leading-5   
                     flex flex-col gap-4 sm:gap-0 justify-between lg:items-start  sm:items-start items-start truncate font-normal lg:text-base lg:leading-[24px]`}
-                    >
-                      {linkNames.map((item, index) => {
-                        return (
-                          <Link
-                            to={"/error"}
-                            key={item + index + Date.now() + "links"}
                           >
-                            <h4
-                              className=" 
+                            {linkNames.map((item, index) => {
+                              return (
+                                <Link
+                                  to={"/error"}
+                                  key={item + index + Date.now() + "links"}
+                                >
+                                  <h4
+                                    className=" 
                         lg:pb-4 sm:pb-[4px] hover:text-CustomRed-0 transition-all duration-300"
-                            >
-                              {item}
-                            </h4>
-                          </Link>
-                        );
-                      })}
-                    </div>
-                  </Link>
+                                  >
+                                    {item}
+                                  </h4>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        </Link>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              ))}</div>
               </div>
             </div>
-          </div>
-          <span
-            className="sm:hidden xl:block hidden
+            <span
+              className="sm:hidden xl:block hidden
 
         w-[1px] lg:mr-0  h-[384px] bg-[#b2b2b270] xl:ml-4 xl:mr-[44px]  "
-          ></span>
+            ></span>
+          </div></motion.div>
           <div
-            className="flex   
+            className="flex  bannerright 
                 lg:mt-10 
                 sm:mt-10 
                   max-w-[892px] lg:max-w-[790px] gap-0 w-full  sm:max-w-[892px] xl:max-w-[892px] sm:h-[344px] sm:w-full

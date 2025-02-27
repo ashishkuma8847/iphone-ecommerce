@@ -15,7 +15,6 @@ const Signup = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="container mx-auto p-6"
     >
     <SignUpFile/></motion.div>
     </>

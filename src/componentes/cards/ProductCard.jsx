@@ -65,7 +65,7 @@ const ProductCard = ({
           <div className="flex gap-2">
             <img
               className="w-[100px] h-[20px]"
-              src={`/assets/svg/${rating}`}
+              src={`/public/assets/svg/${rating}`}
               alt=""
             />
             <h4 className="font-customfont12 font-semibold text-sm leading-[21px] text-black opacity-[50%]">

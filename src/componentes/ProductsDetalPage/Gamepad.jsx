@@ -62,7 +62,6 @@ const Gamepad = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="container mx-auto p-6"
     >
       <main>
         <div className="container">

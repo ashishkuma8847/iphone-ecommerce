@@ -21,7 +21,7 @@ const Featurecard = ({
         )}
         <div className="relative group ">
           <img
-            className="p-[35px_40px_35px_40px] sm:w-[269px] w-[200px] h-[160px] sm:h-[249px] flex justify-center transition-all duration-200 hover:scale-75"
+            className="p-[35px_40px_35px_40px] sm:w-[269px] w-[200px] h-[160px] sm:h-[249px] flex justify-center transition-all duration-200 group-hover:scale-75"
             src={`/assets/images/${headimg}`}
             alt="product"
           />
@@ -62,7 +62,7 @@ const Featurecard = ({
         <div className="flex gap-[8px] relative z-50">
           {color &&
             color.map((item, index) => (
-              <Fragment key={index}>
+              <div key={index}>
                 <div
                   className={`flex items-center w-5 h-5  justify-center rounded-full border-[2px]  ${
                     isborder === index ? " border-black" : " border-none"
@@ -78,7 +78,7 @@ const Featurecard = ({
                     } `}
                   ></button>
                 </div>
-              </Fragment>
+              </div>
             ))}
         </div>
       </div>

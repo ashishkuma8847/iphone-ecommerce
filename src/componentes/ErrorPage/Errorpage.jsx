@@ -15,7 +15,6 @@ const Errorpage = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="container mx-auto p-6"
     >
       <div className="container">
         <div className="lg:pt-[80px] sm:pt-[40px] sm:pb-[80px] lg:pb-[140px] flex flex-col sm:gap-[80px] lg:gap-[140px] ">

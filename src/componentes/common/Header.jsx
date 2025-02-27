@@ -3,6 +3,7 @@ import { data, Link, NavLink } from "react-router-dom";
 import HeaderJson from "../../json/Header.json";
 import jsonwishlist from "../../json/Wishlist.json";
 import cartjson from "../../json/Cart.json";
+import "../../Animationcss/Animation.css"
 const Header = () => {
   const [search, setSearch] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
     <>
       <header className="border-b border-#b2b2b2">
         <div className="bg-black ">
-          <div className="container bg-black flex items-center justify-end w-full text-white  py-[12px] ">
+          <div className="container bg-black flex items-center headerhead justify-end w-full text-white  py-[12px] ">
             <div
               className="flex 
              sm:gap-[60px]   
@@ -71,7 +72,7 @@ const Header = () => {
 
         <nav className="container  mt-[40px] mb-[16px]">
           <div
-            className=" flex 
+            className=" flex headertitile
  flex-row gap-0 items-start
            sm:flex-col sm:gap-5 sm:items-start
            md:flex-col md:gap-5 md:items-start
@@ -79,13 +80,17 @@ const Header = () => {
            xl:flex-row  xl:gap-0   xl:items-center 
            justify-between  font-poppins "
           >
-            <div className="max-w-[118px]  flex items-center justify-center  ">
+
+
+            <div className="max-w-[118px]   flex items-center justify-center  ">
               <h1 className="font-customfont  font-bold text-2xl leading-6 tracking-[0.03em]">
                 Exclusive
               </h1>
             </div>
+
+
             <div
-              className=" flex justify-end  lg:justify-between    sm:gap-0   sm:justify-between  md:w-full xl:w-[890px]
+              className=" flex justify-end  lg:justify-between header   sm:gap-0   sm:justify-between  md:w-full xl:w-[890px]
             xl:justify-between
            "
             >

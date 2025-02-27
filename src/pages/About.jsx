@@ -18,7 +18,6 @@ const About = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="container mx-auto p-6"
     >
     <Heading/>
     <Ourstory/></motion.div>

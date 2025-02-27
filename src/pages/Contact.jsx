@@ -17,7 +17,6 @@ const Contact = () => {
       initial="initial"
       animate="animate"
       exit="exit"
-      className="container mx-auto p-6"
     >
       <div className="container">
         <div className="flex flex-col xl:pt-[80px] xl:pb-[140px] sm:pt-[40px] pt-[40px] sm:pb-[80px] pb-[80px] sm:gap-10 gap-10 xl:gap-[80px]">

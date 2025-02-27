@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import { AnimatePresence } from 'framer-motion'; // Import AnimatePresence
+import { AnimatePresence } from 'framer-motion'; 
 import Header from './componentes/common/Header';
 import Footer from './componentes/common/Footer';
 import Home from './pages/Home';
@@ -21,7 +21,7 @@ import Viewallprojects from './componentes/viewallprojects/Viewallprojects';
 import ScrollToTop from './componentes/common/ScrollToTop';
 
 const AnimatedRoutes = () => {
-  const location = useLocation(); // Detects route changes
+  const location = useLocation(); 
 
   return (
     <AnimatePresence mode="wait">
@@ -56,14 +56,14 @@ const App = () => {
     <>
       {loading ? (
         <Loader />
-      ) : (
+      ) : (""
+      )}
         <Router>
           <ScrollToTop />
           <Header />
           <AnimatedRoutes />
           <Footer />
         </Router>
-      )}
     </>
   );
 };
