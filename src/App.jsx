@@ -19,6 +19,7 @@ import Loader from './pages/Loader/Loader';
 import Gamepad from './componentes/ProductsDetalPage/Gamepad';
 import Viewallprojects from './componentes/viewallprojects/Viewallprojects';
 import ScrollToTop from './componentes/common/ScrollToTop';
+import Core from "./Core"
 
 const AnimatedRoutes = () => {
   const location = useLocation(); 
@@ -60,6 +61,7 @@ const App = () => {
       )}
         <Router>
           <ScrollToTop />
+         <Core/>
           <Header />
           <AnimatedRoutes />
           <Footer />
